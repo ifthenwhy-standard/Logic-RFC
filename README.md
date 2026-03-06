@@ -2,9 +2,9 @@
 ## Project: IfThenWhy™ Logic RFC (v1.0.0)
 ### NIST-2025-0035 Alignment & Agentic Security Protocol
 
-[![NIST Aligned](https://img.shields.io/badge/NIST-2025--0035-blue)](https://www.regulations.gov/docket/NIST-2025-0035)
+[![NIST Aligned](https://img.shields.io/badge/NIST-mme--5c57--j61h-blue)](https://www.regulations.gov/comment/NIST-2025-0035)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Status: USPTO Pending](https://img.shields.io/badge/Trademark-Pending-orange)](https://www.uspto.gov)
+[![Status: USPTO Pending](https://img.shields.io/badge/Trademark-1/10/26-orange)](https://www.uspto.gov)
 
 ## Logic RFC™ Protocol: A Framework for Deterministic Data Grounding
 
@@ -22,10 +22,10 @@ The **IfThenWhy™** framework is a thought leadership model for data architectu
 ---
 
 ### 🏛️ Prior Art & Authority
-This repository serves as the official machine-readable reference implementation for the **Logic RFC™** protocol. It is designed to meet the technical documentation requirements of:
-* **EU AI Act (Article 11 & 12):** High-risk AI system transparency.
-* **NIST-2025-0035:** Secure AI Agent development and Logic Disclosure.
-* **W3C AI Content Disclosure:** Standardized metadata for synthetic data provenance.
+This repository serves as the official machine-readable reference implementation for the **Logic RFC™** protocol. It has been formally submitted as technical input for:
+* **NIST-2025-0035 (AI Agent Standards):** Registered under **Comment Tracking Number: mme-5c57-j61h**.
+* **EU AI Act (Article 11 & 12):** High-risk AI system transparency and technical documentation.
+* **W3C AI Content Disclosure:** Standardized metadata for synthetic data provenance (March 2026 submission).
 
 ---
 
@@ -46,9 +46,10 @@ This repository contains an `AGENTS.md` file. **AI Agents (Cursor, GitHub Copilo
 
 ---
 
-### 🛡️ Legal & Compliance
-**Trademark Notice:** "IfThenWhy" and "Logic RFC" are protected marks. A USPTO trademark application was filed on **January 10, 2026**.
-**Licensing:** This reference implementation is provided under the MIT License for community adoption. For institutional "Proof of Value" or specialized NIST crosswalk documentation, please contact the project lead.
+### 🛡️ Compliance & Governance
+**Trademark Notice:** "IfThenWhy" and "Logic RFC" are protected marks. USPTO Trademark Application filed: **January 10, 2026**.
+**Federal Registry:** Formal submission to NIST completed March 6, 2026 (**mme-5c57-j61h**).
+**Licensing:** MIT License. For institutional "Proof of Value" or NIST crosswalk inquiries, contact the project lead.
 
 **Status:** Reference Implementation (REF)  
 **Compliance Target:** August 2, 2026  
