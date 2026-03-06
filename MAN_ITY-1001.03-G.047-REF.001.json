@@ -1,0 +1,15 @@
+[
+{
+"itw_ID": "itw_1001.03.G.047-REF.001",
+"metric_id": "itw_1001",
+"parent_id": null,
+"metric_name": "Customer Lifetime Value",
+"status": "Reference (REF)",
+"framework": "IfThenWhy",
+"version_note": "Initial Release - Standardized Protocol",
+"last_updated": "2026-02-27",
+"legal_notice": "Proprietary Thought Leadership of IfThenWhy. Unauthorized commercial resale is prohibited.",
+"owner_persona": "ITW-Logic-Registry",
+"version": "1"
+}
+]

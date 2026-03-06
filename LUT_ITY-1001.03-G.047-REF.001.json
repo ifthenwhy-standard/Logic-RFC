@@ -1,0 +1,50 @@
+[
+{
+"itw_id": "itw_1001.03.G.047-REF.001",
+"lookup_type": "SHIP_MODE",
+"lookup_code": "1",
+"human_label": "First Class"
+},
+{
+"itw_id": "itw_1001.03.G.047-REF.001",
+"lookup_type": "SHIP_MODE",
+"lookup_code": "2",
+"human_label": "Same Day"
+},
+{
+"itw_id": "itw_1001.03.G.047-REF.001",
+"lookup_type": "SHIP_MODE",
+"lookup_code": "3",
+"human_label": "Second Class"
+},
+{
+"itw_id": "itw_1001.03.G.047-REF.001",
+"lookup_type": "SHIP_MODE",
+"lookup_code": "4",
+"human_label": "Standard Class"
+},
+{
+"itw_id": "itw_1001.03.G.047-REF.001",
+"lookup_type": "SEGMENT",
+"lookup_code": "1",
+"human_label": "Consumer"
+},
+{
+"itw_id": "itw_1001.03.G.047-REF.001",
+"lookup_type": "SEGMENT",
+"lookup_code": "2",
+"human_label": "Corporate"
+},
+{
+"itw_id": "itw_1001.03.G.047-REF.001",
+"lookup_type": "SEGMENT",
+"lookup_code": "3",
+"human_label": "Home Office"
+},
+{
+"itw_id": "itw_1001.03.G.047-REF.001",
+"lookup_type": "LTV",
+"lookup_code": "CLV",
+"human_label": "Customer Lifetime Value"
+}
+]

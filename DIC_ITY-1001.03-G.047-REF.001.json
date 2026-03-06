@@ -1,0 +1,55 @@
+[
+{
+"itw-id": "itw-1001.03.G.047-REF.001",
+"physical_table": "Customers",
+"physical_column": "Customer ID",
+"data_type": "VARCHAR",
+"source_system": "dB Name",
+"description": "Primary Key. Unique identifier for each customer.",
+"refresh_frequency": "Daily -  @2am",
+"strategic_importance": "Initially an engineer assigns a block of 1 million possible Customer ID numbers to marketing customers and a different block of 1 million numbers to Order Mgmt. Over time the governance is lost, and the new DBAs assign additional number blocks that overlap.",
+"unit_of_measure": "reward_points, USD, EUR",
+"_comment": "unit_of_measure may be USD, EUR, reward_points",
+"null_handling_logic": "if transaction_history is NULL, exclude from calculation"
+},
+{
+"itw-id": "itw-1001.03.G.047-REF.001",
+"physical_table": "Customers",
+"physical_column": "Segment",
+"data_type": "INTEGER",
+"source_system": "Customer Relationship Mgmt",
+"description": "Lookup code. Join to Lookup_Tables WHERE Domain = 'SEGMENT'.",
+"refresh_frequency": "Daily -  @2am",
+"owner_persona": "Marketing Ops"
+},
+{
+"itw-id": "itw-1001.03.G.047-REF.001",
+"physical_table": "Orders",
+"physical_column": "Order ID",
+"data_type": "VARCHAR",
+"source_system": "E-commerce Site",
+"description": "Primary Key. Represents a unique 'Checkout Event'.",
+"refresh_frequency": "Real Time",
+"owner_persona": "Order Mgmt"
+},
+{
+"itw-id": "itw-1001.03.G.047-REF.001",
+"physical_table": "Transactions",
+"physical_column": "Sales",
+"data_type": "DECIMAL",
+"source_system": "POS",
+"description": "Gross sales amount used for AOV and PM.",
+"refresh_frequency": "Real Time",
+"owner_persona": "Finance"
+},
+{
+"itw-id": "itw-1001.03.G.047-REF.001",
+"physical_table": "Lookup_Tables",
+"physical_column": "Description",
+"data_type": "VARCHAR",
+"source_system": "Data Vault",
+"description": "The human-readable label (e.g., 'Standard Class').",
+"refresh_frequency": "Manual",
+"owner_persona": "Data Architect"
+}
+]

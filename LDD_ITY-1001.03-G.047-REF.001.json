@@ -1,0 +1,73 @@
+{
+  "validation_logic": {
+    "control_id": "ITW-NIST-2026-DP-1",
+    "description": "Deterministic Gate for Agentic Logic Authorization",
+    "logic_dna_hash": "SHA-256:[Unique_Logic_Signature]",
+    "enforcement_protocol": {
+      "if_trigger": "EVENT.TRX_CANCELLATION",
+      "then_action": "CALCULATE.NET_REVENUE_RETENTION",
+      "why_intent": "STRATEGY.KPI_CHURN_REDUCTION_V2"
+    },
+    "metrics_payload": [
+      {
+        "itw_id": "itw-1001.03.G.047-REF.001",
+        "calculation_name": "AOV",
+        "unit_of_measure": "USD",
+        "metric_name": "Average Order Value",
+        "logic_dna_formula": "( SUM([Sales] WHERE [Sales] > 0)) / (COUNTD(IF [Sales] > 0 THEN [Order ID] END) )",
+        "why_this_is_important": "Prevents $0 sales from skewing the average or a divide by zero error.",
+        "validation_rule": "Sum(Sales) > 0"
+      },
+      {
+        "itw_id": "itw-1001.03.G.047-REF.001",
+        "calculation_name": "PF",
+        "unit_of_measure": "Ratio",
+        "metric_name": "Purchase Frequency",
+        "logic_dna_formula": "COUNTD(IF [Sales] > 0 THEN [Order ID] END) / (IF DATEDIFF('year', MIN(IF [Sales] > 0 THEN [Order Date] END), MAX(IF [Sales] > 0 THEN [Order Date] END)) = 0 THEN 1 ELSE DATEDIFF('year', MIN(IF [Sales] > 0 THEN [Order Date] END), MAX(IF [Sales] > 0 THEN [Order Date] END)) END)",
+        "why_this_is_important": "Set date to 1 if all orders in the same year to prevent divide by zero error.",
+        "validation_rule": "Sum(Sales) > 0 and PF > 0"
+      },
+      {
+        "itw_id": "itw-1001.03.G.047-REF.001",
+        "calculation_name": "CL",
+        "unit_of_measure": "Years",
+        "metric_name": "Customer Lifespan",
+        "logic_dna_formula": "IF DATEDIFF('year', MIN(IF [Sales] > 0 THEN [Order Date] END), MAX(IF [Sales] > 0 THEN [Order Date] END)) = 0 THEN 1 ELSE DATEDIFF('year', MIN(IF [Sales] > 0 THEN [Order Date] END), MAX(IF [Sales] > 0 THEN [Order Date] END)) END",
+        "why_this_is_important": "Set date to 1 if all orders in the same year to prevent divide by zero error.",
+        "validation_rule": "Min(Year) = Max(Year) and CL = 1"
+      },
+      {
+        "itw_id": "itw-1001.03.G.047-REF.001",
+        "calculation_name": "PM",
+        "unit_of_measure": "%",
+        "metric_name": "Profit Margin",
+        "logic_dna_formula": "IF SUM(ZN([Sales])) > 0 THEN (SUM(ZN([Sales])) - (SUM(ZN([Product Cost])) + SUM(ZN([Shipping Cost])))) / SUM(ZN([Sales])) ELSE 0 END",
+        "why_this_is_important": "Prevents $0 sales causing a divide by zero error.",
+        "validation_rule": "Sum(Sales) > 0 and PM > 0"
+      },
+      {
+        "itw_id": "itw-1001.03.G.047-REF.001",
+        "calculation_name": "CLV",
+        "unit_of_measure": "USD",
+        "metric_name": "Customer Lifetime Value",
+        "logic_dna_formula": "AOV * PF * CL * PM",
+        "why_this_is_important": "The Nullif insures new customers (day 0) don't break the equation",
+        "validation_rule": "Sum(Sales) > 0 and CLV > 0"
+      }
+    ],
+    "integrity_checks": [
+      {
+        "check_type": "Schema_Binding",
+        "target": "DIC.json",
+        "rule": "Target_Field_Must_Match_Physical_Source_Target"
+      },
+      {
+        "check_type": "Categorical_Constraint",
+        "target": "LUT.json",
+        "rule": "Label_Must_Exist_In_Universal_Translator"
+      }
+    ],
+    "audit_trail": "APPEND_TO_METRIC_MANIFEST_VERSION_LOG",
+    "on_failure": "HALT_AND_RAISE_EXCEPTION_CODE_403_LOGIC_MISMATCH"
+  }
+}
