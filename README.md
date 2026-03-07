@@ -2,11 +2,14 @@
 ## Project: IfThenWhy™ Logic RFC (v1.0.0)
 ### NIST-2025-0035 Alignment & Agentic Security Protocol
 
+# IfThenWhy™: The Logic RFC™ (v1.0.0)
+## Powered by the Logic DNA™ Architecture
+
 [![NIST Aligned](https://img.shields.io/badge/NIST-mme--5c57--j61h-blue)](https://www.regulations.gov/comment/NIST-2025-0035)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status: USPTO Pending](https://img.shields.io/badge/Trademark-1/10/26-orange)](https://www.uspto.gov)
 
-## Logic RFC™ Protocol: A Framework for Deterministic Data Grounding
+## A Framework for Deterministic Data Grounding
 
 ---
 
@@ -22,22 +25,24 @@ The **IfThenWhy™** framework is a thought leadership model for data architectu
 ---
 
 ### 🏛️ Prior Art & Authority
-This repository serves as the official machine-readable reference implementation for the **Logic RFC™** protocol. It has been formally submitted as technical input for:
-* **NIST-2025-0035 (AI Agent Standards):** Registered under **Comment Tracking Number: mme-5c57-j61h**.
-* **EU AI Act (Article 11 & 12):** High-risk AI system transparency and technical documentation.
-* **W3C AI Content Disclosure:** Standardized metadata for synthetic data provenance (March 2026 submission).
+This repository serves as the official machine-readable reference implementation for the **Logic RFC™** framework. It provides the metadata bridge required for AI agents to operate within human-governed business rules.
 
 ---
 
-### 📂 Repository Structure (The 6-File Logic DNA™)
-To achieve **Deterministic Data Grounding**, the Logic RFC™ utilizes a standardized 6-file architecture that separates business intent from physical storage.
+### 📂 Repository Structure (The Logic DNA™)
+This repository is organized as a **Monorepo** to separate the core protocol from its functional implementation. The **Logic RFC™** is executed through a 6-file structure known as **Logic DNA™**, ensuring every AI action is physically bonded to a business "Why."
 
-1.  **MAN (Metric Manifest):** The "Master Label"—identifies the Metric Name, ITW ID, Version, and Business Owner.
-2.  **SEM (Semantic Layer):** The "Business Why"—a natural language manifest anchoring every metric to a specific Stakeholder Persona.
-3.  **BRG (Bridge File):** The "If-Then Connector"—the kinetic link between a real-world event (The If) and a data action (The Then).
-4.  **LDD (Logical Data Design):** The "Engine & Proof"—the authoritative source for all mathematical calculations.
-5.  **DIC (Data Dictionary):** The "Map"—the high-fidelity physical source-to-target mapping.
-6.  **LUT (Lookup Tables):** The "Universal Translator"—centralized reference data for all categorical labels.
+
+
+* **`/spec` (The Protocol):** Contains the core **Logic DNA™** manifests used to achieve **Deterministic Data Grounding** by separating business intent from physical storage:
+    * **MAN (Metric Manifest):** The "Master Label"—identifies the Metric Name, ITW ID, Version, and Business Owner.
+    * **SEM (Semantic Layer):** The "Business Why"—anchoring metrics to specific Stakeholder Personas.
+    * **BRG (Bridge File):** The "If-Then Connector"—the kinetic link between a real-world event and a data action.
+    * **LDD (Logical Data Design):** The "Engine & Proof"—the authoritative source for all mathematical calculations.
+    * **DIC (Data Dictionary):** The "Map"—the high-fidelity physical source-to-target mapping.
+    * **LUT (Lookup Tables):** The "Universal Translator"—centralized reference data for categorical labels.
+* **`/app` (The Builder):** Contains the Python-based application used to programmatically generate and validate these manifests.
+* **Root Folder:** Contains global metadata, NIST-2025-0035 crosswalks, and agentic enforcement instructions.
 
 ---
 
@@ -47,10 +52,9 @@ This repository contains an `AGENTS.md` file. **AI Agents (Cursor, GitHub Copilo
 ---
 
 ### 🛡️ Compliance & Governance
-**Trademark Notice:** "IfThenWhy" and "Logic RFC" are protected marks. USPTO Trademark Application filed: **January 10, 2026**.
-**Federal Registry:** Formal submission to NIST completed March 6, 2026 (**mme-5c57-j61h**).
+**Trademark Notice:** "IfThenWhy" and "Logic RFC" are protected marks. USPTO Trademark Application filed: **January 10, 2026**.  
+**Federal Registry:** Formal submission to NIST completed March 6, 2026 (**mme-5c57-j61h**).  
 **Licensing:** MIT License. For institutional "Proof of Value" or NIST crosswalk inquiries, contact the project lead.
 
 **Status:** Reference Implementation (REF)  
-**Compliance Target:** August 2, 2026  
-**Inquiries:** `info@ifthenwhy.ai`
+**Compliance Target:** August 2, 2026
