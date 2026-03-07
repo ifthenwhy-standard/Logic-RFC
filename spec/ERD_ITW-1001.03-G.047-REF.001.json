@@ -1,0 +1,62 @@
+[
+  {
+    "itw_ID": "",
+    "metric_id": "113",
+    "framework": "IfThenWhy",
+    "last_updated": "",
+    "source_table": "Customers",
+    "target_table": "Orders",
+    "join_key": "Customer ID",
+    "cardinality": "1:N"
+  },
+  {
+    "itw_ID": "",
+    "metric_id": "114",
+    "framework": "IfThenWhy",
+    "last_updated": "",
+    "source_table": "Customers",
+    "target_table": "Orders",
+    "join_key": "Customer ID",
+    "cardinality": "1:N"
+  },
+  {
+    "itw_ID": "",
+    "metric_id": "112",
+    "framework": "IfThenWhy",
+    "last_updated": "",
+    "source_table": "Orders",
+    "target_table": "Transactions",
+    "join_key": "Order ID",
+    "cardinality": "1:N"
+  },
+  {
+    "itw_ID": "",
+    "metric_id": "115",
+    "framework": "IfThenWhy",
+    "last_updated": "",
+    "source_table": "Transactions",
+    "target_table": "Products",
+    "join_key": "Product ID",
+    "cardinality": "N:1"
+  },
+  {
+    "itw_ID": "",
+    "metric_id": "111",
+    "framework": "IfThenWhy",
+    "last_updated": "",
+    "source_table": "Orders",
+    "target_table": "Returns",
+    "join_key": "Order ID",
+    "cardinality": "1:1"
+  },
+  {
+    "itw_ID": "",
+    "metric_id": "115",
+    "framework": "IfThenWhy",
+    "last_updated": "",
+    "source_table": "Orders",
+    "target_table": "Shipping_Log",
+    "join_key": "Order ID",
+    "cardinality": "1:1"
+  }
+]

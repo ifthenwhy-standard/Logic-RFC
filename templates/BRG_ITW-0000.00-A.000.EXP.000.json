@@ -1,0 +1,20 @@
+{
+    "Manifest_Label": {
+        "Filename": "",
+        "Metric_Name": "",
+        "ITW_ID": "",
+        "Protocol": "Logic RFC v1.0.0"
+    },
+    "Logic_Intent": {
+        "If": "[Trigger Event]",
+        "Then": "[Data Action]",
+        "Why": "Why does this event and action matter."
+    },
+    "Context": {
+        "Layer": "Bridge File",
+        "Industry": "",
+        "Division": "",
+        "Status": "EXP",
+        "Version": "001"
+    }
+}

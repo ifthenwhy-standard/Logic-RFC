@@ -1,0 +1,36 @@
+{
+    "validation_logic": {
+        "itw_ID": "",
+        "metric_id": "",
+        "framework": "IfThenWhy",
+        "last_updated": "",
+        "control_id": "",
+        "description": "",
+        "logic_dna_hash": "",
+        "enforcement_protocol": {
+            "if_trigger": "",
+            "then_action": "",
+            "why_intent": ""
+        },
+        "metrics_payload": [
+            {
+                "itw_id": "",
+                "calculation_name": "",
+                "unit_of_measure": "",
+                "metric_name": "",
+                "logic_dna_formula": "",
+                "why_this_is_important": "",
+                "validation_rule": ""
+            }
+        ],
+        "integrity_checks": [
+            {
+                "check_type": "",
+                "target": "",
+                "rule": ""
+            }
+        ],
+        "audit_trail": "",
+        "on_failure": ""
+    }
+}

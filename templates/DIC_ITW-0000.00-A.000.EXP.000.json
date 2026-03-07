@@ -1,0 +1,31 @@
+[
+  {
+    "itw_ID": "",
+    "metric_id": "",
+    "framework": "",
+    "last_updated": "",
+    "physical_table": "",
+    "physical_column": "",
+    "data_type": "",
+    "source_system": "",
+    "description": "",
+    "refresh_frequency": "",
+    "strategic_importance": "",
+    "unit_of_measure": "",
+    "_comment": "",
+    "null_handling_logic": ""
+  },
+  {
+    "itw_ID": "",
+    "metric_id": "",
+    "framework": "",
+    "last_updated": "",
+    "physical_table": "",
+    "physical_column": "",
+    "data_type": "",
+    "source_system": "",
+    "description": "",
+    "refresh_frequency": "",
+    "owner_persona": ""
+  }
+]
