@@ -30,7 +30,7 @@ This repository serves as the official machine-readable reference implementation
 ---
 
 ### 📂 Repository Structure (The Logic DNA™)
-This repository is organized as a **Monorepo** to separate the core protocol from its functional implementation. The **Logic RFC™** is executed through a 6-file structure known as **Logic DNA™**, ensuring every AI action is physically bonded to a business "Why."
+This repository is organized as a **Monorepo** to separate the core protocol from its functional implementation. The **Logic RFC™** is executed through a file structure known as **Logic DNA™**, ensuring every AI action is physically bonded to a business "Why."
 * **`/spec` (The Protocol):** Contains the core **Logic DNA™** manifests used to achieve **Deterministic Data Grounding** by separating business intent from physical storage:
     * **MAN (Metric Manifest):** The "Master Label"—identifies the Metric Name, ITW ID, Version, and Business Owner.
     * **SEM (Semantic Layer):** The "Business Why"—anchoring metrics to specific Stakeholder Personas.
@@ -42,6 +42,35 @@ This repository is organized as a **Monorepo** to separate the core protocol fro
 * **Root Folder:** Contains global metadata, NIST-2025-0035 crosswalks, and agentic enforcement instructions.
 
 ---
+
+### 📂 Logic DNA™ Naming Convention (Standardized String)
+
+To maintain **Deterministic Data Grounding**, all files within this repository must adhere to the following naming convention:
+
+**`MAN_ITW-1001.03-G.047-IBM.001`**
+
+#### **Component Definitions**
+* **MAN (File Type Prefix)**: This is 3 letters and can be **MAN**, **SEM**, **LDD**, **ERD**, **DIC**, **BRG**, or **LUT**.
+    * **MAN**: Manifest (Strategy)
+    * **SEM**: Semantic (Logic)
+    * **LDD**: Logical Design (Math)
+    * **ERD**: Entity Relationship (Joins)
+    * **DIC**: Data Dictionary (Physical)
+    * **BRG**: Bridge File (Kinetic Link)
+    * **LUT**: Lookup Tables (Reference)
+* **ITW (Assignment)**: This represents the **IfThenWhy™** framework assignment and is always **ITW**.
+* **1001 (Unique Metric Identifier)**: This is a number beginning at 1001.
+* **03 (Functional "Why")**: The **APQC Process Category** or **PCF category**. This is a number padded to be text so that it is always two digits.
+* **G (ISIC Section)**: This is one letter and represents the **ISIC Section code**.
+* **047-IBM (Owner)**: Identifies the specific business owner or organization.
+* **001 (Version)**: The specific version of the logic file.
+
+---
+
+### **Agentic Enforcement Protocol**
+AI agents are instructed to utilize this naming standard to eliminate "Contextual Hallucination". The protocol mandates that agents refuse to commit code (The "Then") that lacks a defined "Why" in a file following this exact string pattern.
+
+
 
 ### 🤖 Agentic Enforcement (`AGENTS.md`)
 This repository contains an `AGENTS.md` file. **AI Agents (Cursor, GitHub Copilot, Claude Code) are instructed to read this file before performing any data operations.** The protocol mandates that agents refuse to commit code that lacks a defined "Why" in the SEM or BRG files.
