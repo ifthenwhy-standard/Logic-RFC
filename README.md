@@ -31,9 +31,6 @@ This repository serves as the official machine-readable reference implementation
 
 ### 📂 Repository Structure (The Logic DNA™)
 This repository is organized as a **Monorepo** to separate the core protocol from its functional implementation. The **Logic RFC™** is executed through a 6-file structure known as **Logic DNA™**, ensuring every AI action is physically bonded to a business "Why."
-
-
-
 * **`/spec` (The Protocol):** Contains the core **Logic DNA™** manifests used to achieve **Deterministic Data Grounding** by separating business intent from physical storage:
     * **MAN (Metric Manifest):** The "Master Label"—identifies the Metric Name, ITW ID, Version, and Business Owner.
     * **SEM (Semantic Layer):** The "Business Why"—anchoring metrics to specific Stakeholder Personas.

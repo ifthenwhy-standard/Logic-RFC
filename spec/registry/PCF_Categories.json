@@ -1,0 +1,67 @@
+[
+    {
+        "PCF Category": "Vision & Strategy",
+        "PCF Code": 1,
+        "Strategic Intent": "Long-term direction and mission alignment."
+    },
+    {
+        "PCF Category": "Product/Service Dev",
+        "PCF Code": 2,
+        "Strategic Intent": "Innovation and bringing new ideas to market."
+    },
+    {
+        "PCF Category": "Marketing & Sales",
+        "PCF Code": 3,
+        "Strategic Intent": "Customer acquisition and revenue generation."
+    },
+    {
+        "PCF Category": "Delivery (Physical)",
+        "PCF Code": 4,
+        "Strategic Intent": "Supply chain, logistics, and manufacturing."
+    },
+    {
+        "PCF Category": "Delivery (Service)",
+        "PCF Code": 5,
+        "Strategic Intent": "Execution of intangible value/services."
+    },
+    {
+        "PCF Category": "Customer Service",
+        "PCF Code": 6,
+        "Strategic Intent": "Retention and post-sale relationship health."
+    },
+    {
+        "PCF Category": "Human Capital (HR)",
+        "PCF Code": 7,
+        "Strategic Intent": "Workforce optimization and talent health."
+    },
+    {
+        "PCF Category": "Information Tech (IT)",
+        "PCF Code": 8,
+        "Strategic Intent": "Data integrity and system uptime."
+    },
+    {
+        "PCF Category": "Finance / Accounting",
+        "PCF Code": 9,
+        "Strategic Intent": "Capital management and fiscal truth."
+    },
+    {
+        "PCF Category": "Assets & Facilities",
+        "PCF Code": 10,
+        "Strategic Intent": "Maintenance of physical/digital infrastructure."
+    },
+    {
+        "PCF Category": "Risk & Compliance",
+        "PCF Code": 11,
+        "Strategic Intent": "Security, legal safety, and business resilience."
+    },
+    {
+        "PCF Category": "External Relations",
+        "PCF Code": 12,
+        "Strategic Intent": "Investor, government, and community relations."
+    },
+    {
+        "PCF Category": "Business Capabilities",
+        "PCF Code": 13,
+        "Strategic Intent": "Internal process improvement and KM."
+    }
+]

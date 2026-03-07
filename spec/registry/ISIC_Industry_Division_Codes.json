@@ -1,0 +1,442 @@
+[
+    {
+        "ISIC Section": "A",
+        "ISIC Division": 0.001,
+        "Industry Sector / Activity Name": "Crop and animal production, hunting and related service activities"
+    },
+    {
+        "ISIC Section": "A",
+        "ISIC Division": 0.002,
+        "Industry Sector / Activity Name": "Forestry and logging"
+    },
+    {
+        "ISIC Section": "A",
+        "ISIC Division": 0.003,
+        "Industry Sector / Activity Name": "Fishing and aquaculture"
+    },
+    {
+        "ISIC Section": "B",
+        "ISIC Division": 0.005,
+        "Industry Sector / Activity Name": "Mining of coal and lignite"
+    },
+    {
+        "ISIC Section": "B",
+        "ISIC Division": 0.006,
+        "Industry Sector / Activity Name": "Extraction of crude petroleum and natural gas"
+    },
+    {
+        "ISIC Section": "B",
+        "ISIC Division": 0.007,
+        "Industry Sector / Activity Name": "Mining of metal ores"
+    },
+    {
+        "ISIC Section": "B",
+        "ISIC Division": 0.008,
+        "Industry Sector / Activity Name": "Other mining and quarrying"
+    },
+    {
+        "ISIC Section": "B",
+        "ISIC Division": 0.009,
+        "Industry Sector / Activity Name": "Mining support service activities"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.01,
+        "Industry Sector / Activity Name": "Manufacture of food products"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.011,
+        "Industry Sector / Activity Name": "Manufacture of beverages"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.012,
+        "Industry Sector / Activity Name": "Manufacture of tobacco products"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.013,
+        "Industry Sector / Activity Name": "Manufacture of textiles"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.014,
+        "Industry Sector / Activity Name": "Manufacture of wearing apparel"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.015,
+        "Industry Sector / Activity Name": "Manufacture of leather and related products"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.016,
+        "Industry Sector / Activity Name": "Manufacture of wood and of products of wood and cork"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.017,
+        "Industry Sector / Activity Name": "Manufacture of paper and paper products"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.018,
+        "Industry Sector / Activity Name": "Printing and reproduction of recorded media"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.019,
+        "Industry Sector / Activity Name": "Manufacture of coke and refined petroleum products"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.02,
+        "Industry Sector / Activity Name": "Manufacture of chemicals and chemical products"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.021,
+        "Industry Sector / Activity Name": "Manufacture of pharmaceuticals, medicinal chemical and botanical products"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.022,
+        "Industry Sector / Activity Name": "Manufacture of rubber and plastics products"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.023,
+        "Industry Sector / Activity Name": "Manufacture of other non-metallic mineral products"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.024,
+        "Industry Sector / Activity Name": "Manufacture of basic metals"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.025,
+        "Industry Sector / Activity Name": "Manufacture of fabricated metal products, except machinery and equipment"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.026,
+        "Industry Sector / Activity Name": "Manufacture of computer, electronic and optical products"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.027,
+        "Industry Sector / Activity Name": "Manufacture of electrical equipment"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.028,
+        "Industry Sector / Activity Name": "Manufacture of machinery and equipment n.e.c."
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.029,
+        "Industry Sector / Activity Name": "Manufacture of motor vehicles, trailers and semi-trailers"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.03,
+        "Industry Sector / Activity Name": "Manufacture of other transport equipment"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.031,
+        "Industry Sector / Activity Name": "Manufacture of furniture"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.032,
+        "Industry Sector / Activity Name": "Other manufacturing"
+    },
+    {
+        "ISIC Section": "C",
+        "ISIC Division": 0.033,
+        "Industry Sector / Activity Name": "Repair and installation of machinery and equipment"
+    },
+    {
+        "ISIC Section": "D",
+        "ISIC Division": 0.035,
+        "Industry Sector / Activity Name": "Electricity, gas, steam and air conditioning supply"
+    },
+    {
+        "ISIC Section": "E",
+        "ISIC Division": 0.036,
+        "Industry Sector / Activity Name": "Water collection, treatment and supply"
+    },
+    {
+        "ISIC Section": "E",
+        "ISIC Division": 0.037,
+        "Industry Sector / Activity Name": "Sewerage"
+    },
+    {
+        "ISIC Section": "E",
+        "ISIC Division": 0.038,
+        "Industry Sector / Activity Name": "Waste collection, treatment and disposal activities; materials recovery"
+    },
+    {
+        "ISIC Section": "E",
+        "ISIC Division": 0.039,
+        "Industry Sector / Activity Name": "Remediation activities and other waste management services"
+    },
+    {
+        "ISIC Section": "F",
+        "ISIC Division": 0.041,
+        "Industry Sector / Activity Name": "Construction of buildings"
+    },
+    {
+        "ISIC Section": "F",
+        "ISIC Division": 0.042,
+        "Industry Sector / Activity Name": "Civil engineering"
+    },
+    {
+        "ISIC Section": "F",
+        "ISIC Division": 0.043,
+        "Industry Sector / Activity Name": "Specialized construction activities"
+    },
+    {
+        "ISIC Section": "G",
+        "ISIC Division": 0.045,
+        "Industry Sector / Activity Name": "Wholesale and retail trade and repair of motor vehicles and motorcycles"
+    },
+    {
+        "ISIC Section": "G",
+        "ISIC Division": 0.046,
+        "Industry Sector / Activity Name": "Wholesale trade, except of motor vehicles and motorcycles"
+    },
+    {
+        "ISIC Section": "G",
+        "ISIC Division": 0.047,
+        "Industry Sector / Activity Name": "Retail trade, except of motor vehicles and motorcycles"
+    },
+    {
+        "ISIC Section": "H",
+        "ISIC Division": 0.049,
+        "Industry Sector / Activity Name": "Land transport and transport via pipelines"
+    },
+    {
+        "ISIC Section": "H",
+        "ISIC Division": 0.05,
+        "Industry Sector / Activity Name": "Water transport"
+    },
+    {
+        "ISIC Section": "H",
+        "ISIC Division": 0.051,
+        "Industry Sector / Activity Name": "Air transport"
+    },
+    {
+        "ISIC Section": "H",
+        "ISIC Division": 0.052,
+        "Industry Sector / Activity Name": "Warehousing and support activities for transportation"
+    },
+    {
+        "ISIC Section": "H",
+        "ISIC Division": 0.053,
+        "Industry Sector / Activity Name": "Postal and courier activities"
+    },
+    {
+        "ISIC Section": "I",
+        "ISIC Division": 0.055,
+        "Industry Sector / Activity Name": "Accommodation"
+    },
+    {
+        "ISIC Section": "I",
+        "ISIC Division": 0.056,
+        "Industry Sector / Activity Name": "Food and beverage service activities"
+    },
+    {
+        "ISIC Section": "J",
+        "ISIC Division": 0.058,
+        "Industry Sector / Activity Name": "Publishing activities"
+    },
+    {
+        "ISIC Section": "J",
+        "ISIC Division": 0.059,
+        "Industry Sector / Activity Name": "Motion picture, video and television programme production, sound recording and music publishing activities"
+    },
+    {
+        "ISIC Section": "J",
+        "ISIC Division": 0.06,
+        "Industry Sector / Activity Name": "Programming and broadcasting activities"
+    },
+    {
+        "ISIC Section": "J",
+        "ISIC Division": 0.061,
+        "Industry Sector / Activity Name": "Telecommunications"
+    },
+    {
+        "ISIC Section": "J",
+        "ISIC Division": 0.062,
+        "Industry Sector / Activity Name": "Computer programming, consultancy and related activities"
+    },
+    {
+        "ISIC Section": "J",
+        "ISIC Division": 0.063,
+        "Industry Sector / Activity Name": "Information service activities"
+    },
+    {
+        "ISIC Section": "K",
+        "ISIC Division": 0.064,
+        "Industry Sector / Activity Name": "Financial service activities, except insurance and pension funding"
+    },
+    {
+        "ISIC Section": "K",
+        "ISIC Division": 0.065,
+        "Industry Sector / Activity Name": "Insurance, reinsurance and pension funding, except compulsory social security"
+    },
+    {
+        "ISIC Section": "K",
+        "ISIC Division": 0.066,
+        "Industry Sector / Activity Name": "Activities auxiliary to financial service and insurance activities"
+    },
+    {
+        "ISIC Section": "L",
+        "ISIC Division": 0.068,
+        "Industry Sector / Activity Name": "Real estate activities"
+    },
+    {
+        "ISIC Section": "M",
+        "ISIC Division": 0.069,
+        "Industry Sector / Activity Name": "Legal and accounting activities"
+    },
+    {
+        "ISIC Section": "M",
+        "ISIC Division": 0.07,
+        "Industry Sector / Activity Name": "Activities of head offices; management consultancy activities"
+    },
+    {
+        "ISIC Section": "M",
+        "ISIC Division": 0.071,
+        "Industry Sector / Activity Name": "Architectural and engineering activities; technical testing and analysis"
+    },
+    {
+        "ISIC Section": "M",
+        "ISIC Division": 0.072,
+        "Industry Sector / Activity Name": "Scientific research and development"
+    },
+    {
+        "ISIC Section": "M",
+        "ISIC Division": 0.073,
+        "Industry Sector / Activity Name": "Advertising and market research"
+    },
+    {
+        "ISIC Section": "M",
+        "ISIC Division": 0.074,
+        "Industry Sector / Activity Name": "Other professional, scientific and technical activities"
+    },
+    {
+        "ISIC Section": "M",
+        "ISIC Division": 0.075,
+        "Industry Sector / Activity Name": "Veterinary activities"
+    },
+    {
+        "ISIC Section": "N",
+        "ISIC Division": 0.077,
+        "Industry Sector / Activity Name": "Rental and leasing activities"
+    },
+    {
+        "ISIC Section": "N",
+        "ISIC Division": 0.078,
+        "Industry Sector / Activity Name": "Employment activities"
+    },
+    {
+        "ISIC Section": "N",
+        "ISIC Division": 0.079,
+        "Industry Sector / Activity Name": "Travel agency, tour operator, reservation service and related activities"
+    },
+    {
+        "ISIC Section": "N",
+        "ISIC Division": 0.08,
+        "Industry Sector / Activity Name": "Security and investigation activities"
+    },
+    {
+        "ISIC Section": "N",
+        "ISIC Division": 0.081,
+        "Industry Sector / Activity Name": "Services to buildings and landscape activities"
+    },
+    {
+        "ISIC Section": "N",
+        "ISIC Division": 0.082,
+        "Industry Sector / Activity Name": "Office administrative, office support and other business support activities"
+    },
+    {
+        "ISIC Section": "O",
+        "ISIC Division": 0.084,
+        "Industry Sector / Activity Name": "Public administration and defence; compulsory social security"
+    },
+    {
+        "ISIC Section": "P",
+        "ISIC Division": 0.085,
+        "Industry Sector / Activity Name": "Education"
+    },
+    {
+        "ISIC Section": "Q",
+        "ISIC Division": 0.086,
+        "Industry Sector / Activity Name": "Human health activities"
+    },
+    {
+        "ISIC Section": "Q",
+        "ISIC Division": 0.087,
+        "Industry Sector / Activity Name": "Residential care activities"
+    },
+    {
+        "ISIC Section": "Q",
+        "ISIC Division": 0.088,
+        "Industry Sector / Activity Name": "Social work activities without accommodation"
+    },
+    {
+        "ISIC Section": "R",
+        "ISIC Division": 0.09,
+        "Industry Sector / Activity Name": "Creative, arts and entertainment activities"
+    },
+    {
+        "ISIC Section": "R",
+        "ISIC Division": 0.091,
+        "Industry Sector / Activity Name": "Libraries, archives, museums and other cultural activities"
+    },
+    {
+        "ISIC Section": "R",
+        "ISIC Division": 0.092,
+        "Industry Sector / Activity Name": "Gambling and betting activities"
+    },
+    {
+        "ISIC Section": "R",
+        "ISIC Division": 0.093,
+        "Industry Sector / Activity Name": "Sports activities and amusement and recreation activities"
+    },
+    {
+        "ISIC Section": "S",
+        "ISIC Division": 0.094,
+        "Industry Sector / Activity Name": "Activities of membership organizations"
+    },
+    {
+        "ISIC Section": "S",
+        "ISIC Division": 0.095,
+        "Industry Sector / Activity Name": "Repair of computers and personal and household goods"
+    },
+    {
+        "ISIC Section": "S",
+        "ISIC Division": 0.096,
+        "Industry Sector / Activity Name": "Other personal service activities"
+    },
+    {
+        "ISIC Section": "T",
+        "ISIC Division": 0.097,
+        "Industry Sector / Activity Name": "Activities of households as employers of domestic personnel"
+    },
+    {
+        "ISIC Section": "T",
+        "ISIC Division": 0.098,
+        "Industry Sector / Activity Name": "Undifferentiated goods- and services-producing activities of private households"
+    },
+    {
+        "ISIC Section": "U",
+        "ISIC Division": 0.099,
+        "Industry Sector / Activity Name": "Activities of extraterritorial organizations and bodies"
+    }
+]

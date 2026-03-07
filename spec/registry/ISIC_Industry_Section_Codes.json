@@ -1,0 +1,23 @@
+[
+    {"ISIC Section": "A", "Industry Sector Name": "Agriculture, Forestry, and Fishing"},
+    {"ISIC Section": "B", "Industry Sector Name": "Mining and Quarrying"},
+    {"ISIC Section": "C", "Industry Sector Name": "Manufacturing"},
+    {"ISIC Section": "D", "Industry Sector Name": "Electricity, Gas, Steam and Air Conditioning Supply"},
+    {"ISIC Section": "E", "Industry Sector Name": "Water Supply; Sewerage, Waste Management and Remediation"},
+    {"ISIC Section": "F", "Industry Sector Name": "Construction"},
+    {"ISIC Section": "G", "Industry Sector Name": "Wholesale and Retail Trade; Repair of Motor Vehicles"},
+    {"ISIC Section": "H", "Industry Sector Name": "Transportation and Storage"},
+    {"ISIC Section": "I", "Industry Sector Name": "Accommodation and Food Service Activities"},
+    {"ISIC Section": "J", "Industry Sector Name": "Information and Communication"},
+    {"ISIC Section": "K", "Industry Sector Name": "Financial and Insurance Activities"},
+    {"ISIC Section": "L", "Industry Sector Name": "Real Estate Activities"},
+    {"ISIC Section": "M", "Industry Sector Name": "Professional, Scientific and Technical Activities"},
+    {"ISIC Section": "N", "Industry Sector Name": "Administrative and Support Service Activities"},
+    {"ISIC Section": "O", "Industry Sector Name": "Public Administration and Defence; Compulsory Social Security"},
+    {"ISIC Section": "P", "Industry Sector Name": "Education"},
+    {"ISIC Section": "Q", "Industry Sector Name": "Human Health and Social Work Activities"},
+    {"ISIC Section": "R", "Industry Sector Name": "Arts, Entertainment and Recreation"},
+    {"ISIC Section": "S", "Industry Sector Name": "Other Service Activities"},
+    {"ISIC Section": "T", "Industry Sector Name": "Activities of Households as Employers"},
+    {"ISIC Section": "U", "Industry Sector Name": "Activities of Extraterritorial Organizations and Bodies"}
+]
