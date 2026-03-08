@@ -84,3 +84,17 @@ This repository contains an `AGENTS.md` file. **AI Agents (Cursor, GitHub Copilo
 
 **Status:** Reference Implementation (REF)  
 **Compliance Target:** August 2, 2026
+
+---
+
+### 📜 NIST Standards Citation
+To cite the **Logic RFC™** or the **IfThenWhy™** methodology in technical documentation or regulatory filings, please use the following reference:
+
+```bibtex
+@Manual{ITW_LogicRFC_2026,
+  title  = {IfThenWhy: Logic RFC Framework for Deterministic Data Integrity},
+  author = {ITW Logic Registry},
+  year   = {2026},
+  note   = {NIST Public Comment Submission: NIST-2025-0035 (mme-5c57-j61h)},
+  url    = {[https://ifthenwhy.ai](https://ifthenwhy.ai)}
+}
