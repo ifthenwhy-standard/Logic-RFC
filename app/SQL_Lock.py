@@ -8,7 +8,18 @@ DESCRIPTION:
 SQL_Lock is a bi-directional synchronization and validation engine. 
 It ensures that the 'Strategic Intent' (The Why) defined in Logic DNA 
 is perfectly mirrored by the 'Mechanical Action' (The Then) in the SQL.
+
+KEY ARCHITECTURAL FEATURES:
+- Bi-Directional Sync: Compiles SQL from Logic DNA (LDD/DIC) and reverse-engineers legacy SQL.
+- Cryptographic Logic Anchoring: Uses SHA-256 signatures to ensure 100% logic alignment.
+- Agentic AI Authorization: Mandatory validation layer to prevent query hallucinations.
+- NIST-Compliant Traceability: High-fidelity audit trails within the Metric Manifest (MAN).
 """
+
+import hashlib
+import os
+import time
+from datetime import datetime
 
 # -------------------------------------------------------------------
 # STEP 1: THE DISCOVERY (SQL -> Logic DNA Files)
@@ -21,6 +32,7 @@ def capture_logic_from_sql(sql_script):
     - Populates LDD (Math), DIC (Map), and ERD (Blueprint) files.
     - Result: Converts technical debt into a structured 'Why-first' framework.
     """
+    # Logic to parse SQL and generate Logic DNA goes here.
     pass
 
 # -------------------------------------------------------------------
@@ -34,12 +46,13 @@ def generate_reference_sql(itw_id):
     - Pulls 1:N / N:1 join conditions from ERD.
     - Result: The authoritative 'Reference SQL' that reflects the DNA.
     """
+    # Logic to assemble SQL from JSON Logic DNA files goes here.
     pass
 
 # -------------------------------------------------------------------
 # STEP 3: THE LIVE AUDIT (THE LOCK)
 # -------------------------------------------------------------------
-def verify_logic_integrity(production_sql, itw_id):
+def verify_logic_integrity(production_sql_path, itw_id):
     """
     The 'Always-On' Deterministic Gate.
     1. Generates a SHA-256 hash of the 'Reference SQL' (The Intent).
@@ -54,7 +67,28 @@ def verify_logic_integrity(production_sql, itw_id):
     pass
 
 # -------------------------------------------------------------------
-# STEP 4: THE SEMANTIC LINK
+# STEP 4: IMMUTABLE SNAPSHOT LOGIC
+# -------------------------------------------------------------------
+def get_immutable_snapshot_path(base_path, metric_name):
+    """
+    Ensures every save event creates a unique, timestamped folder.
+    Pauses execution if a snapshot for the current minute already exists.
+    """
+    while True:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M")
+        folder_name = f"{timestamp}_{metric_name}"
+        full_path = os.path.join(base_path, folder_name)
+        
+        if not os.path.exists(full_path):
+            os.makedirs(full_path)
+            return full_path
+        
+        print(f"Snapshot for {timestamp} already exists. Pausing until next minute...")
+        seconds_to_wait = 60 - datetime.now().second
+        time.sleep(seconds_to_wait)
+
+# -------------------------------------------------------------------
+# STEP 5: THE SEMANTIC LINK
 # -------------------------------------------------------------------
 def log_audit_trail(event_status):
     """
@@ -62,20 +96,9 @@ def log_audit_trail(event_status):
     - Ensures every calculation is anchored to a Stakeholder Persona (SEM).
     - Records the 'Proof' that the business purpose was met.
     """
+    # Logic to update the MAN file with the audit outcome goes here.
     pass
 
 if __name__ == "__main__":
     print("SQL_Lock Protocol: Initialized.")
     print("Status: Monitoring for Logic Drift via SHA-256 DNA Signatures...")
-    
-    
-/* Key Features:
-
-Bi-Directional Sync: Compiles SQL from Logic DNA (LDD/DIC) and reverse-engineers legacy SQL into the Logic RFC manifest.
-
-Cryptographic Logic Anchoring: Generates immutable hashes of calculation logic to ensure absolute alignment between business rules and production code.
-
-Agentic AI Authorization: Provides a mandatory validation layer to prevent AI-generated query hallucinations.
-
-NIST-Compliant Traceability: Maintains a high-fidelity audit trail within the Metric Manifest (MAN) for internal and external regulatory compliance.
-*/
