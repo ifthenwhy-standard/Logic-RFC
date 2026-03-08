@@ -1,15 +1,15 @@
 [
-{
-"itw_ID": "itw_1001.03.G.047-REF.001",
-"metric_id": "itw_1001",
-"parent_id": null,
-"metric_name": "Customer Lifetime Value",
-"status": "Reference (REF)",
-"framework": "IfThenWhy",
-"version_note": "Initial Release - Standardized Protocol",
-"last_updated": "2026-02-27",
-"legal_notice": "Proprietary Thought Leadership of IfThenWhy. Unauthorized commercial resale is prohibited.",
-"owner_persona": "ITW-Logic-Registry",
-"version": "1"
-}
+  {
+    "itw_id": "ITW-1001",
+    "metric_id": "ITW-1001",
+    "parent_id": null,
+    "metric_name": "Customer Lifetime Value",
+    "status": "LOCKED",
+    "framework": "IfThenWhy",
+    "version_note": "Final Logic Lock - 8-File Sync (AOV, PF, PM, CL)",
+    "last_updated": "2026-03-08",
+    "legal_notice": "Logic RFC™ Thought Leadership Protocol. Patent Pending.",
+    "owner_persona": "Marketing Manager / Finance Analyst",
+    "version": "1.0.0"
+  }
 ]

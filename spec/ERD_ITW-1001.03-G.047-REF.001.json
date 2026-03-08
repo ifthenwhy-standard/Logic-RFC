@@ -1,62 +1,52 @@
 [
   {
-    "itw_ID": "",
+    "itw_id": "ITW-1001",
     "metric_id": "113",
     "framework": "IfThenWhy",
-    "last_updated": "",
+    "last_updated": "2026-03-08",
     "source_table": "Customers",
     "target_table": "Orders",
     "join_key": "Customer ID",
     "cardinality": "1:N"
   },
   {
-    "itw_ID": "",
+    "itw_id": "ITW-1001",
     "metric_id": "114",
     "framework": "IfThenWhy",
-    "last_updated": "",
+    "last_updated": "2026-03-08",
     "source_table": "Customers",
     "target_table": "Orders",
     "join_key": "Customer ID",
     "cardinality": "1:N"
   },
   {
-    "itw_ID": "",
+    "itw_id": "ITW-1001",
     "metric_id": "112",
     "framework": "IfThenWhy",
-    "last_updated": "",
+    "last_updated": "2026-03-08",
     "source_table": "Orders",
     "target_table": "Transactions",
     "join_key": "Order ID",
     "cardinality": "1:N"
   },
   {
-    "itw_ID": "",
+    "itw_id": "ITW-1001",
     "metric_id": "115",
     "framework": "IfThenWhy",
-    "last_updated": "",
+    "last_updated": "2026-03-08",
     "source_table": "Transactions",
     "target_table": "Products",
     "join_key": "Product ID",
     "cardinality": "N:1"
   },
   {
-    "itw_ID": "",
+    "itw_id": "ITW-1001",
     "metric_id": "111",
     "framework": "IfThenWhy",
-    "last_updated": "",
+    "last_updated": "2026-03-08",
     "source_table": "Orders",
-    "target_table": "Returns",
-    "join_key": "Order ID",
-    "cardinality": "1:1"
-  },
-  {
-    "itw_ID": "",
-    "metric_id": "115",
-    "framework": "IfThenWhy",
-    "last_updated": "",
-    "source_table": "Orders",
-    "target_table": "Shipping_Log",
-    "join_key": "Order ID",
-    "cardinality": "1:1"
+    "target_table": "Regions",
+    "join_key": "Region ID",
+    "cardinality": "N:1"
   }
 ]
