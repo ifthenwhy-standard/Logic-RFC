@@ -1,0 +1,54 @@
+{
+  "bridge_manifest": {
+    "itw_id": "ITW-1001",
+    "version": "1.0.0",
+    "file_type": "BRG",
+    "status": "LOCKED",
+    "brg_self_hash": "574ba9cebe0c03e48777c511c7789cb567b67ae2304d2aab7d5cef5d672b42ab"
+  },
+  "logic_target": {
+    "file_name": "LDD_ITW-1001.03-G.047-REF.001.sql",
+    "target_logic_hash": "1446980d704da644e7c1f2823dc4b6bc2ab85fa892c4307c472686d641f3015e",
+    "hash_algorithm": "SHA-256"
+  },
+  "kinetic_mapping": {
+    "the_if": {
+      "business_event": "Customer Purchase Transaction",
+      "source_event_id": "Order ID",
+      "event_timestamp": "Order Date",
+      "entity_primary_key": "Customer ID"
+    },
+    "the_then": {
+      "monetary_value_column": "Sales",
+      "transaction_count_logic": "DISTINCT_COUNT(Order ID)",
+      "granularity": "Transactional",
+      "physical_source": "Sample - Superstore.csv"
+    },
+    "the_why_bridge": {
+      "metric_intent": "Customer Lifetime Value (CLV)",
+      "strategic_kpi": "Retention Value & Segment Profitability",
+      "persona_alignment": "Marketing Manager / Finance Analyst"
+    }
+  },
+  "field_crosswalk": [
+    {
+      "source_column": "Customer ID",
+      "logic_role": "Dimension",
+      "description": "Unique identifier for the customer entity."
+    },
+    {
+      "source_column": "Order ID",
+      "logic_role": "Event_ID",
+      "description": "The unique trigger for a single commerce event."
+    },
+    {
+      "source_column": "Sales",
+      "logic_role": "Measure",
+      "description": "The raw currency value captured at the time of the event."
+    }
+  ],
+  "agentic_governance": {
+    "enforcement_rule": "IF Order ID IS NULL OR Sales < 0 THEN VOID_LOGIC",
+    "logic_integrity_check": "REQUIRED: SQL Hash must match 1446980d704da644e7c1f2823dc4b6bc2ab85fa892c4307c472686d641f3015e"
+  }
+}

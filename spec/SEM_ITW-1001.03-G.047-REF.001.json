@@ -1,6 +1,6 @@
 [
 {
-"itw_ID": "itw_1001.03.G.047-REF.001",
+"itw_id": "itw_1001.03.G.047-REF.001",
 "metric_name": "Customer Lifetime Value",
 "calculation_name": "CLV",
 "business_definition": "The total projected profit contributed by a customer over the entirety of their relationship with the Superstore. This metric is used to determine the maximum 'allowable' cost to acquire a new customer (CAC).",
@@ -8,7 +8,7 @@
 "owner_persona": "John.Doe@google.com"
 },
 {
-"itw_ID": "itw_1001.03.G.047-REF.001",
+"itw_id": "itw_1001.03.G.047-REF.001",
 "metric_name": "Average Order Value",
 "calculation_name": "AOV",
 "business_definition": "The mean gross currency amount per Order.",
@@ -16,7 +16,7 @@
 "owner_persona": "John.Doe@google.com"
 },
 {
-"itw_ID": "itw_1001.03.G.047-REF.001",
+"itw_id": "itw_1001.03.G.047-REF.001",
 "metric_name": "Purchase Frequency",
 "calculation_name": "PF",
 "business_definition": "The velocity of purchasing for a customer.",
@@ -24,7 +24,7 @@
 "owner_persona": "John.Doe@google.com"
 },
 {
-"itw_ID": "itw_1001.03.G.047-REF.001",
+"itw_id": "itw_1001.03.G.047-REF.001",
 "metric_name": "Customer Lifespan",
 "calculation_name": "CL",
 "business_definition": "The Loyalty Window for a customer.",
@@ -32,7 +32,7 @@
 "owner_persona": "John.Doe@google.com"
 },
 {
-"itw_ID": "itw_1001.03.G.047-REF.001",
+"itw_id": "itw_1001.03.G.047-REF.001",
 "metric_name": "Profit Margin",
 "calculation_name": "PM",
 "business_definition": "The Efficiency Factor for a customer.",
