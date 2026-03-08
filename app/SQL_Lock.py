@@ -67,3 +67,15 @@ def log_audit_trail(event_status):
 if __name__ == "__main__":
     print("SQL_Lock Protocol: Initialized.")
     print("Status: Monitoring for Logic Drift via SHA-256 DNA Signatures...")
+    
+    
+/* Key Features:
+
+Bi-Directional Sync: Compiles SQL from Logic DNA (LDD/DIC) and reverse-engineers legacy SQL into the Logic RFC manifest.
+
+Cryptographic Logic Anchoring: Generates immutable hashes of calculation logic to ensure absolute alignment between business rules and production code.
+
+Agentic AI Authorization: Provides a mandatory validation layer to prevent AI-generated query hallucinations.
+
+NIST-Compliant Traceability: Maintains a high-fidelity audit trail within the Metric Manifest (MAN) for internal and external regulatory compliance.
+*/
