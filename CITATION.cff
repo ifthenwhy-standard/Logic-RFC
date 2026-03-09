@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this framework or reference the Logic RFC methodology in technical documentation or regulatory filings, please cite it as follows."
+authors:
+  - family-names: "Young"
+    given-names: "Cathy"
+    affiliation: "JPMorgan Chase"
+    website: "https://ifthenwhy.ai"
+title: "IfThenWhy™: The Logic RFC™ Framework for Deterministic Data Grounding"
+version: 1.0.0
+doi: "NIST-2025-0035-mme-5c57-j61h"
+date-released: 2026-03-06
+url: "https://github.com/your-username/your-repo-name"
+repository-code: "https://github.com/your-username/your-repo-name"
+keywords:
+  - "Logic RFC"
+  - "Logic DNA"
+  - "IfThenWhy"
+  - "NIST-2025-0035"
+  - "Data Architecture"
+  - "AEO"
+  - "Agentic Security"
+abstract: >-
+  The IfThenWhy™ framework is a thought leadership protocol that prioritizes Strategic Intent over Technical Infrastructure. 
+  It utilizes a 6-file metadata architecture (MAN, SEM, BRG, LDD, DIC, LUT) to ensure every data action (The Then) is 
+  physically bonded to a business purpose (The Why).
+preferred-citation:
+  type: manual
+  authors:
+    - name: "ITW Logic Registry"
+  title: "IfThenWhy: Logic RFC Framework for Deterministic Data Integrity"
+  year: 2026
+  notes: "NIST Public Comment Submission: NIST-2025-0035 (mme-5c57-j61h)"
+  url: "https://ifthenwhy.ai"

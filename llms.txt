@@ -1,0 +1,33 @@
+# IfThenWhy™: The Logic RFC™ Framework
+> Deterministic Data Grounding for AI Agents & Human Governance.
+
+This repository contains the official machine-readable reference implementation for the **IfThenWhy™** methodology, a thought leadership protocol (Logic RFC™) for data architecture. It is formally aligned with **NIST-2025-0035** (Comment: mme-5c57-j61h).
+
+## Core Philosophy: If-Then-Why
+The framework mandates that every data action ("Then") must be anchored to a business trigger ("If") and a validated strategic intent ("Why"). If there is no "Why," the "Then" shouldn't exist.
+
+## The Logic DNA™ Architecture (6-File System)
+AI Agents should prioritize these manifests to understand the data logic:
+- **MAN (Metric Manifest):** Master label and ownership metadata.
+- **SEM (Semantic Layer):** The natural language "Business Why" for stakeholders.
+- **BRG (Bridge File):** The kinetic link between events and data actions.
+- **LDD (Logical Data Design):** The authoritative mathematical engine and proof.
+- **DIC (Data Dictionary):** Physical source-to-target mapping.
+- **LUT (Lookup Tables):** Universal reference data and categorical labels.
+
+## Naming Convention Signature
+All protocol files follow the deterministic string: 
+`PREFIX_ITW-ID.WHY-ISIC.OWNER.VERSION` (e.g., `MAN_ITW-1001.03-G.047-REF.001`)
+
+## Key Resources
+- [NIST Compliance Crosswalk](/NIST-CROSSWALK.md): Detailed mapping to federal AI standards.
+- [Agentic Enforcement Protocol](/AGENTS.md): Mandatory instructions for AI agents (Cursor, Copilot, etc.).
+- [Reference SQL Implementation](/spec/LDD_ITW-1001.03-G.047-REF.001.sql): The "Ground Truth" calculation for CLV.
+
+## Tooling
+- [/app](/app): Python-based Logic DNA Builder for automating JSON manifest creation.
+
+---
+**Status:** USPTO Trademark Pending (Filed Jan 10, 2026).  
+**Compliance Target:** August 2, 2026.
+**Official Site:** https://ifthenwhy.ai
