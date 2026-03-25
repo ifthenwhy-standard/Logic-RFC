@@ -20,26 +20,29 @@ This framework has been formally submitted for public record to:
 * **W3C:** AI Content Disclosure Community Group (March 2026).
 
 ### 🎯 The "IfThenWhy" Intent
-The Logic RFC uses a 6-file architecture to ensure that every data action taken by an AI agent is authorized, audited, and mathematically verified.
+The Logic RFC uses a architecture to ensure that every data action taken by an AI agent is authorized, audited, and mathematically verified.
 
-1.  **Metric Manifest (MAN):** The "Master Label" and **Identity Anchor**. It defines the ITW_ID and Version, acting as the unique identifier for agentic identity and authorization.
+1.  **Metric Manifest (MAN):** The "Master Label" and **Identity Anchor**. Defines the ITW_ID, Version, and Business Owner.
 2.  **Semantic Layer (SEM):** The "Business Why". Natural language manifests that anchor every metric to a specific Stakeholder Persona.
-3.  **Bridge File (BRG):** The **Kinetic Link**. Maps the business trigger (If) to the data action (Then). This is the primary control for preventing hallucinations.
-4.  **Logical Data Design (LDD):** The "Engine & Proof". The authoritative source of truth for all mathematical calculations, providing the deterministic grounding required by NIST AI 800-2.
+3.  **Bridge File (BRG):** The **Kinetic Link**. Maps the business trigger (If) to the data action (Then). 
+4.  **Logical Data Design (LDD):** The "Engine & Proof". The authoritative source of truth for all mathematical calculations and validation logic.
 5.  **Data Dictionary (DIC):** The "Map". High-fidelity physical source-to-target mapping.
-6.  **Lookup Tables (LUT):** The **Universal Translator**. Centralized reference data for all categorical labels and hierarchies.
+6.  **Lookup Tables (LUT):** The **Universal Translator**. Centralized reference data for categorical labels and hierarchies.
 
 ---
 
-### 🛡️ SQL_Lock: The 5-Second Audit Protocol
-This repository includes a reference Python implementation that acts as a **Digital Deadbolt** for SQL execution. It verifies **BRG** authorization and validates math against the **LDD** to ensure **Non-Repudiation**—addressing the core security concerns of the April 2nd NIST Concept Paper.
+### ✈️ Case Study: Grounding the Air Canada AI 
 
----
+In 2024, an airline chatbot hallucinated a refund policy because it lacked a logic frame. It had empathy, but no grounding. 
 
-### ⚖️ Legal & Trademark Notice
+**The Solution (Fluent in Human):**
+By applying these 5 lines of logic, the AI is forced to follow the business rule instead of its own "feelings."
 
-**1. Software License:**
-The technical logic, file schemas, and reference code in this repository are licensed under the **Apache License, Version 2.0** (the "License"). You may obtain a copy of the License at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0).
-
-**2. Attribution & Notice:**
-Per Section 4(d) of the Apache 2.0 License, **attribution must be maintained** as specified in the [NOTICE](NOTICE) file located in the root directory of this repository. Any redistribution of this work or derivative
+```json
+{
+  "MAN": {"Name": "Grounded_Refund_Protocol", "ID": "POL-AIR-004", "Ver": "2.1"},
+  "SEM": {"Why": "To ground the AI in factual policy and prevent post-travel liability."},
+  "BRG": [{"If": "Post_Travel", "Then": "Deny_Refund", "Why": "Rates must be booked upfront."}],
+  "LDD": {"Logic": "IF (Flight_Status == 'Completed') THEN Result = 'Ineligible'"},
+  "LUT": {"Policy": "BEREAVE_002", "Action": "Retroactive_Refund", "Allowed": false}
+}
