@@ -1,0 +1,24 @@
+The IfThenWhy Project
+Copyright 2024-2026 The IfThenWhy Project
+
+This product includes the Logic RFC™ (Request for Comments) framework and 
+the Logic DNA™ architecture, a thought leadership protocol for data 
+architecture, AI hallucination mitigation, and deterministic grounding.
+
+The Logic RFC framework is composed of the following core components:
+- The Metric Manifest (MAN): Identity & Authorization Anchor
+- The Semantic Layer (SEM): Natural Language Business Intent
+- The Bridge File (BRG): Kinetic Link (If-Then Connector)
+- The Logical Data Design (LDD): Mathematical Engine & Proof
+- The Logical ERD: Conceptual Blueprint
+- The Data Dictionary (DIC): Physical Source Mapping
+- The Lookup Tables (LUT): Universal Categorical Translator
+
+This framework is formally aligned with NIST-2025-0035 and provides the 
+deterministic grounding required for NIST AI 800-2 benchmarking standards.
+
+This framework is maintained by The IfThenWhy Project and is 
+licensed under the Apache License, Version 2.0.
+
+For more information, official registry updates, and compliance 
+documentation, visit: https://ifthenwhy.ai

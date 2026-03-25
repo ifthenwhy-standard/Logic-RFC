@@ -1,10 +1,17 @@
 {
   "bridge_manifest": {
     "itw_id": "ITW-1001",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "file_type": "BRG",
     "status": "LOCKED",
-    "brg_self_hash": "574ba9cebe0c03e48777c511c7789cb567b67ae2304d2aab7d5cef5d672b42ab"
+    "brg_self_hash": "GENERATED_ON_SAVE",
+    "last_validated_by": "John Smith",
+    "validation_timestamp": "2026-03-21T12:30:00Z"
+  },
+  "logic_governance": {
+    "risk_tier": "LOW",
+    "compliance_alignment": "NIST AI RMF 1.0",
+    "data_sensitivity": "Public / Internal"
   },
   "logic_target": {
     "file_name": "LDD_ITW-1001.03-G.047-REF.001.sql",
@@ -44,11 +51,12 @@
     {
       "source_column": "Sales",
       "logic_role": "Measure",
-      "description": "The raw currency value captured at the time of the event."
+      "description": "The currency value associated with the transaction."
     }
   ],
-  "agentic_governance": {
-    "enforcement_rule": "IF Order ID IS NULL OR Sales < 0 THEN VOID_LOGIC",
-    "logic_integrity_check": "REQUIRED: SQL Hash must match 1446980d704da644e7c1f2823dc4b6bc2ab85fa892c4307c472686d641f3015e"
+  "agentic_support": {
+    "enforcement_rule": "VOID_LOGIC_IF_NULL(Order ID)",
+    "logic_integrity_check": "MATCH_TARGET_HASH",
+    "hallucination_guard": "STRICT_SCHEMA_ENFORCEMENT"
   }
 }
