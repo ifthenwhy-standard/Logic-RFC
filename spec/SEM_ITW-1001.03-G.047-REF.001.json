@@ -4,64 +4,64 @@
     "metric_id": "111",
     "metric_name": "Customer Lifetime Value",
     "metric_alias": "CLV",
-    "business_definition": "The total projected profit contributed by a customer over the entirety of their relationship with the Superstore. This metric is used to determine the maximum 'allowable' cost to acquire a new customer (CAC).",
-    "business_conditions": "Exclude returns and focus only on the Corporate segment",
+    "business_definition": "METADATA ENTITY: The total projected profit contributed by a customer over the entirety of their relationship. This metric defines the 'Allowable' threshold for agentic acquisition logic.",
+    "business_conditions": "DETERMINISTIC RULE: Exclude returns; focus only on the Corporate segment.",
     "expression_sql": null,
     "favorable_trend": "Up is better",
     "default_time_period": "Yearly",
-    "owner_persona": "Marketing Manager / Finance Analyst",
-    "strategic_intent": "If CLV drops by 20% it is a Retention Risk. Action: Trigger a high-touch email sequence."
+    "owner_persona": "Marketing Manager / Finance Analyst / AI Governance Officer",
+    "strategic_intent": "AGENTIC GUARDRAIL: If CLV drops by 20%, trigger automated retention sequence. NIST-600-1 ALIGNMENT: Ensures deterministic accountability for churn risk."
   },
   {
     "itw_id": "ITW-1001",
     "metric_id": "112",
     "metric_name": "Average Order Value",
     "metric_alias": "AOV",
-    "business_definition": "The mean gross currency amount per Order.",
-    "business_conditions": "We define an 'Order' by the unique Transaction ID, not by individual line items. We only count order if Sales > 0.",
+    "business_definition": "METADATA ENTITY: The mean gross currency amount per unique Transaction ID.",
+    "business_conditions": "DETERMINISTIC RULE: Unique Transaction ID only. Sales must be > 0.",
     "expression_sql": null,
     "favorable_trend": null,
     "default_time_period": null,
-    "owner_persona": "Marketing Manager / Finance Analyst",
-    "strategic_intent": "Monitor for upselling effectiveness. Only count orders if Sales > 0."
+    "owner_persona": "Marketing Manager / Finance Analyst / AI Governance Officer",
+    "strategic_intent": "AGENTIC TRIGGER: Monitor for upselling effectiveness. Logic anchor for 'If' order-value expansion."
   },
   {
     "itw_id": "ITW-1001",
     "metric_id": "113",
     "metric_name": "Purchase Frequency",
     "metric_alias": "PF",
-    "business_definition": "The velocity of purchasing for a customer.",
-    "business_conditions": "Calculated as the number of unique orders with Sales > $0.00 divided by the number of unique orders within the same period. If Min Year = Max Year, then denominator is 1",
+    "business_definition": "METADATA ENTITY: The velocity of purchasing for a customer entity.",
+    "business_conditions": "DETERMINISTIC RULE: Unique orders with Sales > $0.00 / total unique orders. Denominator is 1 if Min Year = Max Year.",
     "expression_sql": null,
     "favorable_trend": null,
     "default_time_period": null,
-    "owner_persona": "Marketing Manager / Finance Analyst",
-    "strategic_intent": "Identify churn risk via purchase gaps in a specific period."
+    "owner_persona": "Marketing Manager / Finance Analyst / AI Governance Officer",
+    "strategic_intent": "AGENTIC GUARDRAIL: Identify churn risk via purchase gaps. Triggers proactive 'Parental' oversight if frequency decelers."
   },
   {
     "itw_id": "ITW-1001",
     "metric_id": "114",
     "metric_name": "Customer Lifespan",
     "metric_alias": "CL",
-    "business_definition": "The Loyalty Window for a customer.",
-    "business_conditions": "For the Superstore analysis, we define this as the duration (in years) between the First Purchase Date and Current Date (if active) or Last Purchase Date (if churned). If Min Year = Max Year, then denominator is 1",
+    "business_definition": "METADATA ENTITY: The temporal boundary of the customer relationship (Loyalty Window).",
+    "business_conditions": "DETERMINISTIC RULE: Duration in years between First Purchase and Current/Last Purchase. Denominator is 1 if Min Year = Max Year.",
     "expression_sql": null,
     "favorable_trend": null,
     "default_time_period": null,
-    "owner_persona": "Marketing Manager / Finance Analyst",
-    "strategic_intent": "Determine long-term revenue potential and the 'If' of customer loyalty."
+    "owner_persona": "Marketing Manager / Finance Analyst / AI Governance Officer",
+    "strategic_intent": "STRATEGIC INTENT: Determine long-term revenue potential. Serves as the primary 'If' condition for lifecycle-based agentic reasoning."
   },
   {
     "itw_id": "ITW-1001",
     "metric_id": "115",
     "metric_name": "Profit Margin",
     "metric_alias": "PM",
-    "business_definition": "The Efficiency Factor for a customer.",
-    "business_conditions": "We use Gross Profit (Revenue minus Cost of Goods and Shipping). We do not include overhead or marketing spend in this specific calculation. If Sales is <= 0 then PM is 0.",
+    "business_definition": "METADATA ENTITY: The Efficiency Factor for a customer relationship.",
+    "business_conditions": "DETERMINISTIC RULE: Gross Profit (Revenue minus COGS/Shipping). Excludes overhead. If Sales <= 0 then PM is 0.",
     "expression_sql": null,
     "favorable_trend": null,
     "default_time_period": null,
-    "owner_persona": "Marketing Manager / Finance Analyst",
-    "strategic_intent": "Ensure marketing spend does not exceed the profitable threshold."
+    "owner_persona": "Marketing Manager / Finance Analyst / AI Governance Officer",
+    "strategic_intent": "AGENTIC GUARDRAIL: Ensure marketing spend does not exceed profitable threshold. Logical boundary for automated spend triggers."
   }
 ]

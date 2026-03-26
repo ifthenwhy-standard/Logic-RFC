@@ -1,0 +1,10 @@
+{
+  "itw_id": "ITW-1002.03-G.047-REF.001",
+  "metric_name": "Bereavement Fare Discount Logic",
+  "business_owner": "Customer Success Operations",
+  "stakeholder_persona": "Customer Service Agent / AI Chatbot",
+  "strategic_intent": "To provide empathetic, standardized financial relief for grieving passengers while preventing unauthorized revenue leakage.",
+  "inclusion_logic": "Includes all international and domestic flight bookings where a death certificate or funeral home notice is provided.",
+  "exclusion_logic": "Excludes promotional fares, codeshare flights not operated by the primary carrier, and retroactive claims older than 90 days.",
+  "governance_status": "LOCKED"
+}

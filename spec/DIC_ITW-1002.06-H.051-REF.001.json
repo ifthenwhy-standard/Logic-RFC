@@ -1,0 +1,19 @@
+{
+  "itw_id": "ITW-1002.03-G.047-REF.001",
+  "source_system": "Global Reservation System (GRS)",
+  "physical_table": "FACT_BOOKINGS_DISCOUNTS",
+  "column_mapping": [
+    {
+      "logical_field": "Bereavement_Discount_Amt",
+      "physical_column": "DISC_AMT_VAL",
+      "data_type": "DECIMAL(10,2)",
+      "semantic_entity_mapping": "Financial_Liability"
+    },
+    {
+      "logical_field": "Verification_Status",
+      "physical_column": "DOC_VERIF_FLG",
+      "data_type": "BOOLEAN",
+      "logic_integrity_constraint": "Must be TRUE to release payment."
+    }
+  ]
+}

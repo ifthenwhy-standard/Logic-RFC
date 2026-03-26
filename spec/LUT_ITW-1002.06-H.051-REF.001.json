@@ -1,0 +1,11 @@
+{
+  "itw_id": "ITW-1002.03-G.047-REF.001",
+  "semantic_domain": "BEREAVEMENT_DOCUMENTATION_TYPES",
+  "isic_alignment": "G.047 (Retail/Service)",
+  "reference_data": [
+    {"deterministic_key": "DC", "label": "Death Certificate", "nist_alignment": "High-Trust"},
+    {"deterministic_key": "FH", "label": "Funeral Home Notice", "nist_alignment": "Medium-Trust"},
+    {"deterministic_key": "LP", "label": "Letter from Physician", "nist_alignment": "Medium-Trust"}
+  ],
+  "governance_persona": "System Admin / Auditor"
+}

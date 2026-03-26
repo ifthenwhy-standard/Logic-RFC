@@ -1,0 +1,11 @@
+{
+  "itw_id": "ITW-1002.03-G.047-REF.001",
+  "calculation_logic": "Base_Fare * (1 - Discount_Rate)",
+  "variables": {
+    "Base_Fare": "Standard economy or business class fare at time of booking.",
+    "Discount_Rate": "0.15"
+  },
+  "validation_logic": "Discount_Rate MUST NOT exceed 0.15 without manual supervisor override flag (Override_Level_2).",
+  "logic_dna_signature": "SHA-256:7b92a1c4...",
+  "mathematical_proof": "If Base_Fare = 1000, Then Final_Fare = 850. Result is deterministic."
+}
