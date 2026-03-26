@@ -1,0 +1,8 @@
+{
+    "Metric_Name": "Algorithmic Trading Circuit Breaker",
+    "ITW_ID": "ITW-1007.02.K.64.R.001",
+    "Version": "1.0.0",
+    "Business_Owner": "Chief Risk Officer / Head of Trading",
+    "Standard_Anchor": "FINRA Rule 6190 (Limit Up-Limit Down)",
+    "Status": "Registered"
+}

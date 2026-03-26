@@ -1,0 +1,6 @@
+{
+    "ITW_ID": "ITW-1007.02.K.64.R.001",
+    "If_Trigger": "Automated Trading Agent initiates a buy/sell execution request.",
+    "Then_Action": "Validate Agent_ID status in LUT-64-Registry and verify LDD-Risk-Thresholds before routing to exchange.",
+    "Why_Intent": "To enforce a deterministic 'Go/No-Go' layer between autonomous code and market liquidity."
+}

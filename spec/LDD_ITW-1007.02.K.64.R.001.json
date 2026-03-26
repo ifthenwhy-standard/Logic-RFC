@@ -1,0 +1,6 @@
+{
+    "ITW_ID": "ITW-1007.02.K.64.R.001",
+    "Calculation_Proof": "Trade_Permitted = (Agent_Status == 'ACTIVE') AND (Current_Session_Loss < Max_Risk_Cap)",
+    "Validation_Logic": "If Agent_Status is 'RETIRED' or 'STALE' (Zombie Code), return 'EXECUTION_BLOCKED_BY_REGISTRY'. If Session_Loss > $10M, trigger 'EMERGENCY_CIRCUIT_BREAKER'.",
+    "Authoritative_Source": "Corporate Risk Management Registry"
+}
