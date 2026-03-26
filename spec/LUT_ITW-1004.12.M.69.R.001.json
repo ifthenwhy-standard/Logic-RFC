@@ -1,0 +1,16 @@
+{
+    "ITW_ID": "ITW-1004.12.M.69.R.001",
+    "Reference_Table": "LUT-69-001_Judicial_Reporters",
+    "Valid_Entries": [
+        "F.3d",
+        "U.S.",
+        "S.Ct.",
+        "A.D.3d",
+        "N.Y.S.2d"
+    ],
+    "Banned_Entries": [
+        "Varghese v. China Southern",
+        "Martinez v. Delta Air Lines (AI Hallucination)"
+    ],
+    "Registry_Source": "ISIC Division 69 - Legal Activities"
+}

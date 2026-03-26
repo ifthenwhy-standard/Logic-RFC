@@ -1,0 +1,6 @@
+{
+    "ITW_ID": "ITW-1004.12.M.69.R.001",
+    "Calculation_Proof": "Verification_Status = (Input_Citation IN Verified_Registry_LUT)",
+    "Validation_Logic": "If Count == 0, return 'HALLUCINATION_ALERT' and block submission.",
+    "Authoritative_Source": "Official Court Reporters / Judicial Databases"
+}
