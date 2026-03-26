@@ -1,0 +1,6 @@
+{
+    "ITW_ID": "ITW-1006.03.G.45.R.001",
+    "Calculation_Proof": "Deal_Approved = (Proposed_Price >= (MSRP * (1 - Max_Discount_Threshold)))",
+    "Validation_Logic": "If Proposed_Price < Floor (e.g., $1 vs $54,000), return 'UNAUTHORIZED_CONTRACT_ERROR' and terminate session.",
+    "Authoritative_Source": "Dealer Inventory Management System (DMS)"
+}

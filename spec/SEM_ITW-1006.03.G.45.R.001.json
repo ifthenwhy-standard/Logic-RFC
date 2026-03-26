@@ -1,0 +1,6 @@
+{
+    "ITW_ID": "ITW-1006.03.G.45.R.001",
+    "Stakeholder_Persona": "Digital Sales Manager / AI Auditor",
+    "Business_Why": "To prevent unauthorized contractual commitments and 'Prompt Injection' price manipulation. Ensures AI agents cannot bypass corporate pricing floors or enter into 'legally binding' agreements without deterministic validation.",
+    "Strategic_Intent": "Protection of Contractual Integrity and Pricing Floor"
+}

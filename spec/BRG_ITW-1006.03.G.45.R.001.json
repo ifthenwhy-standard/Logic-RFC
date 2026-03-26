@@ -1,0 +1,6 @@
+{
+    "ITW_ID": "ITW-1006.03.G.45.R.001",
+    "If_Trigger": "Customer interaction involves a 'Price', 'Deal', or 'Agreement' confirmation.",
+    "Then_Action": "Extract proposed price and validate against LUT-45-Pricing; trigger Human-in-the-Loop if variance > 0%.",
+    "Why_Intent": "To separate generative conversational flow from deterministic financial authority."
+}
