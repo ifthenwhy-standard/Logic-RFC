@@ -1,0 +1,6 @@
+{
+    "ITW_ID": "ITW-1009.04.C.28.R.001",
+    "Calculation_Proof": "Movement_Authorized = (AI_Confidence > 0.95) AND (Object_ID NOT IN LUT_Hazard_List) AND (Coordinates_Safe == TRUE)",
+    "Validation_Logic": "If vision input matches a 'Hazardous' tag in the LUT, return 'EMERGENCY_STOP' and zero-out motor velocity regardless of AI pathing requests.",
+    "Authoritative_Source": "Industrial Safety PLC (Programmable Logic Controller)"
+}

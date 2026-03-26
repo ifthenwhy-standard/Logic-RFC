@@ -1,0 +1,6 @@
+{
+    "ITW_ID": "ITW-1009.04.C.28.R.001",
+    "If_Trigger": "Cobot Vision System identifies a path or object for interaction.",
+    "Then_Action": "Query LUT-28-Hazard-Registry and LDD-Proximity-Logic before executing motor commands.",
+    "Why_Intent": "To enforce a physical 'Hard-Stop' that is independent of the AI's confidence score."
+}

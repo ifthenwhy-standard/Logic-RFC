@@ -1,0 +1,23 @@
+{
+    "ITW_ID": "ITW-1009.04.C.28.R.001",
+    "Reference_Table": "LUT-28-Manufacturing-Hazard-Registry",
+    "Verified_Entries": [
+        {
+            "Hazard_Type": "Human_Detection_Zone",
+            "Action": "Immediate_Stop"
+        },
+        {
+            "Hazard_Type": "Corrosive_Chemical_Storage",
+            "Action": "Bypass_Route"
+        },
+        {
+            "Hazard_Type": "High_Voltage_Enclosure",
+            "Action": "Restricted_Access"
+        }
+    ],
+    "Safety_Thresholds": {
+        "Min_Proximity_Distance": "1.5 Meters",
+        "Max_Velocity_Near_Human": "0.2 m/s"
+    },
+    "Registry_Source": "ISIC Division 28 - Manufacture of machinery and equipment"
+}

@@ -1,0 +1,6 @@
+{
+    "ITW_ID": "ITW-1008.09.Q.86.R.001",
+    "Calculation_Proof": "Alert_Authorized = (AI_Confidence > 0.85) AND (Patient_Vitals_In_Bounds == TRUE)",
+    "Validation_Logic": "If Patient_Vitals (Lactate, WBC, HR) fall outside LUT-86 statistical 'Safe Zones', return 'UNCERTAIN_MODEL_DRIFT' and route to Manual Triage.",
+    "Authoritative_Source": "Clinical Quality Control Registry"
+}

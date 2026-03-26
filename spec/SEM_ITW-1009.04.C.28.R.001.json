@@ -1,0 +1,6 @@
+{
+    "ITW_ID": "ITW-1009.04.C.28.R.001",
+    "Stakeholder_Persona": "Plant Floor Supervisor / Safety Engineer",
+    "Business_Why": "To prevent physical collisions and chemical spills caused by AI computer-vision hallucinations. This protocol ensures that an autonomous robot's 'Then' (Movement) is restricted by a deterministic registry of 'Forbidden Zones' and 'Hazardous Object IDs' that override the AI's probabilistic pathing.",
+    "Strategic_Intent": "Operational Safety and Physical Asset Protection"
+}

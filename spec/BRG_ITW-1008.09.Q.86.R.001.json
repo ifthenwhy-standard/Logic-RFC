@@ -1,0 +1,6 @@
+{
+    "ITW_ID": "ITW-1008.09.Q.86.R.001",
+    "If_Trigger": "AI Diagnostic Agent generates a Sepsis Probability Score.",
+    "Then_Action": "Validate current patient vitals against LUT-86-Training-Bounds and LDD-Drift-Calculation.",
+    "Why_Intent": "To enforce a deterministic 'Sanity Check' on AI diagnostics before alerting clinical staff."
+}

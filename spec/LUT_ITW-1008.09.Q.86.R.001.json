@@ -1,0 +1,23 @@
+{
+    "ITW_ID": "ITW-1008.09.Q.86.R.001",
+    "Reference_Table": "LUT-86-Sepsis-Training-Bounds",
+    "Verified_Entries": [
+        {
+            "Vitals_Parameter": "Lactate_Level",
+            "Max_Verified_Range": "4.0 mmol/L"
+        },
+        {
+            "Vitals_Parameter": "Heart_Rate",
+            "Max_Verified_Range": "140 bpm"
+        },
+        {
+            "Vitals_Parameter": "WBC_Count",
+            "Max_Verified_Range": "30.0 x10^9/L"
+        }
+    ],
+    "Safety_Thresholds": {
+        "Drift_Tolerance": "0.10",
+        "Min_Data_Points_Required": 5
+    },
+    "Registry_Source": "ISIC Division 86 - Human health activities"
+}
