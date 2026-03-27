@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1015.04-H.052-REF.001",
+    "calculation_proof": "Route_Viability = (Thermal_OK AND Asset_Eligible AND Path_Open)",
+    "validation_logic": "AGENTIC_GUARDRAIL: If Path_Open is FALSE (due to Strike/War), the AI is prohibited from initiating the 'Then' action. If Asset_ID is in 'Grounded_List', the shipment cannot be assigned.",
+    "authoritative_source": "NTSB Safety Directives / National Weather Service / Labor Relations Board"
+}

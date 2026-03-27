@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1010.05-D.035-REF.001",
+    "stakeholder_persona": "Grid Operator / Energy Analyst",
+    "business_why": "To ensure autonomous grid management agents prioritize frequency stability over economic dispatch during critical load drops. This grounding prevents AI from 'hallucinating' safe load levels during low-inertia events.",
+    "strategic_intent": "Critical Infrastructure Resilience & NIST-600-1 Compliance"
+}

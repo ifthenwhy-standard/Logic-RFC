@@ -1,0 +1,21 @@
+{
+    "itw_id": "itw_1010.05-D.035-REF.001",
+    "reference_table": "LUT-35-Energy-Load-Priority",
+    "verified_entries": [
+        {
+            "Load_Type": "Hospital/Emergency",
+            "Priority": 1,
+            "Shed_Allowed": false
+        },
+        {
+            "Load_Type": "Industrial_Heavy",
+            "Priority": 5,
+            "Shed_Allowed": true
+        },
+        {
+            "Load_Type": "Residential_Tier_1",
+            "Priority": 10,
+            "Shed_Allowed": true
+        }
+    ]
+}

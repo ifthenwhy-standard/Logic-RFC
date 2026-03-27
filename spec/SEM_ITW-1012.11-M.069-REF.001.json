@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1012.11-M.069-REF.001",
+    "stakeholder_persona": "Legal Auditor / Procurement Manager",
+    "business_why": "To prevent 'Logic Drift' in AI-assisted contract analysis. This grounding ensures that an autonomous agent cannot authorize a payment or renewal if specific 'Must-Have' legal clauses are missing or invalidated, regardless of the AI's confidence in the rest of the document.",
+    "strategic_intent": "Legal Risk Mitigation & Regulatory Non-Repudiation"
+}

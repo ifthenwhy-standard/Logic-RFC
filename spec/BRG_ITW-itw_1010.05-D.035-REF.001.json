@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1010.05-D.035-REF.001",
+    "if_trigger": "FREQUENCY_EVENT: Grid frequency drops below 59.95Hz",
+    "then_action": "DETERMINISTIC_RESPONSE: Initiate 'Demand Response' logic and shed non-critical load blocks",
+    "why_intent": "Maintain 60Hz nominal frequency to prevent cascading equipment failure."
+}

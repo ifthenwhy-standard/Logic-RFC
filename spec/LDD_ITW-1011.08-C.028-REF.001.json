@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1011.08-C.028-REF.001",
+    "calculation_proof": "Compliance_Status = IF(Lead_PPM <= 1000, 'PASS', 'FAIL')",
+    "validation_logic": "Integrity Check: If Compliance_Status == 'FAIL', the 'Order_Authorized' boolean must be set to FALSE regardless of AI price recommendations.",
+    "authoritative_source": "NIST-2025 Material Safety Guidelines"
+}

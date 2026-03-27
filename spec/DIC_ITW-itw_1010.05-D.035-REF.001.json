@@ -1,0 +1,12 @@
+{
+    "itw_id": "itw_1010.05-D.035-REF.001",
+    "source_system": "SCADA Telemetry (Verified)",
+    "physical_table": "Grid_Frequency_Logs",
+    "columns": [
+        "Timestamp",
+        "Frequency_Hz",
+        "Inertia_Constant",
+        "Load_Shed_Status"
+    ],
+    "data_provenance": "NIST-600-1 Traceable Sensor Data"
+}

@@ -1,0 +1,13 @@
+{
+    "itw_id": "itw_1013.12-Q.086-REF.001",
+    "source_system": "Electronic Medical Record (EMR) - Verified",
+    "physical_table": "Clinical_Order_Logs",
+    "columns": [
+        "Order_ID",
+        "Patient_ID",
+        "Medication_Code",
+        "Dosage_MG",
+        "Timestamp"
+    ],
+    "data_provenance": "NIST-600-1 Traceable Health Data"
+}

@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1014.01-A.001-REF.001",
+    "if_trigger": "SATELLITE_NDVI_EVENT: Verified biomass increase detected in Parcel_ID.",
+    "then_action": "DETERMINISTIC_CALCULATION: Trigger Carbon_Credit_Estimation and Additionality_Check.",
+    "why_intent": "Ensure that financial credits are directly linked to verified physical environmental changes."
+}

@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1013.12-Q.086-REF.001",
+    "if_trigger": "PRESCRIPTION_EVENT: New medication order entered into EMR",
+    "then_action": "DETERMINISTIC_VALIDATION: Cross-reference order dosage against LUT-86 Safety Thresholds.",
+    "why_intent": "Ensure no autonomous action is taken if dosage exceeds manufacturer or hospital safety limits."
+}

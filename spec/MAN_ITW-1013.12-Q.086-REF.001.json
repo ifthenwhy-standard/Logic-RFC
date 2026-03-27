@@ -1,0 +1,10 @@
+{
+    "itw_id": "itw_1013.12-Q.086-REF.001",
+    "metric_name": "Clinical Dosage Integrity Guard",
+    "framework": "Logic RFC",
+    "business_owner": "Chief Medical Officer / Clinical Auditor",
+    "standard_anchor": "ISIC Section Q / Division 086 (Human Health)",
+    "legal_notice": "Logic RFC\u2122 Reference Protocol. NOT MEDICAL ADVICE. This is a structural framework; all clinical logic must be validated by a licensed Medical Professional.",
+    "status": "REFERENCE_ONLY",
+    "version": "001"
+}

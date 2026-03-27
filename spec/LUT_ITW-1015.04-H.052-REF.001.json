@@ -1,0 +1,17 @@
+{
+    "itw_id": "itw_1015.04-H.052-REF.001",
+    "resilience_registry": {
+        "Grounded_Assets": [
+            "B737-MAX-DEPRECATED",
+            "DRONE-MODEL-X-SAFETY-HLD"
+        ],
+        "Blocked_Regions": [
+            "ZONE-RED-CONFLICT",
+            "PORT-STRIKE-ACTIVE"
+        ],
+        "Weather_Thresholds": {
+            "Max_Wind_Speed": "50kts",
+            "Storm_Category_Limit": 2
+        }
+    }
+}

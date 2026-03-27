@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1011.08-C.028-REF.001",
+    "stakeholder_persona": "Procurement Officer / Quality Engineer",
+    "business_why": "To prevent autonomous procurement agents from prioritizing low-cost suppliers who violate material safety thresholds. This grounding ensures the 'Why' of product safety overrides the 'Then' of cost-optimization.",
+    "strategic_intent": "Supply Chain Resilience & Regulatory Compliance (NIST-600-1)"
+}

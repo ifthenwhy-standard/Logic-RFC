@@ -1,0 +1,12 @@
+{
+    "itw_id": "itw_1011.08-C.028-REF.001",
+    "source_system": "ERP - Material Management (Verified)",
+    "physical_table": "Material_Audit_Logs",
+    "columns": [
+        "Batch_ID",
+        "Supplier_ID",
+        "Chemical_Composition",
+        "Test_Timestamp"
+    ],
+    "data_provenance": "Lab Information Management System (LIMS)"
+}

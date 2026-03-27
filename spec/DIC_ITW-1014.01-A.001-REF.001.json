@@ -1,0 +1,16 @@
+{
+    "itw_id": "itw_1014.01-A.001-REF.001",
+    "source_system": "Geospatial Data Lake / Land Registry",
+    "physical_tables": [
+        "Parcel_Geometry",
+        "Satellite_NDVI_Logs",
+        "Ownership_Records"
+    ],
+    "columns": [
+        "Parcel_ID",
+        "Vegetation_Index",
+        "Hectares",
+        "Owner_Hash",
+        "Assessment_Date"
+    ]
+}

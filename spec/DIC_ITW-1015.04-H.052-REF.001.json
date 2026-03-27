@@ -1,0 +1,15 @@
+{
+    "itw_id": "itw_1015.04-H.052-REF.001",
+    "source_system": "Global Risk Feed / FAA Registry / IoT Gateway",
+    "physical_tables": [
+        "Asset_Master",
+        "Route_Status_Logs",
+        "Regulatory_Directives"
+    ],
+    "columns": [
+        "Asset_Model_ID",
+        "Path_Status",
+        "Directive_ID",
+        "Risk_Level"
+    ]
+}

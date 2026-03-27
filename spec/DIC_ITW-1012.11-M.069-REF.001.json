@@ -1,0 +1,12 @@
+{
+    "itw_id": "itw_1012.11-M.069-REF.001",
+    "source_system": "Contract Lifecycle Management (CLM)",
+    "physical_table": "Legal_Clause_Registry",
+    "columns": [
+        "Clause_ID",
+        "Contract_ID",
+        "Integrity_Hash",
+        "Approval_Date"
+    ],
+    "data_provenance": "Hashed Immutable Audit Log"
+}

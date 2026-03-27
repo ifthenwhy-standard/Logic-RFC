@@ -1,0 +1,21 @@
+{
+    "itw_id": "itw_1012.11-M.069-REF.001",
+    "reference_table": "LUT-69-Mandatory-Legal-Clauses",
+    "verified_entries": [
+        {
+            "Clause_Type": "Indemnification",
+            "Required": true,
+            "Min_Version": "2.1"
+        },
+        {
+            "Clause_Type": "Data_Privacy",
+            "Required": true,
+            "Min_Version": "3.0"
+        },
+        {
+            "Clause_Type": "Termination_for_Convenience",
+            "Required": false,
+            "Min_Version": "N/A"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1013.12-Q.086-REF.001",
+    "stakeholder_persona": "Clinical Pharmacist / Safety Officer",
+    "business_why": "To eliminate 'Decimal Drift' and hallucinations in autonomous medication dispensing. This protocol ensures the AI's 'Then' (Dispense) is strictly gated by a deterministic 'Why' (Patient Safety Thresholds) stored in a human-verified registry.",
+    "strategic_intent": "Patient Safety, NIST-600-1 Compliance, and Malpractice Risk Mitigation"
+}

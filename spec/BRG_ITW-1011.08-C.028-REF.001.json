@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1011.08-C.028-REF.001",
+    "if_trigger": "MATERIAL_TEST_EVENT: Raw material lead-content exceeds 0.1% threshold",
+    "then_action": "DETERMINISTIC_RESPONSE: Automatically disqualify supplier and flag batch for quarantine.",
+    "why_intent": "Prevent downstream product recalls and maintain 'Safe for Use' certification."
+}

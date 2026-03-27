@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1015.04-H.052-REF.001",
+    "if_trigger": "EXTERNAL_SHOCK_EVENT: NTSB/FAA Grounding, Labor Strike, or Weather Emergency declared.",
+    "then_action": "DETERMINISTIC_HALT: Suspend all affected 'In-Transit' status and trigger 'Alternative_Modal_Logic'.",
+    "why_intent": "Redirect assets to safe-storage or alternative paths before thermal integrity is lost due to systemic delays."
+}

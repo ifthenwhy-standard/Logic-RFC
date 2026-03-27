@@ -1,0 +1,21 @@
+{
+    "itw_id": "itw_1011.08-C.028-REF.001",
+    "reference_table": "LUT-28-Material-Safety-Thresholds",
+    "verified_entries": [
+        {
+            "Substance": "Lead (Pb)",
+            "Max_PPM": 1000,
+            "Action": "Block_Supplier"
+        },
+        {
+            "Substance": "Cadmium (Cd)",
+            "Max_PPM": 100,
+            "Action": "Block_Supplier"
+        },
+        {
+            "Substance": "Mercury (Hg)",
+            "Max_PPM": 1000,
+            "Action": "Block_Supplier"
+        }
+    ]
+}

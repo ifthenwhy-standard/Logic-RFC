@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1014.01-A.001-REF.001",
+    "calculation_proof": "Net_Sequestration = (Total_Biomass_Tons * Sequestration_Factor) - Buffer_Pool_Allocation",
+    "validation_logic": "AGENTIC_GUARDRAIL: If Additionality_Score < 0.8 OR Ownership_Verified is FALSE, the 'Credit_Authorization' must return NULL and trigger 'AUDIT_REQUIRED'.",
+    "authoritative_source": "IPCC Guidelines for National Greenhouse Gas Inventories"
+}

@@ -1,0 +1,24 @@
+{
+    "itw_id": "itw_1014.01-A.001-REF.001",
+    "sequestration_registry": [
+        {
+            "Crop_Type": "Hardwood_Forest",
+            "Factor": 2.5,
+            "Buffer_Required": "20%"
+        },
+        {
+            "Crop_Type": "Cover_Crops",
+            "Factor": 0.8,
+            "Buffer_Required": "10%"
+        },
+        {
+            "Crop_Type": "Regenerative_Wheat",
+            "Factor": 1.2,
+            "Buffer_Required": "15%"
+        }
+    ],
+    "regional_baselines": {
+        "Region_ID": "US-MW-01",
+        "Avg_Sequestration": 0.5
+    }
+}

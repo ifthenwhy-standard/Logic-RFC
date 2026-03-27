@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1010.05-D.035-REF.001",
+    "calculation_proof": "Response_Load_MW = (Nominal_Freq - Actual_Freq) * Frequency_Bias_Factor",
+    "validation_logic": "If Actual_Freq < 59.00Hz, override AI pathing and trigger EMERGENCY_ISLANDING immediately.",
+    "authoritative_source": "NERC Reliability Standard BAL-001-2"
+}

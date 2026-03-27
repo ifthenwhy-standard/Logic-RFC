@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1012.11-M.069-REF.001",
+    "if_trigger": "CONTRACT_SCAN_EVENT: Indemnification Clause missing or modified",
+    "then_action": "DETERMINISTIC_RESPONSE: Set 'Renewal_Authorization' to FALSE and trigger manual Legal Review.",
+    "why_intent": "Prevent exposure to third-party liability and ensure compliance with Corporate Governance Policy V2."
+}

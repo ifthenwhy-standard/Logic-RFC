@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1013.12-Q.086-REF.001",
+    "calculation_proof": "Dosage_Safety_Check = IF(Order_Dose <= LUT.Max_Daily_Dose, 'SAFE', 'OVERLIMIT')",
+    "validation_logic": "AGENTIC_GUARDRAIL: If Dosage_Safety_Check == 'OVERLIMIT', the system must return a NULL value to the dispensing agent and trigger an 'IMMEDIATE_HUMAN_REVIEW' alert.",
+    "authoritative_source": "Hospital Clinical Formulary V4.2"
+}

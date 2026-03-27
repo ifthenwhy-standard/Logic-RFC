@@ -1,0 +1,6 @@
+{
+    "itw_id": "itw_1012.11-M.069-REF.001",
+    "calculation_proof": "Compliance_Score = Count(Required_Clauses_Present) / Total_Required_Clauses",
+    "validation_logic": "If Compliance_Score < 1.0, then Status = 'REJECTED'. AI agents are forbidden from overriding this deterministic gate.",
+    "authoritative_source": "Corporate Governance Policy - Section 4.2"
+}

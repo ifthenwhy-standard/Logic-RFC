@@ -1,0 +1,22 @@
+{
+    "itw_id": "itw_1013.12-Q.086-REF.001",
+    "reference_table": "LUT-86-Medication-Safety-Registry",
+    "verified_entries": [
+        {
+            "Medication": "Medication_A",
+            "Max_Daily_Dose_MG": 50,
+            "UOM": "MG"
+        },
+        {
+            "Medication": "Medication_B",
+            "Max_Daily_Dose_MG": 100,
+            "UOM": "MG"
+        },
+        {
+            "Medication": "Medication_C",
+            "Max_Daily_Dose_MG": 10,
+            "UOM": "MG"
+        }
+    ],
+    "registry_source": "FDA / Hospital Safety Board Verified"
+}
