@@ -12,25 +12,27 @@ The framework utilizes a series of text-based map files to extract and standardi
 * **DIC (Data Dictionary):** The "Map." High-fidelity physical source-to-target mapping providing the technical provenance required for 2026-standard audits.
 * **LUT (Lookup Tables):** The "Universal Translator." Centralized reference data for all categorical labels and hierarchies, ensuring a unified vocabulary for NLP and AI agents.
 
-## 2. Systemic Resilience: Beyond "Single-Point" Checks
+## 2. Systemic Resilience: The Deterministic Safety Chain
 Logic RFC™ prevents **"Operational Blindness"** by forcing AI to validate a complete chain of institutional wisdom before taking action. It turns decades of "What If" experience into an automated, proactive "Then" response.
 
-### Case Study: The Cold-Chain Safety Gate (`itw_1015`)
-Standard systems check a sensor; Logic RFC™ checks the **entire world** around that sensor:
+### Case Study: The Cold Perishable Safety Gate (`itw_1015`)
+Standard systems check a sensor; Logic RFC™ checks the **entire world** around that sensor to protect a **cold perishable** shipment:
 * **Operational:** Is the current temperature within the LUT threshold?
-* **Asset:** Is this specific aircraft model currently grounded by the FAA/NTSB?
-* **Macro:** Is there a declared labor strike or weather emergency on this route?
-* **Result:** If any link in the "Safety Chain" fails, the AI is **physically prohibited** from proceeding.
+* **Asset Integrity:** Is the transport vehicle (e.g., **Boeing 737 MAX 9**) currently grounded by the FAA/NTSB?
+* **Infrastructure:** Is the destination port closed due to a **vessel bridge strike** (like the Dali in Baltimore) or labor strike?
+* **Geopolitical/Signal:** Is the route compromised by a **GPS blackout** caused by a regional conflict, such as a **war with Iran**?
+* **Result:** If any link in this **Deterministic Safety Chain** fails, the AI is **physically prohibited** from proceeding.
 
 ## 3. Global Milestone: 15 Core Metric Sets
 The protocol now provides a horizontal logic backbone across the global economy, spanning 15 comprehensive metric sets:
 1. **Retail (1001-1008):** Growth, Churn, and Profit Logic.
-2. **Manufacturing (1009/1011):** Cobot Safety and Supply Chain Integrity.
+2. **Manufacturing (1009):** Cobot Safety and Production Integrity.
 3. **Energy (1010):** Grid Stability and Load Shedding.
-4. **Legal (1012):** Deterministic Contractual Compliance.
-5. **Healthcare (1013):** Clinical Safety & "Five Rights" Validation.
-6. **Agriculture/ESG (1014):** Carbon Sequestration & Additionality Integrity.
-7. **Logistics (1015):** Cold-Chain Resilience & Macro-Risk Handling.
+4. **Manufacturing (1011):** **Cold-Chain** Industrial Equipment Monitoring & Thermal Stability.
+5. **Legal (1012):** Deterministic Contractual Compliance & **Perishable** Clause Validation.
+6. **Healthcare (1013):** Clinical Safety & **Cold-Chain** Medication/Vaccine Integrity.
+7. **Agriculture/ESG (1014):** Carbon Sequestration & **Cold Perishable** Food Security.
+8. **Logistics (1015):** **Cold Perishable** Resilience & Global Macro-Risk Handling.
 
 ## 4. Standardized Naming Convention
 To maintain 100% deterministic fidelity and traceability, all files follow a strictly concatenated naming convention.
@@ -43,7 +45,7 @@ The internal identifier used for cross-linking metrics across the 5-file set:
 * **PCF:** Process Classification Framework (last two digits).
 * **Section:** **ISIC Industry Section** letter (e.g., 'G' for Retail).
 * **Division:** **ISIC Industry Division** code (e.g., '047').
-* **Status:** Company or Status identifier (e.g., `REF` or `EXP`).
+* **Status:** Company identifier (e.g., `REF` or `EXP`).
 * **Version:** 3-digit versioning (e.g., `001`).
 
 ### **Physical Filename Pattern**
@@ -79,3 +81,4 @@ This protocol is engineered for **Agentic AI Governance**, providing:
 
 ---
 *“Fluent in Human, There for AI.”*
+**A #WorkerBee Standard.**
