@@ -1,8 +1,9 @@
 {
     "Metric_Name": "AI Diagnostic Model Drift Guard",
     "ITW_ID": "ITW-1008.09.Q.86.R.001",
-    "Version": "1.0.0",
+    "Version": "1.0.1",
     "Business_Owner": "Chief Medical Information Officer (CMIO)",
-    "Standard_Anchor": "ISO 13485 / FDA Software as a Medical Device (SaMD) Guidance",
+    "Standard_Anchor": "Data Engineering Quality Control / Logic RFC Architecture Protocol",
+    "Legal_Scope": "Structural Logic Map Only. Not for Clinical Use without Licensed Medical Oversight. User assumes all clinical liability.",
     "Status": "Registered"
 }
