@@ -2,5 +2,5 @@
     "ITW_ID": "ITW-1008.09.Q.86.R.001",
     "Calculation_Proof": "Governance_Flag = (Data_Stream_Confidence > 0.85) AND (Input_Parameters_In_Bounds == TRUE)",
     "Validation_Logic": "If Input_Parameters (Lactate, WBC, HR) fall outside LUT-86 structural 'Safe Zones', return 'UNCERTAIN_DATA_DRIFT' and default to Manual Human Triage. This logic governs data integrity, not clinical diagnosis.",
-    "Authoritative_Source": "Logic RFC Architecture Governance / Data Engineering Registry"
+    "Authoritative_Source": "Logic RFC Architecture Governance /Data Engineering Registry"
 }

@@ -2,5 +2,5 @@
     "ITW_ID": "ITW-1008.09.Q.86.R.001",
     "If_Trigger": "AI Diagnostic Agent generates a Sepsis Probability Score for a specific patient profile.",
     "Then_Action": "Execute a deterministic validation of current patient vitals against LUT-86-Training-Bounds and apply LDD-Drift-Calculation logic.",
-    "Why_Intent": "To enforce a deterministic data-integrity gate. The strategic intent is to ensure the AI's output remains within the architecturally governed 'Safe Zone' approved by the Medical Director. If data is out of bounds, the protocol defaults to manual human triage to prevent clinical reliance on unvalidated data drift."
+    "Why_Intent": "To enforce a deterministic data-integrity gate.  The strategic intent is to ensure the AI's output remains within the architecturally governed 'Safe Zone' approved by the Medical Director. If data is out of bounds, the protocol defaults to manual human triage to prevent clinical reliance on unvalidated data drift."
 }
