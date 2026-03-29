@@ -1,6 +1,6 @@
 {
     "ITW_ID": "ITW-1004.12.M.69.R.001",
     "Calculation_Proof": "Verification_Status = (Input_Citation IN Verified_Registry_LUT)",
-    "Validation_Logic": "If Count == 0, return 'HALLUCINATION_ALERT' and block submission.",
-    "Authoritative_Source": "Official Court Reporters / Judicial Databases"
+    "Validation_Logic": "If Input_Citation matches an entry in the 'Banned_Entries' list (e.g., Mata v. Avianca / Varghese) OR if the Reporter is not found in 'Valid_Entries', return 'HALLUCINATION_ALERT' and block submission. This logic must execute against the version of the LUT specified in MAN v.1.0.1.",
+    "Authoritative_Source": "Official Court Reporters / Judicial Databases / ABA Model Rule 1.1 Compliance Registry"
 }
