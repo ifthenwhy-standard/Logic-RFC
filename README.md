@@ -1,14 +1,15 @@
-# Logic RFC™: The IfThenWhy Logic Protocol
-
+# Logic RFC™: A Reference Architecture for Deterministic AI Grounding
+### *An Open-Source Protocol by IfThenWhy™*
+---
 ## Executive Summary
-Logic RFC (Request for Comments) is a deterministic, machine-readable standard for data architecture. It is designed to bridge the gap between human intent ("The Why") and mechanical data actions ("The Then"). By utilizing a **Logic Map File Architecture**, this protocol ensures that every metric is structurally bound to a verifiable business trigger and a specific strategic goal, meeting **NIST-2025/2026 AI Transparency Standards**.
+Logic RFC (Request for Comments) is a system-agnostic Reference Architecture for data logic and AI governance. It provides a deterministic, machine-readable standard designed to bridge the gap between human intent ("The Why") and mechanical data actions ("The Then"). By utilizing a Logic Map File Architecture, this protocol ensures that every metric is structurally bound to a verifiable business trigger, meeting the rigorous demands of NIST-2025/2026 AI Transparency Standards and Agentic AI Governance.
 
 ## 1. The Logic Map File Architecture
 The framework utilizes a series of text-based map files to extract and standardize business rules, transforming raw data into "Logic DNA" and eliminating AI hallucinations.
 
 * **SEM (Semantic Layer):** The "Business Why." A natural language manifest that anchors every metric to specific stakeholder personas and inclusion/exclusion logic.
 * **BRG (Bridge File):** The "If-Then Connector." The kinetic link between a real-world business event (The If) and a data action (The Then).
-* **LDD (Logical Data Design):** The "Engine & Proof." The authoritative source for mathematical calculations, containing the Logic DNA™ signatures and validation rules.
+* **LDD (Logical Data Design):** The "Engine & Proof." The authoritative source for mathematical calculations, containing the Immutable Logic DNA™ signatures and validation rules.
 * **DIC (Data Dictionary):** The "Map." High-fidelity physical source-to-target mapping providing the technical provenance required for 2026-standard audits.
 * **LUT (Lookup Tables):** The "Universal Translator." Centralized reference data for all categorical labels and hierarchies, ensuring a unified vocabulary for NLP and AI agents.
 
@@ -85,6 +86,11 @@ This protocol is engineered for **Agentic AI Governance**, providing:
 * **Non-Repudiation:** Proof that logic has not been altered since its last human-in-the-loop validation.
 * **Deterministic Guardrails:** Ensuring autonomous agents operate only within "LOCKED" logical boundaries defined in the LDD.
 
+## 9. Provenance & Attribution
+* **NIST Public Record:** This framework and its underlying logic were formally submitted to the **NIST-2025-0035** public docket (Security Considerations for AI Agents) in March 2026.
+* **Digital DNA:** All core files utilize the `ITW_ID` signature protocol to ensure deterministic cross-referencing and logic integrity across distributed systems.
+* **Licensing:** Distributed under the **Apache License 2.0**. Attribution to **IfThenWhy™** is required for all derivative works, commercial implementations, or regulatory adoptions.
+* **Author:** Developed by IfThenWhy Project, 2025-2026.
+
 ---
 *“Fluent in Human, There for AI.”*
-**A #WorkerBee Standard.**
