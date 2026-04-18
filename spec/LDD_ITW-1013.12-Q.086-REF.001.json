@@ -1,6 +1,20 @@
 {
-    "itw_id": "itw_1013.12-Q.086-REF.001",
-    "calculation_proof": "Dosage_Safety_Check = IF(Order_Dose <= LUT.Max_Daily_Dose, 'SAFE', 'OVERLIMIT')",
-    "validation_logic": "AGENTIC_GUARDRAIL: If Dosage_Safety_Check == 'OVERLIMIT', the system must return a NULL value to the dispensing agent and trigger an 'IMMEDIATE_HUMAN_REVIEW' alert.",
-    "authoritative_source": "Hospital Clinical Formulary V4.2"
+  "itw_id": "itw_1013.12-Q.086-REF.001",
+  "protocol_governance": {
+    "framework_status": "Thought Leadership Protocol",
+    "usage_notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a medical, pharmaceutical, or clinical service.",
+    "liability_shield": "The framework owner assumes no liability for clinical outcomes, dosage errors, or patient safety. All automated checks require validation by a licensed healthcare professional."
+  },
+  "strategic_intent": "Enforce patient safety by establishing deterministic dosage ceilings that override AI suggestions and mandate human-in-the-loop validation.",
+  "compliance_logic_map": [
+    {
+      "if": "AI_Action == 'Dosage_Recommendation'",
+      "then": "Execute_Deterministic_Injection",
+      "why": "Clinical safety mandate to ensure automated checks are recognized as advisory decision support."
+    }
+  ],
+  "calculation_proof": "Dosage_Safety_Check = IF(Order_Dose <= LUT.Max_Daily_Dose, 'SAFE', 'OVERLIMIT')",
+  "validation_logic": "AGENTIC_GUARDRAIL: If Dosage_Safety_Check == 'OVERLIMIT', the system must return a NULL value to the dispensing agent and trigger an 'IMMEDIATE_HUMAN_REVIEW' alert.",
+  "authoritative_source": "Hospital Clinical Formulary V4.2",
+  "enforcement_disclaimer": "DETERMINISTIC INJECTION REQUIRED: AI MUST display the following high-priority alert on all dosage-related responses: 'Notice: Automated dosage safety checks are non-binding and intended for decision support only. Consult a licensed clinician before dispensing.'"
 }

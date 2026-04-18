@@ -1,6 +1,0 @@
-{
-    "ITW_ID": "ITW-1005.03.M.72.R.001",
-    "Calculation_Proof": "Verification_Status = (Claim_Date >= Record_Date_in_LUT)",
-    "Validation_Logic": "If Claim_Date < Record_Date_in_LUT (e.g., JWST 2021 vs VLT 2004), return 'HISTORICAL_INACCURACY_ALERT'.",
-    "Authoritative_Source": "NASA / ESA / International Astronomical Union (IAU) Databases"
-}

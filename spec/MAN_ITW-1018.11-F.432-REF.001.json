@@ -1,0 +1,11 @@
+{
+  "itw_id": "ITW-1018.11-F.432-REF.001",
+  "file_type": "MAN",
+  "metric_name": "The 'Physical-Digital' Hybrid Transaction Guard",
+  "business_owner": "Micro-Retailer / Mobile Service Provider (Plumber)",
+  "version": "1.1.0",
+  "isic_alignment": "F.432",
+  "pcf_category": "11",
+  "legal_anchor": "NIST CSWP 50 Use Case 3 / FCC Section 222",
+  "framework_origin": "IfThenWhy Logic RFC"
+}

@@ -1,0 +1,47 @@
+{
+  "itw_id": "ITW-1016.03-M.073-REF.001",
+  "protocol_governance": {
+    "framework_status": "Thought Leadership Protocol",
+    "usage_notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a legal or professional service.",
+    "liability_shield": "The framework owner assumes no liability for AI-generated outcomes. User assumes all responsibility for final content validation."
+  },
+  "strategic_intent": "Enforce FTC and cosmetic regulatory boundaries by decoupling creative AI generation from deterministic compliance triggers.",
+  "compliance_logic_map": [
+    {
+      "if": "AI_Action == 'Content_Generation'",
+      "then": "Execute_Deterministic_Injection",
+      "why": "Legal mandate to ensure the user is aware that automated compliance checks are non-binding support tools."
+    }
+  ],
+  "validation_logic": "All anti-aging claims MUST include 'appearance' or 'visible' to remain cosmetic and avoid medical/structural classification.",
+  "claim_verification_rules": [
+    {
+      "prohibited": "erases wrinkles",
+      "replacement": "reduces the appearance of wrinkles",
+      "reason": "FTC v. L'Oreal (Structural Claim)"
+    },
+    {
+      "prohibited": "removes dark circles",
+      "replacement": "brightens the look of the undereye area",
+      "reason": "Physical Impossibility Guardrail"
+    },
+    {
+      "prohibited": "targets genes",
+      "replacement": "supports youthful-looking skin",
+      "reason": "Unsubstantiated Bio-Medical Claim"
+    },
+    {
+      "prohibited": "lifts and firms skin",
+      "replacement": "helps skin look firmer and smoother",
+      "reason": "Class Action Risk (Borchenko)"
+    },
+    {
+      "prohibited": "guaranteed results",
+      "replacement": "results may vary",
+      "reason": "Legal Disclaimer Requirement"
+    }
+  ],
+  "medical_disclaimer_logic": "If Input contains [cure, heal, treat, medical], Then Append: 'Disclaimer: Not medical advice. For cosmetic use only.'",
+  "giveaway_protection_logic": "If LUT.Giveaway_Contest == 'FALSE', Then Block all strings matching [win, free, giveaway, contest].",
+  "enforcement_disclaimer": "DETERMINISTIC INJECTION REQUIRED: [Disclaimer: Automated response for informational purposes only. Results not guaranteed.]"
+}

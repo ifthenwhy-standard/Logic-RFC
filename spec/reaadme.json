@@ -1,79 +1,59 @@
 {
   "protocol": "Logic RFC™",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "framework_name": "IfThenWhy Logic Protocol",
-  "compliance_target": "NIST-2025-0035 / 2026 AI Transparency Standards",
+  "compliance_target": "NIST-2025-0035 / NIST CSWP 50 (2026 Small Business Standards)",
   "identity_standards": {
-    "naming_convention": "MAN_[ITW_ID].[Process_Category].[ISIC_Section].[ISIC_Division].[Entity]",
-    "example": "MAN_1001.03-G.047-IBM.001"
+    "naming_convention": "MAN_[ITW_ID].[Process_Category].[ISIC_Section].[ISIC_Division].[Entity].[Version]",
+    "example": "MAN_ITW-1018.11-F.432-REF.001"
   },
   "core_pillars": [
     {
       "pillar": "0. Identity (MAN)",
-      "mission": "The 'Master Label' and Version Control. Establishes the unique Metric Identifier and functional 'Why' through standardized taxonomy.",
-      "risk_mitigation": "Eliminates 'Identity Ambiguity.' Every logic chain is bound to a cryptographic hash, ensuring non-repudiation."
+      "mission": "The 'Master Label' and Version Control. Establishes the unique Metric Identifier and functional 'Why' through standardized taxonomy."
     },
     {
-      "pillar": "1. Data",
-      "mission": "Utilizing Logic RFC text map files to extract business rules and strategic intent.",
-      "risk_mitigation": "Eliminates 'Contextual Hallucination' by ensuring AI never guesses the purpose of data."
+      "pillar": "1. Logic Map File Architecture",
+      "mission": "A system of deterministic text-based map files (SEM, BRG, LDD, DIC, LUT) designed to transform raw data into machine-readable 'Logic DNA'.",
+      "risk_mitigation": "Eliminates 'Contextual Hallucination' by ensuring AI never guesses the intent or purpose of data."
     },
     {
-      "pillar": "2. Validation",
-      "mission": "Real-time, verifiable checks providing objective mathematical proof of accuracy.",
-      "risk_mitigation": "Eliminates 'Logic Drift' and provides Deterministic Certainty for automated decisioning."
+      "pillar": "2. Validation (Safety Circuits)",
+      "mission": "Real-time, verifiable checks providing objective mathematical proof of accuracy via HITL (Human-in-the-Loop) rails.",
+      "risk_mitigation": "Prevents unauthorized financial commitments and 'Negotiation Drift' (e.g., Chevy Tahoe/Air Canada precedents)."
     },
     {
       "pillar": "3. Governance",
-      "mission": "Uniform standards maintaining consistency across all business units.",
-      "risk_mitigation": "Hardens Logic DNA™ to prevent unauthorized logic mutation."
-    },
-    {
-      "pillar": "4. Persona",
-      "mission": "Capturing diverse perspectives from human leadership to autonomous AI agents.",
-      "risk_mitigation": "Prevents 'Perspective Bias' by anchoring logic to specific personas in the SEM layer."
-    },
-    {
-      "pillar": "5. Instruction",
-      "mission": "Defined parameters for accuracy that govern how data is interpreted.",
-      "risk_mitigation": "Prevents 'Operational Error' by ensuring human intent remains sovereign."
+      "mission": "Uniform standards maintaining consistency across all business units and agentic AI deployments.",
+      "milestone": "18 Core Metric Sets including the NIST CSWP 50 Small Business Series (ITW-1016, 1017, 1018)."
     }
   ],
-  "file_architecture": [
+  "file_architecture_definitions": [
     {
       "component": "MAN",
       "label": "Metric Manifest",
-      "strategic_value": "The identity anchor. Contains the ITW_ID, Version, and Business Owner. The primary file for auditability."
+      "strategic_value": "The identity anchor. Contains the ITW_ID, Version, and Business Owner."
     },
     {
       "component": "SEM",
       "label": "Semantic Layer",
-      "strategic_value": "The 'Business Why'. Anchors metrics to Stakeholder Personas and contains the SQL expressions."
+      "strategic_value": "The 'Business Why'. Anchors metrics to Stakeholder Personas and natural language manifests."
     },
     {
       "component": "BRG",
       "label": "Bridge File",
-      "strategic_value": "The 'If-Then Connector'. Kinetic link mapping input_events to data actions."
+      "strategic_value": "The 'If-Then Connector'. Kinetic link mapping real-world triggers to deterministic data actions."
     },
     {
       "component": "LDD",
       "label": "Logical Data Design",
-      "strategic_value": "The 'Engine & Proof'. Immutable logic carrying the Logic DNA™ Signature."
-    },
-    {
-      "component": "ERD",
-      "label": "Logical ERD",
-      "strategic_value": "The 'Blueprint'. Guardrails preventing join errors and logic drift."
-    },
-    {
-      "component": "DIC",
-      "label": "Data Dictionary",
-      "strategic_value": "The 'Map'. High-fidelity source-to-target mapping and technical provenance."
+      "strategic_value": "The 'Engine & Proof'. Immutable logic carrying Logic DNA™ signatures and deterministic safety rails."
     },
     {
       "component": "LUT",
       "label": "Lookup Tables",
-      "strategic_value": "The 'Universal Translator'. NLP-optimized labeling for AI interfaces."
+      "strategic_value": "The 'Universal Translator'. Centralized reference data for unified vocabulary across NLP and AI agents."
     }
-  ]
+  ],
+  "registry_index_url": "https://www.ifthenwhy.ai/logic-rfc-metric-registry-index"
 }

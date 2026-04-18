@@ -1,6 +1,20 @@
 {
-    "itw_id": "itw_1015.04-H.052-REF.001",
-    "calculation_proof": "Route_Viability = (Thermal_OK AND Asset_Eligible AND Path_Open)",
-    "validation_logic": "AGENTIC_GUARDRAIL: If Path_Open is FALSE (due to Strike/War), the AI is prohibited from initiating the 'Then' action. If Asset_ID is in 'Grounded_List', the shipment cannot be assigned.",
-    "authoritative_source": "NTSB Safety Directives / National Weather Service / Labor Relations Board"
+  "itw_id": "itw_1015.04-H.052-REF.001",
+  "protocol_governance": {
+    "framework_status": "Thought Leadership Protocol",
+    "usage_notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional logistics, legal, or safety engineering service.",
+    "liability_shield": "The framework owner assumes no liability for shipment delays, asset loss, or supply chain failures. Principal Logistics Manager signature required for operational execution."
+  },
+  "strategic_intent": "Maintain supply chain integrity and personnel safety by anchoring AI routing suggestions to deterministic labor, weather, and safety interlocks.",
+  "compliance_logic_map": [
+    {
+      "if": "AI_Action == 'Route_Authorization'",
+      "then": "Execute_Deterministic_Injection",
+      "why": "Operational safety mandate to ensure automated routing is subject to human safety protocols and dispatcher verification."
+    }
+  ],
+  "calculation_proof": "Route_Viability = (Thermal_OK AND Asset_Eligible AND Path_Open)",
+  "validation_logic": "AGENTIC_GUARDRAIL: If Path_Open is FALSE (due to Strike/War), the AI is prohibited from initiating the 'Then' action. If Asset_ID is in 'Grounded_List', the shipment cannot be assigned.",
+  "authoritative_source": "NTSB Safety Directives / National Weather Service / Labor Relations Board",
+  "enforcement_disclaimer": "DETERMINISTIC INJECTION REQUIRED: AI MUST display the following alert if Route_Viability is FALSE: 'Notice: Automated route assessment is non-binding. Subject to dispatcher verification and safety protocol.'"
 }

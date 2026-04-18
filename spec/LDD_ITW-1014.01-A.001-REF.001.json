@@ -1,6 +1,20 @@
 {
-    "itw_id": "itw_1014.01-A.001-REF.001",
-    "calculation_proof": "Net_Sequestration = (Total_Biomass_Tons * Sequestration_Factor) - Buffer_Pool_Allocation",
-    "validation_logic": "AGENTIC_GUARDRAIL: If Additionality_Score < 0.8 OR Ownership_Verified is FALSE, the 'Credit_Authorization' must return NULL and trigger 'AUDIT_REQUIRED'.",
-    "authoritative_source": "IPCC Guidelines for National Greenhouse Gas Inventories"
+  "itw_id": "itw_1014.01-A.001-REF.001",
+  "protocol_governance": {
+    "framework_status": "Thought Leadership Protocol",
+    "usage_notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional environmental engineering, carbon accounting, or financial service.",
+    "liability_shield": "The framework owner assumes no liability for carbon credit accuracy, sequestration claims, or regulatory non-compliance. Independent third-party audit required for credit issuance."
+  },
+  "strategic_intent": "Protect carbon market integrity by enforcing deterministic additionality and ownership gates over AI estimations, ensuring human-led verification of sequestration reports.",
+  "compliance_logic_map": [
+    {
+      "if": "AI_Action == 'Sequestration_Report'",
+      "then": "Execute_Deterministic_Injection",
+      "why": "Regulatory mandate to prevent automated credit authorization without manual auditor verification and to maintain the status of the framework as non-binding."
+    }
+  ],
+  "calculation_proof": "Net_Sequestration = (Total_Biomass_Tons * Sequestration_Factor) - Buffer_Pool_Allocation",
+  "validation_logic": "AGENTIC_GUARDRAIL: If Additionality_Score < 0.8 OR Ownership_Verified is FALSE, the 'Credit_Authorization' must return NULL and trigger 'AUDIT_REQUIRED' regardless of AI confidence.",
+  "authoritative_source": "IPCC Guidelines for National Greenhouse Gas Inventories",
+  "enforcement_disclaimer": "DETERMINISTIC INJECTION REQUIRED: AI MUST display the following alert on all sequestration summaries: 'Notice: Automated sequestration estimates are non-binding. Final credit authorization and verification require a manual third-party audit.'"
 }

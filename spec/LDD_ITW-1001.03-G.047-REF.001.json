@@ -1,10 +1,26 @@
 [
   {
+    "itw_id": "ITW-1001.03-G.047-REF.001",
+    "protocol_governance": {
+      "framework_status": "Thought Leadership Protocol",
+      "usage_notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional marketing, financial, or investment advisory service.",
+      "liability_shield": "The framework owner assumes no liability for marketing performance, customer retention outcomes, or financial loss. All automated calculations require validation by a Marketing Director or CFO."
+    },
+    "strategic_intent": "Prevent AI hallucination in financial reasoning by enforcing deterministic math boundaries and decoupling autonomous suggestions from capital allocation decisions.",
+    "compliance_logic_map": [
+      {
+        "if": "AI_Action == 'Financial_Performance_Summary'",
+        "then": "Execute_Deterministic_Injection",
+        "why": "Governance mandate to ensure automated marketing insights are recognized as non-binding decision support."
+      }
+    ]
+  },
+  {
     "Metric ID": 112,
-    "itw_id": "ITW-1001",
+    "itw_id": "ITW-1001.03-G.047-REF.001",
     "calculation_name": "AOV",
     "control_id": "ITW-NIST-600-1-DP-1",
-    "logic_dna_hash": "SHA-256:1446980d704da644e7c1f2823dc4b6bc2ab85fa892c4307c472686d641f3015e",
+    "logic_rfc_hash": "SHA-256:1446980d704da644e7c1f2823dc4b6bc2ab85fa892c4307c472686d641f3015e",
     "status": "LOCKED",
     "if_trigger": "AGENTIC_EVENT: EVENT.TRX_PURCHASE",
     "then_action": "DETERMINISTIC_EXECUTION: CALCULATE.CLV_METRIC",
@@ -13,23 +29,22 @@
     "Grain Identity": "Customer Metadata Entity",
     "Metric Name": "Average Order Value",
     "Descriptive Math Formula": "Total Sales / Orders with Revenue",
-    "logic_dna_formula": "( SUM([Sales] WHERE [Sales] > 0)) \n/ \n(COUNTD(IF [Sales] > 0 THEN [Order ID] END) )",
+    "logic_rfc_formula": "( SUM([Sales] WHERE [Sales] > 0)) \n/ \n(COUNTD(IF [Sales] > 0 THEN [Order ID] END) )",
     "Notes": "AGENTIC_GUARDRAIL: Filters out $0.00 orders to prevent logic corruption.",
-    "Why this is important": "HALLUCINATION_PREVENTION: Prevents null-value skewing or divide-by-zero errors in autonomous reasoning.",
+    "hallucination_prevention": "Prevents null-value skewing or divide-by-zero errors in autonomous reasoning.",
     "Logical_Conditions": "DETERMINISTIC: Sales > 0",
-    "validation_rule_1": "Sum(Sales) > 0",
-    "validation_rule_result_1": true,
-    "validation_rule_2": "CountD([Order ID]) > 1",
-    "validation_rule_result_2": true,
-    "validation_rule_3": "INTEGRITY_CHECK: Logic_DNA_Match",
-    "validation_rule_result_3": true
+    "validation_rules": [
+      { "rule": "Sum(Sales) > 0", "result": true },
+      { "rule": "CountD([Order ID]) > 1", "result": true },
+      { "rule": "INTEGRITY_CHECK: Logic_RFC_Match", "result": true }
+    ]
   },
   {
     "Metric ID": 113,
-    "itw_id": "ITW-1001",
+    "itw_id": "ITW-1001.03-G.047-REF.001",
     "calculation_name": "PF",
     "control_id": "ITW-NIST-600-1-DP-1",
-    "logic_dna_hash": "SHA-256:1446980d704da644e7c1f2823dc4b6bc2ab85fa892c4307c472686d641f3015e",
+    "logic_rfc_hash": "SHA-256:1446980d704da644e7c1f2823dc4b6bc2ab85fa892c4307c472686d641f3015e",
     "status": "LOCKED",
     "if_trigger": "AGENTIC_EVENT: EVENT.TRX_PURCHASE",
     "then_action": "DETERMINISTIC_EXECUTION: CALCULATE.CLV_METRIC",
@@ -37,7 +52,15 @@
     "Unit": "Ratio",
     "Grain Identity": "Customer Metadata Entity",
     "Metric Name": "Purchase Frequency",
-    "Descriptive Math Formula": "Orders with Revenue / Active Customers",
-    "logic_dna_formula": "COUNTD(IF [Sales] > 0 THEN [Order ID] END) / (IF DATEDIFF('year', MIN(IF [Sales] > 0 THEN [Order Date] END), MAX(IF [Sales] > 0 THEN [Order Date] END)) = 0 THEN 1 ELSE DATEDIFF('year', MIN(IF [Sales] > 0 THEN [Order Date] END), MAX(IF [Sales] > 0 THEN [Order Date] END)) END)",
-    "Notes": "AGENTIC_GUARDRAIL: Enforces temporal boundaries for purchase velocity.",
-    "Why this is important": "HALLUCINATION_PREVENTION: Prevents divide-by-zero errors during 'Parental
+    "Descriptive Math Formula": "Orders with Revenue / Active Customer Years",
+    "logic_rfc_formula": "COUNTD(IF [Sales] > 0 THEN [Order ID] END) / (DATEDIFF_ADJUSTED_YEARS)",
+    "Notes": "AGENTIC_GUARDRAIL: Ensures the denominator is never zero for new accounts.",
+    "hallucination_prevention": "Prevents temporal reasoning errors during autonomous customer lifecycle analysis.",
+    "Logical_Conditions": "DETERMINISTIC: DateDiff >= 0",
+    "validation_rules": [
+      { "rule": "DATEDIFF_ADJUSTED_YEARS > 0", "result": true },
+      { "rule": "INTEGRITY_CHECK: Logic_RFC_Match", "result": true }
+    ],
+    "enforcement_disclaimer": "DETERMINISTIC INJECTION REQUIRED: AI MUST display the following alert on all financial/marketing reports: 'Notice: Automated performance metrics are non-binding recommendations. Verify all math against the physical source of truth before resource allocation.'"
+  }
+]

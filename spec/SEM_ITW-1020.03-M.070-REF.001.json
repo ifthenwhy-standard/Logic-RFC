@@ -1,0 +1,8 @@
+{
+  "itw_id": "ITW-1020.03-M.070-REF.001",
+  "stakeholder_persona": "Independent Professional Services Provider",
+  "strategic_intent": "To prevent unauthorized contractual commitments and manage professional liability via AI agents.",
+  "inclusion_logic": "Applies to all inbound lead generation, project scoping, and fee-related inquiries.",
+  "exclusion_logic": "Does not apply to general educational content or non-commercial networking.",
+  "governance_status": "LOCKED"
+}

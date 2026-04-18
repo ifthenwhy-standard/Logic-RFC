@@ -1,0 +1,9 @@
+{
+  "itw_id": "ITW-1018.11-F.432-REF.001",
+  "protocol_status": "Thought Leadership Protocol",
+  "stakeholder_persona": "Micro-Retailer (Solo Operator / Mobile Plumber)",
+  "strategic_intent": "To secure financial transaction data and ensure privacy compliance on consumer-grade hardware and mobile networks while mitigating AI-driven legal liability.",
+  "inclusion_logic": "Applies to all mobile digital payment processing (PoS), customer contact management, and shared/public network access during service calls.",
+  "exclusion_logic": "Does not apply to physical hardware maintenance, non-digital cash transactions, or personal non-commercial mobile usage.",
+  "governance_status": "LOCKED"
+}

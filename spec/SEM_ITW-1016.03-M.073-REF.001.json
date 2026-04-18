@@ -1,0 +1,8 @@
+{
+  "itw_id": "ITW-1016.03-M.073-REF.001",
+  "stakeholder_persona": "Content Creator (Age 60+ Demographic)",
+  "strategic_intent": "To ensure AI-generated content remains factually accurate and compliant with FTC guidelines regarding cosmetic vs. medical claims.",
+  "inclusion_logic": "Applies to all AI-generated product descriptions, reviews, and promotional engagement.",
+  "exclusion_logic": "Does not apply to subjective style preferences or non-sponsored personal narratives.",
+  "governance_status": "LOCKED"
+}

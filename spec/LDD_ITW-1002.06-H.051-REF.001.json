@@ -1,11 +1,26 @@
 {
-  "itw_id": "ITW-1002.03-G.047-REF.001",
+  "itw_id": "ITW-1002.06-H.051-REF.001",
+  "protocol_governance": {
+    "framework_status": "Thought Leadership Protocol",
+    "usage_notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional financial, travel agency, or revenue management service.",
+    "liability_shield": "The framework owner assumes no liability for pricing errors, revenue loss, or booking discrepancies. All automated fare adjustments require validation by a Revenue Manager or Supervisor."
+  },
+  "strategic_intent": "Protect corporate revenue integrity by enforcing deterministic discount ceilings that override AI-generated pricing suggestions and mandate human-in-the-loop validation for high-variance overrides.",
+  "compliance_logic_map": [
+    {
+      "if": "AI_Action == 'Price_Adjustment_Recommendation'",
+      "then": "Execute_Deterministic_Injection",
+      "why": "Governance mandate to ensure automated pricing shifts are recognized as non-binding decision support and remain within authorized financial boundaries."
+    }
+  ],
   "calculation_logic": "Base_Fare * (1 - Discount_Rate)",
   "variables": {
     "Base_Fare": "Standard economy or business class fare at time of booking.",
     "Discount_Rate": "0.15"
   },
-  "validation_logic": "Discount_Rate MUST NOT exceed 0.15 without manual supervisor override flag (Override_Level_2).",
-  "logic_dna_signature": "SHA-256:7b92a1c4...",
-  "mathematical_proof": "If Base_Fare = 1000, Then Final_Fare = 850. Result is deterministic."
+  "validation_logic": "AGENTIC_GUARDRAIL: Discount_Rate MUST NOT exceed 0.15 without manual supervisor override flag (Override_Level_2). If AI attempts an override without the flag, the system must return NULL and trigger a 'FINANCIAL_EXCEPTION' alert.",
+  "logic_rfc_signature": "SHA-256:7b92a1c4...",
+  "mathematical_proof": "If Base_Fare = 1000, Then Final_Fare = 850. Result is deterministic.",
+  "authoritative_source": "Corporate Revenue Management Policy V2.1",
+  "enforcement_disclaimer": "DETERMINISTIC INJECTION REQUIRED: AI MUST display the following alert on all pricing responses: 'Notice: Automated fare adjustments are non-binding recommendations. Verify all discounts against current revenue policy before final booking.'"
 }

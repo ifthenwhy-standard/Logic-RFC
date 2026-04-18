@@ -1,0 +1,36 @@
+{
+  "itw_id": "ITW-1018.11-F.432-REF.001",
+  "semantic_domain": "LEGAL_AND_SECURITY_STANDARDS",
+  "reference_data": [
+    {
+      "entity": "Precedent_Alerts",
+      "values": [
+        "Mata v. Avianca (2023): Legal sanctions for AI-generated hallucinations.",
+        "Sterling Plumbing (2024): Investigation into PII exposure during mobile service.",
+        "FCC Section 222: Duty to protect mobile customer proprietary network information.",
+        "Innovak v. Hanover: Legal precedent regarding data breach exclusions in standard business insurance."
+      ]
+    },
+    {
+      "entity": "Authorized_PoS_Vendors",
+      "values": [
+        "Square",
+        "Clover",
+        "Shopify",
+        "PayPal Zettle"
+      ]
+    },
+    {
+      "entity": "Required_Encryption_Standard",
+      "value": "AES-256"
+    },
+    {
+      "entity": "VPN_Whitelist",
+      "values": [
+        "Tailscale",
+        "NordLayer",
+        "ExpressVPN_Business"
+      ]
+    }
+  ]
+}

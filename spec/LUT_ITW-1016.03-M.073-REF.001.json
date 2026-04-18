@@ -1,0 +1,26 @@
+{
+  "itw_id": "ITW-1016.03-M.073-REF.001",
+  "semantic_domain": "ACTIVE_PROMOTIONS_AND_TRUTHS",
+  "reference_data": [
+    {
+      "entity": "Giveaway_Contest",
+      "status": "FALSE",
+      "authorized_value": "0.00"
+    },
+    {
+      "entity": "Clean_Beauty_Label",
+      "status": "RESTRICTED",
+      "constraint": "Do not use unless 100% synthetic-free (Sephora Litigation Risk)"
+    },
+    {
+      "entity": "Collagen_Topical",
+      "truth_constraint": "Must state 'topical' - molecules too large for deep penetration (Lopez v. L'Oreal)"
+    },
+    {
+      "entity": "Clinical_Studies",
+      "status": "NONE",
+      "constraint": "Do not cite 'clinical proof' without validated PDF link."
+    }
+  ],
+  "governance_persona": "Beauty Editor / Compliance Guard"
+}

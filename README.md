@@ -30,8 +30,11 @@ Standard systems check a sensor; Logic RFC™ checks the **entire world** around
 * **Geopolitical/Signal:** Is the route compromised by a **GPS blackout** caused by a regional conflict, such as a **war with Iran**?
 * **Result:** If any link in this **Deterministic Safety Chain** fails, the AI is **physically prohibited** from proceeding.
 
-## 4. Global Milestone: 15 Core Metric Sets
-The protocol now provides a horizontal logic backbone across the global economy, spanning 15 comprehensive metric sets:
+## 4. Global Milestone: 18 Core Metric Sets
+The protocol now provides a horizontal logic backbone across the global economy. The full registry of these logic maps—including the new NIST Small Business Series—can be explored at: 
+**[https://www.ifthenwhy.ai/logic-rfc-metric-registry-index](https://www.ifthenwhy.ai/logic-rfc-metric-registry-index)**
+
+The protocol currently spans 18 comprehensive metric sets:
 1. **Retail (1001-1008):** Growth, Churn, and Profit Logic.
 2. **Manufacturing (1009):** Cobot Safety and Production Integrity.
 3. **Energy (1010):** Grid Stability and Load Shedding.
@@ -40,6 +43,10 @@ The protocol now provides a horizontal logic backbone across the global economy,
 6. **Healthcare (1013):** Clinical Safety & **Cold-Chain** Medication/Vaccine Integrity.
 7. **Agriculture/ESG (1014):** Carbon Sequestration & **Cold Perishable** Food Security.
 8. **Logistics (1015):** **Cold Perishable** Resilience & Global Macro-Risk Handling.
+9. **NIST CSWP 50 Series (1016-1018):** Small Business AI Governance.
+    * **ITW-1016:** The Digital Content Creator (The "Influencer" / Solo Marketer)
+    * **ITW-1017:** The Independent Professional Services Provider (The "Solo Consultant")
+    * **ITW-1018:** The Micro-Retailer / Service Provider (The "Physical-Digital" Hybrid)
 
 ## 5. Standardized Naming Convention
 To maintain 100% deterministic fidelity and traceability, all files follow the **Logic Map Universal Filename Protocol**.
@@ -58,10 +65,10 @@ The internal identifier used for cross-linking metrics across the Logic Map set:
 ### **Physical Filename Pattern**
 `[PREFIX]_ITW-[MetricID].[PCF]-[Section].[Division].[Status].[Version].json`
 
-**Example Set for Metric 1001:**
-* `SEM_ITW-1001.03-G.047-REF.001.json`
-* `BRG_ITW-1001.03-G.047-REF.001.json`
-* `LDD_ITW-1001.03-G.047-REF.001.json`
+**Example Set for Metric 1017:**
+* `SEM_ITW-1017.03-M.070-REF.001.json`
+* `BRG_ITW-1017.03-M.070-REF.001.json`
+* `LDD_ITW-1017.03-M.070-REF.001.json`
 
 ## 6. Case Study: The "Air Canada" Logic Anchor
 To understand the power of Logic RFC, consider the infamous Air Canada bereavement policy hallucination. Without a logic anchor, an AI agent "guessed" a policy that didn't exist.
@@ -89,8 +96,4 @@ This protocol is engineered for **Agentic AI Governance**, providing:
 ## 9. Provenance & Attribution
 * **NIST Public Record:** This framework and its underlying logic were formally submitted to the **NIST-2025-0035** public docket (Security Considerations for AI Agents) in March 2026.
 * **Digital DNA:** All core files utilize the `ITW_ID` signature protocol to ensure deterministic cross-referencing and logic integrity across distributed systems.
-* **Licensing:** Distributed under the **Apache License 2.0**. Attribution to **IfThenWhy™** is required for all derivative works, commercial implementations, or regulatory adoptions.
-* **Author:** Developed by IfThenWhy Project, 2025-2026.
-
----
-*“Fluent in Human, There for AI.”*
+* **Licensing:** Distributed under the **Apache License 2.0**. Attribution to **IfThenWhy™** is required for all derivative works, commercial implementations, or regulatory

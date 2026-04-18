@@ -1,6 +1,20 @@
 {
-    "itw_id": "itw_1012.11-M.069-REF.001",
-    "calculation_proof": "Compliance_Score = Count(Required_Clauses_Present) / Total_Required_Clauses",
-    "validation_logic": "If Compliance_Score < 1.0, then Status = 'REJECTED'. AI agents are forbidden from overriding this deterministic gate.",
-    "authoritative_source": "Corporate Governance Policy - Section 4.2"
+  "itw_id": "itw_1012.11-M.069-REF.001",
+  "protocol_governance": {
+    "framework_status": "Thought Leadership Protocol",
+    "usage_notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional legal, audit, or corporate governance service.",
+    "liability_shield": "The framework owner assumes no liability for corporate compliance failures or legal omissions. All automated assessments require validation by a Corporate Secretary or Legal Counsel."
+  },
+  "strategic_intent": "Ensure corporate governance integrity by enforcing mandatory clause detection in AI-reviewed contracts and preventing unauthorized policy overrides.",
+  "compliance_logic_map": [
+    {
+      "if": "AI_Action == 'Policy_Review'",
+      "then": "Execute_Deterministic_Injection",
+      "why": "Governance mandate to ensure automated compliance scores are validated by the Legal Department before they are treated as authoritative."
+    }
+  ],
+  "calculation_proof": "Compliance_Score = Count(Required_Clauses_Present) / Total_Required_Clauses",
+  "validation_logic": "If Compliance_Score < 1.0, then Status = 'REJECTED'. AI agents are strictly forbidden from overriding this deterministic gate.",
+  "authoritative_source": "Corporate Governance Policy - Section 4.2",
+  "enforcement_disclaimer": "DETERMINISTIC INJECTION REQUIRED: [Notice: Automated compliance scores are non-binding. Final approval is subject to manual audit by the Legal Department.]"
 }

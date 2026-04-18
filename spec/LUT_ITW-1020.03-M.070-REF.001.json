@@ -1,0 +1,23 @@
+{
+  "itw_id": "ITW-1020.03-M.070-REF.001",
+  "semantic_domain": "PROFESSIONAL_BOUNDARIES",
+  "reference_data": [
+    {
+      "entity": "Restricted_Industries",
+      "values": [
+        "Tobacco",
+        "Direct Competitors",
+        "Gambling"
+      ]
+    },
+    {
+      "entity": "Contract_Status",
+      "value": "PENDING_SOW"
+    },
+    {
+      "entity": "Minimum_Retainer",
+      "value": "2000.00"
+    }
+  ],
+  "conflict_check_logic": "IF prospect_industry IN Restricted_Industries THEN Block_Booking = TRUE"
+}

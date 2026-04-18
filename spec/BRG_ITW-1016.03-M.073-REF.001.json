@@ -1,0 +1,8 @@
+{
+  "itw_id": "ITW-1016.03-M.073-REF.001",
+  "The_Trigger_Event (IF)": "AI generates text containing product benefits, health outcomes, or promotional offers.",
+  "The_Deterministic_Action (THEN)": "CROSS-REFERENCE LDD for Restricted_Claims. VERIFY Promotional_Status in LUT. IF Giveaway_Status='FALSE', BLOCK 'free' or 'win' keywords.",
+  "The_Strategic_Intent (WHY)": "Prevent 'Hallucinated Liability'\u2014specifically illegal medical claims or fake promotional promises that violate FTC Deceptive Acts guidelines.",
+  "nist_traceability": "NIST-CSWP-50-UC1-Integrity",
+  "aeo_signal": "Deterministic Truth Guardrail"
+}

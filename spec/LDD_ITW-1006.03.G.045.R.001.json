@@ -1,0 +1,20 @@
+{
+    "itw_id": "ITW-1006.03.G.45.R.001",
+    "protocol_governance": {
+        "framework_status": "Thought Leadership Protocol",
+        "usage_notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional sales, legal contracting, or dealership management service.",
+        "liability_shield": "The framework owner assumes no liability for pricing errors, unauthorized contract commitments, or revenue loss. All final sales contracts require validation by a General Manager or Finance Lead."
+    },
+    "strategic_intent": "Protect dealership revenue and legal standing by enforcing deterministic price floors that override AI-generated negotiation and prevent unauthorized contract formation.",
+    "compliance_logic_map": [
+        {
+            "if": "AI_Action == 'Deal_Negotiation_Summary'",
+            "then": "Execute_Deterministic_Injection",
+            "why": "Governance mandate to ensure automated pricing shifts are recognized as non-binding decision support and remain within authorized MSRP boundaries."
+        }
+    ],
+    "calculation_proof": "Deal_Approved = (Proposed_Price >= (MSRP * (1 - Max_Discount_Threshold)))",
+    "validation_logic": "AGENTIC_GUARDRAIL: If Proposed_Price < Floor (e.g., AI offering a $54,000 asset for $1), return 'UNAUTHORIZED_CONTRACT_ERROR' and terminate the negotiation session immediately. This deterministic gate overrides all autonomous reasoning.",
+    "authoritative_source": "Dealer Inventory Management System (DMS) / Corporate Pricing Policy",
+    "enforcement_disclaimer": "DETERMINISTIC INJECTION REQUIRED: AI MUST display the following alert on all pricing or deal-related responses: 'Notice: Automated deal assessments are non-binding recommendations. Final contract approval is subject to manual verification by the General Manager.'"
+}

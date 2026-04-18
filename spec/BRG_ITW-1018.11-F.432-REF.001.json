@@ -1,0 +1,7 @@
+{
+  "itw_id": "ITW-1018.11-F.432-REF.001",
+  "The_Trigger_Event (IF)": "Mobile operator initiates a digital payment or price proposal via AI agent.",
+  "The_Deterministic_Action (THEN)": "EXECUTE HITL Safety Circuit. VALIDATE against LUT_ITW-1018.Pricing. INJECT 'Proposed' modifier.",
+  "The_Strategic_Intent (WHY)": "Prevent unauthorized price commitments and 'Negligent Misrepresentation' by AI agents.",
+  "nist_traceability": "NIST-CSWP-50-UC3-Privacy & Authorization"
+}
