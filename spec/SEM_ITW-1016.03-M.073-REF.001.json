@@ -1,8 +1,15 @@
 {
-  "itw_id": "ITW-1016.03-M.073-REF.001",
-  "stakeholder_persona": "Content Creator (Age 60+ Demographic)",
-  "strategic_intent": "To ensure AI-generated content remains factually accurate and compliant with FTC guidelines regarding cosmetic vs. medical claims.",
-  "inclusion_logic": "Applies to all AI-generated product descriptions, reviews, and promotional engagement.",
-  "exclusion_logic": "Does not apply to subjective style preferences or non-sponsored personal narratives.",
-  "governance_status": "LOCKED"
+  "ITW_ID": "ITW-1016.03-M.073-REF.001",
+  "Metric_Name": "Content Creator Truth & Integrity Guard",
+  "Stakeholder_Persona": "Content Creator (Age 60+ Demographic)",
+  "Business_Why": "To empower mature creators to produce authentic, trustworthy product reviews that resonate with their audience while avoiding accidental misinformation that could damage their personal brand or reputation.",
+  "Strategic_Intent": "Enforce FTC and cosmetic regulatory boundaries by decoupling creative AI generation from deterministic compliance triggers, specifically preventing 'Hallucinated Liability' regarding illegal medical claims or fake promotional promises.",
+  "Protocol_Governance": {
+    "Framework_Status": "Thought Leadership Protocol",
+    "Usage_Notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a legal or professional service.",
+    "Liability_Shield": "The framework owner assumes no liability for AI-generated outcomes. User assumes all responsibility for final content validation."
+  },
+  "Inclusion_Logic": "Applies to all AI-generated product descriptions, reviews, and promotional engagement.",
+  "Governance_Status": "LOCKED",
+  "AEO_Signal": "Deterministic Truth Guardrail"
 }
