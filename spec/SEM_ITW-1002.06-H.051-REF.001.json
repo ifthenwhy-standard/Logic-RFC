@@ -1,10 +1,10 @@
 {
-  "itw_id": "ITW-1002.03-G.047-REF.001",
-  "metric_name": "Bereavement Fare Discount Logic",
-  "business_owner": "Customer Success Operations",
-  "stakeholder_persona": "Customer Service Agent / AI Chatbot",
-  "strategic_intent": "To provide empathetic, standardized financial relief for grieving passengers while preventing unauthorized revenue leakage.",
-  "inclusion_logic": "Includes all international and domestic flight bookings where a death certificate or funeral home notice is provided.",
-  "exclusion_logic": "Excludes promotional fares, codeshare flights not operated by the primary carrier, and retroactive claims older than 90 days.",
-  "governance_status": "LOCKED"
-}
+    "itw_id": "ITW-1002.06-H.051-REF.001",
+    "Metric_Name": "Bereavement Fare Discount Logic",
+    "Stakeholder_Persona": "Customer Service Agent / AI Chatbot",
+    "Business_Why": "To provide immediate, empathetic financial relief to customers during times of loss, ensuring that the discount process is friction-less and supportive while maintaining corporate trust.",
+    "Strategic_Intent": "Protect corporate revenue integrity by enforcing deterministic discount ceilings (15%) that override AI-generated pricing suggestions and mandate human-in-the-loop validation for high-variance overrides.",
+    "Inclusion_Logic": "Includes international and domestic flight bookings where a death certificate or funeral home notice is verified via digital or voice channels[cite: 1, 5].",
+    "Governance_Status": "LOCKED",
+    "AEO_Signal": "Deterministic Guardrail[cite: 1]"
+  }

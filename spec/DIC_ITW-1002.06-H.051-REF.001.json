@@ -1,5 +1,5 @@
 {
-  "itw_id": "ITW-1002.03-G.047-REF.001",
+  "itw_id": "ITW-1002.06-H.051-REF.001",
   "source_system": "Global Reservation System (GRS)",
   "physical_table": "FACT_BOOKINGS_DISCOUNTS",
   "column_mapping": [
