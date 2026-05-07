@@ -146,6 +146,7 @@ This protocol is engineered for **Agentic AI Governance**, providing[cite: 1]:
 ## 13. Repository Structure
 This repository is organized to separate the core protocol specifications from the operational tools and reference data.
 
+* **`/app`**: Contains the core Python engines, logic-processing scripts, and backend utilities that power the framework.
 * **`/NoLI_App`**: The home of the Streamlit application used to make, update, and audit Logic RFC map files.
 * **`/spec`**: The authoritative registry for ITW_ID metric files and Logic DNA signatures.
 * **`/spec/registry`**: Contains universal reference data, including ISIC Industry codes and PCF categories.
