@@ -1,13 +1,26 @@
 [
   {
-    "itw_ID": "",
-    "metric_id": "",
-    "framework": "IfThenWhy",
-    "last_updated": "",
-    "metric_name": "",
-    "calculation_name": "",
-    "business_definition": "",
-    "strategic_intent": "",
-    "owner_persona": ""
+    "Protocol_Governance": {
+      "Framework_Status": "Thought Leadership Protocol",
+      "Usage_Notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional marketing, financial, or investment advisory service.",
+      "Liability_Shield": "The framework owner assumes no liability for marketing spend errors or AI-generated financial projections."
+    },
+    "Metadata": {
+      "itw_ID": "itw_0000.00-A.000.EXP.000",
+      "framework": "IfThenWhy",
+      "version": "000",
+      "last_updated": "2026-05-07",
+      "status": "EXPERIMENTAL"
+    },
+    "Metric_Definition": {
+      "metric_id": "",
+      "metric_name": "",
+      "calculation_name": "",
+      "business_definition": "",
+      "strategic_intent": "",
+      "owner_persona": "",
+      "inclusion_logic": "",
+      "exclusion_logic": ""
+    }
   }
 ]

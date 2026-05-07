@@ -2,7 +2,21 @@
   "protocol": "Logic RFC™",
   "version": "1.1.0",
   "framework_name": "IfThenWhy Logic Protocol",
+  "framework_status": "Thought Leadership Protocol",
   "compliance_target": "NIST-2025-0035 / NIST CSWP 50 (2026 Small Business Standards)",
+  "governance_notice": {
+    "usage": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only.",
+    "liability_shield": "The framework owner assumes no liability for marketing spend errors or AI-generated financial projections.",
+    "intent": "Prioritizes human intent (The Why) over technical infrastructure (The Then)."
+  },
+  "repository_mapping": {
+    "/app": "Core Python engines and logic-processing scripts.",
+    "/NoLI_App": "Streamlit workspace for making, updating, and auditing Logic RFC map files.",
+    "/spec": "Authoritative registry for ITW_ID metric files and Logic DNA™ signatures.",
+    "/spec/registry": "Universal reference data (ISIC, PCF, LUT) for deterministic mapping.",
+    "/templates": "Master JSON templates for forging new logic maps.",
+    "/output": "Default destination for newly generated or updated Logic Map files."
+  },
   "identity_standards": {
     "naming_convention": "MAN_[ITW_ID].[Process_Category].[ISIC_Section].[ISIC_Division].[Entity].[Version]",
     "example": "MAN_ITW-1018.11-F.432-REF.001"
@@ -26,33 +40,6 @@
       "pillar": "3. Governance",
       "mission": "Uniform standards maintaining consistency across all business units and agentic AI deployments.",
       "milestone": "18 Core Metric Sets including the NIST CSWP 50 Small Business Series (ITW-1016, 1017, 1018)."
-    }
-  ],
-  "file_architecture_definitions": [
-    {
-      "component": "MAN",
-      "label": "Metric Manifest",
-      "strategic_value": "The identity anchor. Contains the ITW_ID, Version, and Business Owner."
-    },
-    {
-      "component": "SEM",
-      "label": "Semantic Layer",
-      "strategic_value": "The 'Business Why'. Anchors metrics to Stakeholder Personas and natural language manifests."
-    },
-    {
-      "component": "BRG",
-      "label": "Bridge File",
-      "strategic_value": "The 'If-Then Connector'. Kinetic link mapping real-world triggers to deterministic data actions."
-    },
-    {
-      "component": "LDD",
-      "label": "Logical Data Design",
-      "strategic_value": "The 'Engine & Proof'. Immutable logic carrying Logic DNA™ signatures and deterministic safety rails."
-    },
-    {
-      "component": "LUT",
-      "label": "Lookup Tables",
-      "strategic_value": "The 'Universal Translator'. Centralized reference data for unified vocabulary across NLP and AI agents."
     }
   ],
   "registry_index_url": "https://www.ifthenwhy.ai/logic-rfc-metric-registry-index"

@@ -135,3 +135,21 @@ This protocol is engineered for **Agentic AI Governance**, providing[cite: 1]:
 * **NIST Public Record:** This framework and its underlying logic were formally submitted to the **NIST-2025-0035** public docket (Security Considerations for AI Agents) in March 2026[cite: 1].
 * **Digital DNA:** All core files utilize the `ITW_ID` signature protocol to ensure deterministic cross-referencing and logic integrity across distributed systems[cite: 1].
 * **Licensing:** Distributed under the **Apache License 2.0**. Attribution to **IfThenWhy™** is required for all derivative works, commercial implementations, or regulatory submissions[cite: 1].
+
+## 12. Thought Leadership & Legal Disclaimer
+**Logic RFC™** is a **Thought Leadership Protocol** designed to prioritize human intent over technical infrastructure. It is an open-source methodology, not a proprietary service or a guaranteed fail-safe for AI accuracy.
+
+* **No Liability:** This protocol and all associated mapping files are provided "as is" under the Apache License 2.0. **IfThenWhy™** and its contributors are not legally responsible for AI hallucinations, data errors, or operational failures resulting from the implementation of this framework. 
+* **User Responsibility:** Users are solely responsible for the creation, human-in-the-loop validation, and oversight of the business rules defined within their specific Logic Map sets. 
+* **Non-Commercial Intent:** Use of this framework constitutes an acknowledgment that IfThenWhy™ is providing a thought leadership idea and is not actively selling or providing professional data services.
+
+## 13. Repository Structure
+This repository is organized to separate the core protocol specifications from the operational tools and reference data.
+
+* **`/NoLI_App`**: The home of the Streamlit application used to make, update, and audit Logic RFC map files.
+* **`/spec`**: The authoritative registry for ITW_ID metric files and Logic DNA signatures.
+* **`/spec/registry`**: Contains universal reference data, including ISIC Industry codes and PCF categories.
+* **`/templates`**: Master JSON templates used by the NoLI App to "Forge" new, standardized logic maps.
+* **`/output`**: The default destination for newly generated or updated Logic Map files.
+---
+*© 2026 IfThenWhy™. All Rights Reserved. Logic RFC™ and Logic DNA™ are trademarks of IfThenWhy™.*
