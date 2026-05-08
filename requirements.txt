@@ -1,8 +1,3 @@
 # Logic RFC™: Tools & Reference Implementation
 # ---------------------------------------------------------
-# This framework is designed for maximum interoperability.
-# The current Logic DNA Builder and SQL_Lock tools utilize 
-# the Python Standard Library (json, csv, hashlib, pathlib) 
-# to ensure zero-dependency execution and security.
-# ---------------------------------------------------------
-# No external third-party libraries are required.
+streamlit
