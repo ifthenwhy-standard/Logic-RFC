@@ -2,30 +2,12 @@
   {
     "itw_ID": "",
     "metric_id": "",
-    "framework": "",
-    "last_updated": "",
+    "framework": "IfThenWhy",
+    "protocol_governance": "Thought Leadership Protocol",
+    "liability_shield": "Non-binding metadata. Requires human-in-the-loop validation.",
     "physical_table": "",
     "physical_column": "",
-    "data_type": "",
     "source_system": "",
-    "description": "",
-    "refresh_frequency": "",
-    "strategic_importance": "",
-    "unit_of_measure": "",
-    "_comment": "",
-    "null_handling_logic": ""
-  },
-  {
-    "itw_ID": "",
-    "metric_id": "",
-    "framework": "",
-    "last_updated": "",
-    "physical_table": "",
-    "physical_column": "",
-    "data_type": "",
-    "source_system": "",
-    "description": "",
-    "refresh_frequency": "",
-    "owner_persona": ""
+    "description": ""
   }
 ]
