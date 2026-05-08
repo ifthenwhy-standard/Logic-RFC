@@ -1,10 +1,22 @@
 import streamlit as st
 import os
+import json
 from pathlib import Path
+from datetime import datetime
+import re
 
-# --- WORKSPACE INITIALIZATION ---
+# --- 1. CONFIGURATION & ASSETS ---
+BLUEPRINT_URL = "https://raw.githubusercontent.com/ifthenwhy-standard/Logic-RFC/main/images./blueprint.svg"
+LOGO_URL = "https://raw.githubusercontent.com/ifthenwhy-standard/Logic-RFC/main/images./ifthenwhy.svg"
+
+st.set_page_config(
+    page_title="NoLI - IfThenWhy™",
+    page_icon="🚨",
+    layout="wide"
+)
+
+# --- 2. WORKSPACE INITIALIZATION ---
 def init_workspace():
-    # APP_DIR is /NoLI_App
     APP_DIR = Path(__file__).resolve().parent
     paths = {
         "templates": APP_DIR.parent / "templates",
@@ -12,54 +24,144 @@ def init_workspace():
         "output": APP_DIR.parent / "output",
         "spec": APP_DIR.parent / "spec"
     }
-    
-    # Ensure output exists (The "Worker Bee" desk is clean)
     os.makedirs(paths["output"], exist_ok=True)
     return paths
 
-# --- Configuration & Assets ---
-BLUEPRINT_ICON = "https://raw.githubusercontent.com/ifthenwhy-standard/Logic-RFC/main/images./blueprint.svg"
+PATHS = init_workspace()
 
-# SETUP
-st.set_page_config(page_title="No Lie Logic Intent - IfThenWhy™")
+# --- 3. HELPER FUNCTIONS ---
+@st.cache_data
+def load_json_registry(filename):
+    path = PATHS["registry"] / filename
+    if not path.exists(): 
+        return None
+    with open(path, 'r') as f: 
+        return json.load(f)
 
+def inject_dna(obj, itw_id, metric_id, metric_name, section, division, prefix):
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if k.lower().replace("-", "_") == "itw_id": obj[k] = itw_id
+            elif k.lower() == "metric_id": obj[k] = metric_id
+            elif k.lower() == "framework": obj[k] = "IfThenWhy"
+            elif k.lower() == "last_updated": obj[k] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            
+            if prefix == "MAN" and k == "metric_name": obj[k] = metric_name
+            if prefix == "BRG":
+                if k in ["Industry", "Industry_Context"]: obj[k] = section
+                if k in ["Division", "Division_Context"]: obj[k] = division
+            
+            if isinstance(v, (dict, list)): 
+                inject_dna(v, itw_id, metric_id, metric_name, section, division, prefix)
+    elif isinstance(obj, list):
+        for item in obj: 
+            inject_dna(item, itw_id, metric_id, metric_name, section, division, prefix)
+    return obj
 
-# HEADLINE
-st.title("NoLI - IfThenWhy™")
-st.markdown("""
-### High-Fidelity Logic Maps for Deterministic Data
-Mapping human intent in structured **Logic and Data Map files**.
-
-* **For Business Leaders:** The "Why" and the calculation behind the metric or action.
-* **For DBAs & Data Analysts:** A deterministic roadmap of source-to-target mappings—without reverse-engineering code to find the truth.
-* **For Auditors:** An audit trail of business logic.
-* **For AI Agents:** Grounding metadata that replaces probabilistic "guesses" with authoritative, human-verified business rules.
-""")
-
-st.markdown("---")
-
-# --- EXECUTION ---
-st.markdown("")
-
-# Call the function here so the paths are ready to use
-paths = init_workspace()
-
-if st.button("Info"):
-    #st.toast("Coming Soon!")
-    st.success(f"""
-    ### <img src="{BLUEPRINT_ICON}" width="35" style="vertical-align: middle; margin-right: 10px;"> Coming soon!
+# --- 4. SIDEBAR NAVIGATION ---
+with st.sidebar:
+    # No title here - clean minimalist start
+    task = st.radio("Select Workflow", ["Forge (Edit)", "View Logic", "Audit (Test)"])
     
-    The NoLI Application has successfully processed your request:
-    
-    * **Create/Edit:** Logic map files updated in the repository.
-    * **Convert:** SQL code successfully mapped to structured Logic RFC.
-    * **Audit:** Full audit report of logic map files generated.
-    * **Validation:** AI results tested using **RAGAS** and **BERT** metrics.
-    * **Browse:** Repository is now refreshed with the latest IfThenWhy logic.
-    """)
-    
-    
-    # Show the "Worker Bee" the math is working
-    #st.write("### Directory Mapping:")
-    #for key, value in paths.items():
-    #    st.code(f"{key}: {value}")
+    st.markdown("---")
+    if st.button("Info"):
+        st.markdown(
+            """
+            <div style="background-color: #d4edda; color: #155724; padding: 1rem; border-radius: 0.5rem; border: 1px solid #c3e6cb;">
+                <h4 style="display: flex; align-items: center; margin-top: 0;">
+                    <img src="{url}" width="25" style="margin-right: 10px;"> 
+                    Coming Soon!
+                </h4>
+                <p style="font-size: 0.85rem;">The NoLI Application Roadmap includes:</p>
+                <ul style="font-size: 0.8rem; margin-top: 0;">
+                    <li><strong>Create/Edit:</strong> Repo updates.</li>
+                    <li><strong>Convert:</strong> SQL to Logic RFC.</li>
+                    <li><strong>Audit:</strong> High-fidelity reports.</li>
+                    <li><strong>Validation:</strong> RAGAS & BERT.</li>
+                </ul>
+            </div>
+            """.format(url=BLUEPRINT_URL), 
+            unsafe_allow_html=True
+        )
+
+    st.markdown("---")
+    with st.expander("About NoLI & IfThenWhy"):
+        # Custom SVG Logo inside the expander
+        st.markdown(
+            """
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="{url}" width="40" style="margin-right: 12px;">
+                <strong style="font-size: 1.1rem;">The IfThenWhy Protocol</strong>
+            </div>
+            """.format(url=LOGO_URL), 
+            unsafe_allow_html=True
+        )
+        st.markdown("""
+        **High-Fidelity Logic Maps for Deterministic Data**
+        
+        * **Business Leaders:** The "Why" behind the metric.
+        * **Technical:** Deterministic source-to-target roadmaps.
+        * **Auditors:** Clear business logic audit trails.
+        * **AI Agents:** Grounding metadata for authoritative rules.
+        """)
+
+# --- 5. MAIN INTERFACE ---
+def main():
+    st.title(f"NoLI: {task}")
+
+    if task == "Forge (Edit)":
+        st.header("Logic RFC™: Precision Builder")
+        
+        sections = load_json_registry("ISIC_Industry_Section_Codes.json")
+        divisions = load_json_registry("ISIC_Industry_Division_Codes.json")
+        pcf_cats = load_json_registry("PCF_Categories.json")
+
+        if not all([sections, divisions, pcf_cats]):
+            st.error("Missing Registry files in /spec/registry.")
+            return
+
+        col1, col2 = st.columns(2)
+        with col1:
+            unique_id = st.text_input("4-Digit Metric ID", value="1000", max_chars=4)
+        with col2:
+            metric_name = st.text_input("Metric Name")
+
+        section = st.selectbox("Industry Section", sections, format_func=lambda x: x["Industry Sector Name"])
+        sec_letter = section.get("ISIC Section")
+
+        filtered_divs = [d for d in divisions if d.get("ISIC Section") == sec_letter]
+        division = st.selectbox("Industry Division", filtered_divs, format_func=lambda x: x["Industry Sector / Activity Name"])
+        pcf = st.selectbox("PCF Category", pcf_cats, format_func=lambda x: f"{x['PCF Code']} - {x['PCF Category']}")
+
+        corp_id = st.text_input("Status/Company ID", value="EXP").upper()
+        ver_num = st.text_input("Version", value="001")
+
+        pcf_val = str(pcf['PCF Code']).split('.')[-1].zfill(2)
+        div_clean = re.sub(r'\D', '', str(division['ISIC Division']))[-3:].zfill(3)
+        full_itw_id = f"itw_{unique_id}.{pcf_val}.{sec_letter}.{div_clean}.{corp_id}.{ver_num}"
+        
+        st.info(f"**Target ITW_ID:** `{full_itw_id}`")
+
+        if st.button("Forge Logic DNA Files"):
+            templates = list(PATHS["templates"].glob("*.json"))
+            if not templates:
+                st.warning("No templates found in /templates.")
+            
+            for t_path in templates:
+                with open(t_path, 'r') as f:
+                    template_data = json.load(f)
+                
+                prefix = t_path.name.split('_')[0]
+                new_filename = f"{prefix}_ITW-{unique_id}.{pcf_val}-{sec_letter}.{div_clean}.{corp_id}.{ver_num}.json"
+                
+                stamped_content = inject_dna(template_data, full_itw_id, f"itw_{unique_id}", metric_name, 
+                                             section["Industry Sector Name"], division["Industry Sector / Activity Name"], prefix)
+                
+                with open(PATHS["output"] / new_filename, 'w') as f:
+                    json.dump(stamped_content, f, indent=4)
+                
+                st.write(f"✅ Generated: `{new_filename}`")
+            st.success("All Logic Map files created in /output.")
+
+if __name__ == "__main__":
+    main()
