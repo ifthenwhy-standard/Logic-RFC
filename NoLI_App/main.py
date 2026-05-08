@@ -7,7 +7,7 @@ import re
 
 # --- 1. CONFIGURATION & ASSETS ---
 BLUEPRINT_URL = "https://raw.githubusercontent.com/ifthenwhy-standard/Logic-RFC/main/images./blueprint.svg"
-LOGO_URL = "https://raw.githubusercontent.com/ifthenwhy-standard/Logic-RFC/main/images./ifthenwhy.svg"
+LOGO_URL = "https://raw.githubusercontent.com/ifthenwhy-standard/Logic-RFC/main/images%2e/ifthenwhy.svg"
 
 st.set_page_config(
     page_title="NoLI - IfThenWhy™",
