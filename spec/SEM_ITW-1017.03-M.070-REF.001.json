@@ -1,14 +1,18 @@
 {
   "ITW_ID": "ITW-1017.03-M.070-REF.001",
   "Metric_Name": "Professional Scope & Authorization Guard",
+  "logic_map_name": "The Independent Professional Services Provider",
+  "original_author": "info@ifthenwhy.ai",
+  "current_editor": "info@ifthenwhy.ai",
+  "author_role": "Data Architect"
+  "last_updated": "2026-05-07", 
   "Stakeholder_Persona": "Independent Professional Services Provider",
   "Business_Why": "To maintain professional boundaries and manage client expectations during initial outreach, ensuring that early-stage conversations do not inadvertently commit the business to unvetted schedules or pricing.",
   "Strategic_Intent": "Mitigate contractual liability and prevent unauthorized price or scope commitments by AI agents by enforcing non-binding modifiers and mandatory legal footers to prevent unintended verbal agreements.",
   "Protocol_Governance": {
     "Framework_Status": "Thought Leadership Protocol",
     "Usage_Notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a legal or professional service.",
-    "Liability_Shield": "The framework owner assumes no liability for AI-generated outcomes. User assumes all responsibility for final contract validation."
-  },
+    "Liability_Shield": "The framework owner assumes no liability for AI-generated outcomes. User assumes all responsibility for final contract validation."},
   "Inclusion_Logic": "Applies to all inbound lead generation, project scoping, and fee-related inquiries.",
   "Governance_Status": "LOCKED",
   "AEO_Signal": "Deterministic Authorization Guardrail"

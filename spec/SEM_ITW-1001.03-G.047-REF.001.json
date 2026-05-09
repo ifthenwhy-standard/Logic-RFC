@@ -1,7 +1,13 @@
 {
-  "ITW_ID": "ITW-1001",
+  "itw_id": "ITW-1001",
   "Metric_Name": "Customer Lifetime Value (CLV) Suite",
   "Stakeholder_Persona": "Marketing Manager / Finance Analyst / AI Governance Officer",
+  "version": "000",
+  "logic_map_name": "Customer Loyalty Forecaster",
+  "original_author": "info@ifthenwhy.ai",
+  "current_editor": "info@ifthenwhy.ai",
+  "author_role": "Data Architect"
+  "last_updated": "2026-05-07",
   "Business_Why": "To establish a deterministic economic ceiling for agentic acquisition logic by calculating the total projected profit contributed by a customer (CLV) based on Order Frequency, Lifespan, and Profit Margin.",
   "Strategic_Intent": "To provide an AGENTIC GUARDRAIL where if CLV drops by 20%, an automated retention sequence is triggered, ensuring NIST-600-1 alignment and deterministic accountability for churn risk.",
   "Protocol_Governance": {

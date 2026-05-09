@@ -1,5 +1,17 @@
 {
-    "ITW_ID": "ITW-1006.03.G.45.R.001",
+    "itw_id": "ITW-1006.03.G.45.R.001",
+    "logic_map_name": "Automated Sales Contract Integrity",
+    "metric_name": "the Chevy Tahoe Price Protector"
+    "original_author": "info@ifthenwhy.ai",
+    "current_editor": "info@ifthenwhy.ai",
+    "author_role": "Data Architect"    
+    "last_updated": "2026-05-07",
+    "Protocol_Governance": {
+   	 	"Framework_Status": "Thought Leadership Protocol",
+    	"Usage_Notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional cybersecurity, financial, or legal service.",
+    	"Liability_Shield": "The framework owner assumes no liability for data breaches, financial loss, or AI hallucinations. User assumes all responsibility for final security per Innovak International v. Hanover.",
+   	    "Hallucination_Gate": "SYSTEM BLOCK: AI is prohibited from 'negotiating' or 'calculating' custom prices. All logic must derive from LUT_ITW-1018."},
+
     "Stakeholder_Persona": "Digital Sales Manager / AI Auditor",
     "Business_Why": "To prevent unauthorized contractual commitments and 'Prompt Injection' price manipulation. Ensures AI agents cannot bypass corporate pricing floors or enter into 'legally binding' agreements without deterministic validation.",
     "Strategic_Intent": "Protection of Contractual Integrity and Pricing Floor"

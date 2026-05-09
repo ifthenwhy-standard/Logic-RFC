@@ -1,6 +1,11 @@
 {
     "itw_id": "ITW-1002.06-H.051-REF.001",
     "Metric_Name": "Bereavement Fare Discount Logic",
+    "logic_map_name": "The Air Canada Guard",
+    "original_author": "info@ifthenwhy.ai",
+    "current_editor": "info@ifthenwhy.ai",
+    "author_role": "Data Architect"
+    "last_updated": "2026-05-07",
     "Stakeholder_Persona": "Customer Service Agent / AI Chatbot",
     "Business_Why": "To provide immediate, empathetic financial relief to customers during times of loss, ensuring that the discount process is friction-less and supportive while maintaining corporate trust.",
     "Strategic_Intent": "Protect corporate revenue integrity by enforcing deterministic discount ceilings (15%) that override AI-generated pricing suggestions and mandate human-in-the-loop validation for high-variance overrides.",

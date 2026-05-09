@@ -1,7 +1,0 @@
-{
-  "itw_id": "ITW-1020.03-M.070-REF.001",
-  "The_Trigger_Event (IF)": "Prospect asks for a project start date, a discount, or a meeting.",
-  "The_Deterministic_Action (THEN)": "CROSS-REFERENCE LUT for Conflict. APPLY LDD non-binding language. REQUIRE 'Subject to Contract' footer.",
-  "The_Strategic_Intent (WHY)": "Mitigate 'Negligent Misrepresentation' and prevent the formation of unintended binding verbal agreements.",
-  "nist_traceability": "NIST-CSWP-50-UC2-Authorization"
-}

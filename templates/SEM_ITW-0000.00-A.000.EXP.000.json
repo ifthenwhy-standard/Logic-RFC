@@ -9,6 +9,10 @@
       "itw_ID": "itw_0000.00-A.000.EXP.000",
       "framework": "IfThenWhy",
       "version": "000",
+      "logic_map_name": "",
+      "original_author": "info@ifthenwhy.ai",
+      "current_editor": "info@ifthenwhy.ai",
+      "author_role": "Data Architect"
       "last_updated": "2026-05-07",
       "status": "EXPERIMENTAL"
     },

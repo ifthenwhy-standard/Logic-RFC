@@ -2,6 +2,9 @@
   {
     "itw_ID": "",
     "metric_id": "",
+    "original_author": "info@ifthenwhy.ai",
+    "current_editor": "info@ifthenwhy.ai",
+    "author_role": "Data Architect"
     "framework": "IfThenWhy",
     "protocol_governance": "Thought Leadership Protocol",
     "liability_shield": "Non-binding metadata. Requires human-in-the-loop validation.",

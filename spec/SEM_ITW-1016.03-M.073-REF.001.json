@@ -1,6 +1,11 @@
 {
-  "ITW_ID": "ITW-1016.03-M.073-REF.001",
+  "itw_id": "ITW-1016.03-M.073-REF.001",
   "Metric_Name": "Content Creator Truth & Integrity Guard",
+  "logic_map_name": "Content Creator Trustworthy Product Reviews",
+  "original_author": "info@ifthenwhy.ai",
+  "current_editor": "info@ifthenwhy.ai",
+  "author_role": "Data Architect"
+  "last_updated": "2026-05-07",  
   "Stakeholder_Persona": "Content Creator (Age 60+ Demographic)",
   "Business_Why": "To empower mature creators to produce authentic, trustworthy product reviews that resonate with their audience while avoiding accidental misinformation that could damage their personal brand or reputation.",
   "Strategic_Intent": "Enforce FTC and cosmetic regulatory boundaries by decoupling creative AI generation from deterministic compliance triggers, specifically preventing 'Hallucinated Liability' regarding illegal medical claims or fake promotional promises.",

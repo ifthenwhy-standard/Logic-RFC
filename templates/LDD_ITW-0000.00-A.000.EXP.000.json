@@ -2,6 +2,10 @@
     "validation_logic": {
         "itw_ID": "",
         "metric_id": "",
+        "logic_map_name": "",
+        "original_author": "info@ifthenwhy.ai",
+        "current_editor": "info@ifthenwhy.ai",
+        "author_role": "Data Architect"
         "framework": "IfThenWhy",
         "last_updated": "",
         "control_id": "",
