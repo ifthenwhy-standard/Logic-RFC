@@ -1,9 +1,9 @@
 {
   "itw_id": "ITW-1002.06-H.051-REF.001",
   "logic_gate_status": "LOCKED",
-  "The_Trigger_Event (IF)": "Customer requests 'Bereavement Fare' via digital channel or voice agent.",
-  "The_Deterministic_Action (THEN)": "EXECUTE: LDD_ITW-1002.03 Calculation. REQUIRE: Valid 'Death_Cert_ID' or 'Funeral_Home_Phone' in LUT_ITW-1002.03.",
-  "The_Strategic_Intent (WHY)": "NIST-600-1 Compliance: Prevent autonomous agents from hallucinating unauthorized financial liabilities or policy exceptions.",
+  "Business_Trigger": "Customer requests 'Bereavement Fare' via digital channel or voice agent.",
+  "Logic_Action": "EXECUTE: LDD_ITW-1002.03 Calculation. REQUIRE: Valid 'Death_Cert_ID' or 'Funeral_Home_Phone' in LUT_ITW-1002.03.",
+  "Strategic_Intent": "NIST-600-1 Compliance: Prevent autonomous agents from hallucinating unauthorized financial liabilities or policy exceptions.",
   "nist_traceability": "AC-Policy-Ref-2026-v2",
   "aeo_signal": "Deterministic Guardrail"
 }

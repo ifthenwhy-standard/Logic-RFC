@@ -2,18 +2,18 @@
     "itw_id": "ITW-1008.09.Q.86.R.001",
     "Stakeholder_Persona": "Clinical Data Scientist / Patient Safety Officer",
     "logic_map_name": "AI Diagnostic Model Drift Guard",
-    "metric_name": "Health Advice Safety Rail"
     "original_author": "info@ifthenwhy.ai",
     "current_editor": "info@ifthenwhy.ai",
-    "author_role": "Data Architect"
+    "author_role": "Data Architect",
     "last_updated": "2026-05-07",
     "Protocol_Governance": {
-   	 	"Framework_Status": "Thought Leadership Protocol",
-    	"Usage_Notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional cybersecurity, financial, or legal service.",
-    	"Liability_Shield": "The framework owner assumes no liability for data breaches, financial loss, or AI hallucinations. User assumes all responsibility for final security per Innovak International v. Hanover.",
-   	    "Hallucination_Gate": "SYSTEM BLOCK: AI is prohibited from 'negotiating' or 'calculating' custom prices. All logic must derive from LUT_ITW-1018."},
-
+        "Framework_Status": "Thought Leadership Protocol",
+        "Usage_Notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional cybersecurity, financial, or legal service.",
+        "Liability_Shield": "The framework owner assumes no liability for data breaches, financial loss, or AI hallucinations. User assumes all responsibility for final security per Innovak International v. Hanover.",
+        "Hallucination_Gate": "SYSTEM BLOCK: AI is prohibited from 'negotiating' or 'calculating' custom prices. All logic must derive from LUT_ITW-1018."
+    },
     "Business_Why": "To provide a deterministic structural audit of AI data inputs. This protocol identifies statistical drift in data streams by ensuring patient profiles remain within the original training boundaries. It is a data-integrity check and is not a substitute for clinical judgment.",
     "Strategic_Intent": "To provide a deterministic structural audit of AI data inputs. This protocol identifies statistical drift in data streams by ensuring patient profiles remain within the original training boundaries. It is a data-integrity check and is not a substitute for clinical judgment.",
-    "Assumptions": "Implementation requires independent validation by a licensed Medical Director.  This file represents structural logic, not medical practice."
+    "Assumptions": "Implementation requires independent validation by a licensed Medical Director.  This file represents structural logic, not medical practice.",
+    "Metric_Name": "Health Advice Safety Rail"
 }

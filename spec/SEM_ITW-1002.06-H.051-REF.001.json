@@ -4,7 +4,7 @@
     "logic_map_name": "The Air Canada Guard",
     "original_author": "info@ifthenwhy.ai",
     "current_editor": "info@ifthenwhy.ai",
-    "author_role": "Data Architect"
+    "author_role": "Data Architect",
     "last_updated": "2026-05-07",
     "Stakeholder_Persona": "Customer Service Agent / AI Chatbot",
     "Business_Why": "To provide immediate, empathetic financial relief to customers during times of loss, ensuring that the discount process is friction-less and supportive while maintaining corporate trust.",
@@ -12,4 +12,4 @@
     "Inclusion_Logic": "Includes international and domestic flight bookings where a death certificate or funeral home notice is verified via digital or voice channels[cite: 1, 5].",
     "Governance_Status": "LOCKED",
     "AEO_Signal": "Deterministic Guardrail[cite: 1]"
-  }
+}

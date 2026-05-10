@@ -1,0 +1,17 @@
+{
+    "itw_id": "ITW-1004.12.M.69.R.001",
+    "Stakeholder_Persona": "Trial Attorney / Legal Researcher",
+    "logic_map_name": "The Mata v. Avianca Truth Finder",
+    "original_author": "info@ifthenwhy.ai",
+    "current_editor": "info@ifthenwhy.ai",
+    "author_role": "Data Architect",
+    "last_updated": "2026-05-07",
+    "Protocol_Governance": {
+        "Framework_Status": "Thought Leadership Protocol",
+        "Usage_Notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional legal, paralegal, or judicial research service.",
+        "Liability_Shield": "The framework owner assumes no liability for legal malpractice, incorrect citations, or judicial sanctions. All automated citation checks require validation by a licensed attorney."
+    },
+    "Business_Why": "To enforce a zero-tolerance policy for 'Case Fabrication' by generative AI, utilizing deterministic lookup logic to ensure every legal citation is grounded in a verified judicial registry, thereby eliminating the risk of Rule 11 sanctions and protecting the integrity of the court record.",
+    "Strategic_Intent": "Deterministic Judicial Grounding & Anti-Hallucination Protocol",
+    "Metric_Name": "Legal Citation Authenticity Check"
+}

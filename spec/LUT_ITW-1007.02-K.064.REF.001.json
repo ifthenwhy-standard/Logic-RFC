@@ -1,0 +1,26 @@
+{
+  "itw_id": "ITW-1007.02.K.64.R.001",
+  "Reference_Table": "LUT-64-Active-Agent-Inventory",
+  "Verified_Entries": [
+    {
+      "Agent_ID": "HFT-ALPHA-01",
+      "Status": "ACTIVE",
+      "Version": "4.2.0"
+    },
+    {
+      "Agent_ID": "HFT-ZOMBIE-OLD",
+      "Status": "RETIRED",
+      "Version": "1.0.0"
+    },
+    {
+      "Agent_ID": "MARKET-MAKER-V3",
+      "Status": "ACTIVE",
+      "Version": "3.1.0"
+    }
+  ],
+  "Kill_Switch_Parameters": {
+    "Max_Risk_Cap": 10000000,
+    "Max_Orders_Per_Second": 5000
+  },
+  "Registry_Source": "ISIC Division 64 - Financial service activities"
+}

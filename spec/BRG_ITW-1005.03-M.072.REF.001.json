@@ -1,0 +1,6 @@
+{
+  "itw_id": "ITW-1005.03.M.72.R.001",
+  "Business_Trigger": "Marketing copy asserts a 'First-ever' historical or scientific milestone.",
+  "Logic_Action": "Extract the Subject and Milestone date; cross-reference against LUT-72-001 (Scientific Records).",
+  "Strategic_Intent": "To ensure public claims are grounded in verifiable historical data before dissemination."
+}

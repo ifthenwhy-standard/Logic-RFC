@@ -1,6 +1,6 @@
 [
   {
-    "itw_id": "ITW-1001.03-G.047-REF.001",
+    "itw_id": "ITW-1001",
     "protocol_governance": {
       "framework_status": "Thought Leadership Protocol",
       "usage_notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional marketing, financial, or investment advisory service.",
@@ -17,7 +17,7 @@
   },
   {
     "Metric ID": 112,
-    "itw_id": "ITW-1001.03-G.047-REF.001",
+    "itw_id": "ITW-1001",
     "calculation_name": "AOV",
     "control_id": "ITW-NIST-600-1-DP-1",
     "logic_rfc_hash": "SHA-256:1446980d704da644e7c1f2823dc4b6bc2ab85fa892c4307c472686d641f3015e",
@@ -41,7 +41,7 @@
   },
   {
     "Metric ID": 113,
-    "itw_id": "ITW-1001.03-G.047-REF.001",
+    "itw_id": "ITW-1001",
     "calculation_name": "PF",
     "control_id": "ITW-NIST-600-1-DP-1",
     "logic_rfc_hash": "SHA-256:1446980d704da644e7c1f2823dc4b6bc2ab85fa892c4307c472686d641f3015e",

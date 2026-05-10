@@ -8,6 +8,9 @@ import re
 
 # --- 1. CONFIGURATION & ASSETS ---
 LOGO_URL = "https://raw.githubusercontent.com/ifthenwhy-standard/Logic-RFC/main/images%2e/ifthenwhy.svg"
+# --- Configuration & Assets ---
+BLUEPRINT_ICON = "https://raw.githubusercontent.com/ifthenwhy-standard/Logic-RFC/main/images./blueprint.svg"
+BLUEPRINT_URL = "https://raw.githubusercontent.com/ifthenwhy-standard/Logic-RFC/main/images./blueprint.svg"
 
 st.set_page_config(
     page_title="NoLI - IfThenWhy™",
@@ -99,43 +102,86 @@ def get_registry_data(paths):
                     if name: metrics_map[full_id]["name"] = name
                 
                 if f_path.name.startswith("SEM_"):
-                    details = content.get("business_why") or content.get("Business_Why") or content.get("strategic_intent")
+                    details = content.get("business_why") or content.get("Business_Why")
                     if details: metrics_map[full_id]["details"] = details
-                    persona = content.get("stakeholder_persona") or content.get("Stakeholder_Persona")
-                    if persona: metrics_map[full_id]["category"] = persona
         except Exception:
             continue
             
     return sorted(metrics_map.values(), key=lambda x: x['itw_id'])
 
-# --- 4. AUDIT & LOGIC TESTING ---
+# --- 4. AUDIT ENGINES (DIOPTRAS & BERT) ---
+
+def calculate_dynamic_robustness(f_path, data):
+    """
+    DIOPTRAS: Grades the file's robustness based on critical Logic RFC keys.
+    Mechanical Integrity check (NIST SP 1270).
+    """
+    score = 0.75 
+    prefix = f_path.stem[:3].upper()
+    
+    if prefix == "BRG":
+        if any(k in data for k in ["Business_Trigger", "if_trigger"]): score += 0.08
+        if any(k in data for k in ["Logic_Action", "then_action"]): score += 0.08
+        if any(k in data for k in ["Strategic_Intent", "why_intent"]): score += 0.07
+    elif prefix == "LDD": 
+        if any(k in str(data) for k in ["calculation_logic", "Calculation"]): score += 0.11
+        if any(k in str(data) for k in ["validation_logic", "Logic_Action"]): score += 0.12
+    elif prefix == "SEM":
+        if any(k in data for k in ["Business_Why", "business_why"]): score += 0.11
+        if any(k in data for k in ["Strategic_Intent", "strategic_intent"]): score += 0.12
+            
+    return round(min(score, 1.0), 2)
+
 def audit_bert_faithfulness(metrics_list, paths):
+    """
+    BERT: Verifying semantic faithfulness using LLM intent alignment.
+    Compares the 'Business Why' against the 'Strategic Intent' to ensure 
+    the data action matches the human intent.
+    """
     try:
         from bert_score import score
     except ImportError:
-        return [{"Error": "bert-score library not installed"}]
+        return [{"ITW_ID": "N/A", "Status": "🚨 ERROR", "Logic": "bert-score library not installed"}]
     
     results = []
     for m in metrics_list:
+        # Search for the Semantic Layer file for this ITW_ID
         sem_files = list(paths["spec"].glob(f"**/SEM_{m['itw_id']}*.json"))
-        if not sem_files: continue
+        if not sem_files:
+            continue
+            
         try:
             with open(sem_files[0], 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 content = data[0] if isinstance(data, list) else data
+                
+                # Capture the two sides of the 'Why'
                 biz = content.get("business_why") or content.get("Business_Why", "")
                 strat = content.get("strategic_intent") or content.get("Strategic_Intent", "")
                 
                 if biz and strat:
+                    # BERT Score calculation (P=Precision, R=Recall, F1=F-measure)
                     P, R, F1 = score([biz], [strat], lang="en", verbose=False)
                     f1_val = round(F1.item(), 4)
+                    
                     results.append({
                         "ITW_ID": m['itw_id'], 
                         "Score": f1_val, 
                         "Status": "✅ PASS" if f1_val >= 0.85 else "⚠️ REVIEW"
                     })
+                else:
+                    results.append({
+                        "ITW_ID": m['itw_id'], 
+                        "Score": 0.0, 
+                        "Status": "❌ MISSING DATA"
+                    })
         except Exception as e:
-            results.append({"ITW_ID": m['itw_id'], "Status": "🚨 ERROR", "Logic": str(e)})
+            results.append({
+                "ITW_ID": m['itw_id'], 
+                "Status": "🚨 ERROR", 
+                "Logic": str(e)
+            })
+            
     return results
 
 # --- 5. MAIN INTERFACE ---
@@ -144,11 +190,76 @@ def main():
         st.session_state.set_created = False
         
     with st.sidebar:
-        task = st.radio("Select Workflow", ["Edit Logic Maps", "Forge (Create)", "View Logic", "Audit (Test)"])
+        task = st.radio("Select Workflow", [
+        "Edit Logic Maps", 
+        "Forge (Create)", 
+        "View Logic", 
+        "Audit (DIOPTRAS)", 
+        "Audit (BERT)"])
         st.markdown("---")
-        with st.expander("About NoLI"):
-            st.markdown(f'<img src="{LOGO_URL}" width="60"> **IfThenWhy™**', unsafe_allow_html=True)
-            st.caption("Standardizing intent over infrastructure.")
+
+
+        if 'show_info' not in st.session_state:
+            st.session_state.show_info = False
+
+        if st.button("ℹ️ Info / Roadmap"):
+            st.session_state.show_info = not st.session_state.show_info
+
+        if st.session_state.show_info:
+            st.markdown(
+                """
+                <div style="background-color: #d4edda; color: #155724; padding: 1rem; border-radius: 0.5rem; border: 1px solid #c3e6cb;">
+                    <h4 style="display: flex; align-items: center; margin-top: 0;">
+                        <img src="{url}" width="25" style="margin-right: 10px;"> 
+                        Breathtaking Roadmap
+                    </h4>
+                    <p style="font-size: 0.85rem;">The NoLI Application Roadmap includes:</p>
+                    <ul style="font-size: 0.8rem; margin-top: 0;">
+                        <li><strong>Gap Scan:</strong> AI search of news, legal, and regulatory updates to identify conflicts. Review items to <b>add or remove</b> in one click.</li>
+                        <li><strong>RAGAS:</strong> Advanced evaluation of RAG faithfulness for Logic Map grounding.</li>
+                        <li><strong>Active:</strong> BERT Faithfulness Audits (Live).</li>
+                    </ul>
+                    <p style="font-size: 0.7rem; opacity: 0.8; margin-top: 10px;">(Click button again to collapse)</p>
+                </div>
+                """.format(url=BLUEPRINT_URL), 
+                unsafe_allow_html=True
+            )
+
+        st.markdown("---")
+        
+        with st.expander("About NoLI & IfThenWhy"):
+            st.markdown(
+                """
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <img src="{url}" width="60" style="margin-right: 8px;">
+                    <strong style="font-size: 1.5rem; line-height: 1; letter-spacing: -0.5px;">IfThenWhy™</strong>
+                </div>
+                """.format(url=LOGO_URL), 
+                unsafe_allow_html=True
+            )
+            st.markdown("""
+            **High-Fidelity Logic Maps for Deterministic Data**
+            
+            * **Business Leaders:** The "Why" behind the metric.
+            * **Technical:** Deterministic source-to-target roadmaps.
+            * **Auditors:** Clear business logic audit trails.
+            * **AI Agents:** Grounding metadata for authoritative rules.
+            """)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     st.markdown("""
         <style>
@@ -164,8 +275,36 @@ def main():
             .itw-wrapper { height: 600px; overflow-y: auto; border: 1px solid #ddd; }
         </style>
     """, unsafe_allow_html=True)
+    
+    if task == "View Logic":
+        st.title("NoLI: Logic Registry")
+        metrics = get_registry_data(PATHS)
+        
+        if not metrics:
+            st.warning("No logic maps found. Please forge a new metric manifest.")
+        else:
+            rows = "".join([f"<tr><td>»</td><td>{m['itw_id']}</td><td>{m['category']}</td><td>{m['isic']}</td><td>{m['div']}</td><td>{m['name']}</td><td>{m['details']}</td></tr>" for m in metrics])
+            
+            registry_html = f"""
+            <div class="itw-wrapper">
+                <style>
+                    table {{ width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 11px; }}
+                    th {{ background: #f4f4f4; padding: 12px; border-bottom: 2px solid #333; position: sticky; top: 0; text-align: left; }}
+                    td {{ padding: 10px; border-bottom: 1px solid #eee; }}
+                    tr:hover {{ background: #f9f9f9; }}
+                </style>
+                <table>
+                    <thead>
+                        <tr><th>Link</th><th>ITW_ID</th><th>Persona</th><th>ISIC</th><th>Div</th><th>Metric_Name</th><th>Intent Details</th></tr>
+                    </thead>
+                    <tbody>{rows}</tbody>
+                </table>
+            </div>
+            """
+            components.html(registry_html, height=650, scrolling=True)
 
-    if task == "Edit Logic Maps":
+
+    elif task == "Edit Logic Maps":
         st.title("Logic Map Files")
         st.header("Edit Logic Maps")
         spec_files = get_all_spec_files()
@@ -173,12 +312,20 @@ def main():
         if not spec_files:
             st.warning("No logic maps found in the /spec directory.")
         else:
+            # Re-establishing the map between display name and actual file path
             file_map = {extract_itw_display_name(f.name): f for f in spec_files}
             selected_itw = st.selectbox("Select ITW_ID", options=[""] + sorted(list(file_map.keys())))
             
             if selected_itw:
-                with open(file_map[selected_itw], "r", encoding="utf-8") as f:
-                    data = json.load(f)
+                target_path = file_map[selected_itw]
+                with open(target_path, "r", encoding="utf-8") as f:
+                    try:
+                        data = json.load(f)
+                    except Exception as e:
+                        st.error(f"Error reading logic file: {e}")
+                        data = {}
+                
+                # Handling both list-wrapped and direct dictionary JSONs
                 content = data[0] if isinstance(data, list) else data
                 updated_content = {}
                 
@@ -188,16 +335,25 @@ def main():
 
                 for k, v in content.items():
                     c1, c2 = st.columns([2, 5])
-                    with c1: st.text_input("K", value=k, disabled=True, key=f"k_{k}", label_visibility="collapsed")
+                    with c1: 
+                        # Fields are rendered but keys are disabled to protect the schema
+                        st.text_input("K", value=k, disabled=True, key=f"k_{selected_itw}_{k}", label_visibility="collapsed")
                     with c2: 
-                        is_prot = k.lower() in ["itw_id", "version", "original_author"]
-                        updated_content[k] = st.text_input("V", value=str(v), disabled=is_prot, key=f"v_{k}", label_visibility="collapsed")
+                        # Protect core protocol fields from accidental editing
+                        is_prot = k.lower() in ["itw_id", "version", "original_author", "file_type"]
+                        updated_content[k] = st.text_input("V", value=str(v), disabled=is_prot, key=f"v_{selected_itw}_{k}", label_visibility="collapsed")
                 
                 if st.button("Save Changes"):
+                    # Update the audit timestamp for DIOPTRAS tracking
                     updated_content["last_updated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                    with open(file_map[selected_itw], "w", encoding="utf-8") as f:
+                    with open(target_path, "w", encoding="utf-8") as f:
                         json.dump(updated_content, f, indent=4)
-                    st.success("Logic Synchronized.")
+                    st.success(f"Logic for {selected_itw} Synchronized.")
+                    st.rerun()
+
+
+
+
 
     elif task == "Forge (Create)":
         st.title("Logic Map Files")
@@ -239,52 +395,55 @@ def main():
                 st.session_state.last_path = str(file_path)
                 st.session_state.set_created = True
                 st.success(f"Generated {file_path.name}")
-
         with c2:
             if st.session_state.set_created:
                 if st.button("Discard/Undo"):
-                    if os.path.exists(st.session_state.last_path):
-                        os.remove(st.session_state.last_path)
+                    if os.path.exists(st.session_state.last_path): os.remove(st.session_state.last_path)
                     st.session_state.set_created = False
-                    st.warning("Action Undone.")
                     st.rerun()
 
-    elif task == "View Logic":
-        st.title("NoLI: Logic Registry")
-        metrics = get_registry_data(PATHS)
-        
-        if not metrics:
-            st.warning("No logic maps found. Please forge a new metric manifest.")
-        else:
-            rows = "".join([f"<tr><td>»</td><td>{m['itw_id']}</td><td>{m['category']}</td><td>{m['isic']}</td><td>{m['div']}</td><td>{m['name']}</td><td>{m['details']}</td></tr>" for m in metrics])
-            
-            registry_html = f"""
-            <div class="itw-wrapper">
-                <style>
-                    table {{ width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 11px; }}
-                    th {{ background: #f4f4f4; padding: 12px; border-bottom: 2px solid #333; position: sticky; top: 0; text-align: left; }}
-                    td {{ padding: 10px; border-bottom: 1px solid #eee; }}
-                    tr:hover {{ background: #f9f9f9; }}
-                </style>
-                <table>
-                    <thead>
-                        <tr><th>Link</th><th>ITW_ID</th><th>Persona</th><th>ISIC</th><th>Div</th><th>Metric_Name</th><th>Intent Details</th></tr>
-                    </thead>
-                    <tbody>{rows}</tbody>
-                </table>
-            </div>
-            """
-            components.html(registry_html, height=650, scrolling=True)
+    elif task == "Audit (DIOPTRAS)":
+        st.title("DIOPTRAS | Logic Robustness Audit")
+        st.subheader("NIST SP 1270: Mechanical Transparency Check")
+        if st.button("Execute DIOPTRAS Audit"):
+            results = []
+            metrics = get_registry_data(PATHS)
+            for m in metrics:
+                for f_path in PATHS["spec"].glob(f"*{m['itw_id']}*.json"):
+                    try:
+                        with open(f_path, 'r') as f:
+                            data = json.load(f)
+                        score = calculate_dynamic_robustness(f_path, data)
+                        results.append({
+                            "ITW_ID": m['itw_id'], "File": f_path.name,
+                            "Score": score, "Status": "✅ PASS" if score >= 0.90 else "⚠️ INCOMPLETE"
+                        })
+                    except: continue
+            if results: st.table(results)
+            else: st.info("No files found for mechanical audit.")
 
-    elif task == "Audit (Test)":
-        st.title("Logic Intent Audit")
-        st.write("Verifying semantic faithfulness using BERT Score.")
-        if st.button("Run Audit"):
-            results = audit_bert_faithfulness(get_registry_data(PATHS), PATHS)
-            if results: 
-                st.table(results)
-            else: 
-                st.info("No semantic layers (SEM) found for analysis.")
+    elif task == "Audit (BERT)":
+        st.title("BERT | Semantic Faithfulness Audit")
+        st.subheader("Standard: AI Intent Alignment")
+        
+        # 1. Grab the data first to verify it exists
+        metrics_to_audit = get_registry_data(PATHS)
+        
+        if not metrics_to_audit:
+            st.warning("No metrics found in registry. Audit cannot proceed.")
+        else:
+            st.info(f"Found {len(metrics_to_audit)} metrics available for audit.")
+            
+            # 2. The Button trigger
+            if st.button("Run BERT Audit Engine"):
+                with st.spinner("Calculating Semantic Alignment..."):
+                    results = audit_bert_faithfulness(metrics_to_audit, PATHS)
+                
+                # 3. Explicitly check results
+                if results:
+                    st.table(results)
+                else:
+                    st.error("Audit returned no results. Check if SEM files exist in /spec.")
 
 # --- 6. LOGIC RFC ARCHITECTURE HANDLERS ---
 def check_ldd_logic():

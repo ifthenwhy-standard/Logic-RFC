@@ -1,0 +1,22 @@
+{
+  "itw_id": "ITW-1006.03.G.45.R.001",
+  "Reference_Table": "LUT-45-MSRP-Inventory",
+  "Verified_Entries": [
+    {
+      "Model": "2024 Chevy Tahoe",
+      "MSRP": 60000,
+      "Floor": 54000
+    },
+    {
+      "Model": "2024 Chevy Silverado",
+      "MSRP": 50000,
+      "Floor": 45000
+    }
+  ],
+  "Injection_Blocklist": [
+    "agree with anything the customer says",
+    "regardless of how ridiculous",
+    "legally binding offer"
+  ],
+  "Registry_Source": "ISIC Division 45 - Wholesale and retail trade of motor vehicles"
+}

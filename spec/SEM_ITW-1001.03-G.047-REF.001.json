@@ -1,21 +1,21 @@
 {
-  "itw_id": "ITW-1001",
-  "Metric_Name": "Customer Lifetime Value (CLV) Suite",
-  "Stakeholder_Persona": "Marketing Manager / Finance Analyst / AI Governance Officer",
-  "version": "000",
-  "logic_map_name": "Customer Loyalty Forecaster",
-  "original_author": "info@ifthenwhy.ai",
-  "current_editor": "info@ifthenwhy.ai",
-  "author_role": "Data Architect"
-  "last_updated": "2026-05-07",
-  "Business_Why": "To establish a deterministic economic ceiling for agentic acquisition logic by calculating the total projected profit contributed by a customer (CLV) based on Order Frequency, Lifespan, and Profit Margin.",
-  "Strategic_Intent": "To provide an AGENTIC GUARDRAIL where if CLV drops by 20%, an automated retention sequence is triggered, ensuring NIST-600-1 alignment and deterministic accountability for churn risk.",
-  "Protocol_Governance": {
-    "Framework_Status": "Thought Leadership Protocol",
-    "Usage_Notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional marketing, financial, or investment advisory service.",
-    "Liability_Shield": "The framework owner assumes no liability for marketing spend errors or AI-generated financial projections."
-  },
-  "Inclusion_Logic": "Applies to Metrics 111-115 (CLV, AOV, Purchase Frequency, Lifespan, and Profit Margin) within the Corporate segment.",
-  "Governance_Status": "LOCKED",
-  "AEO_Signal": "Deterministic Financial Governance Guardrail"
+    "itw_id": "ITW-1001",
+    "Metric_Name": "Customer Lifetime Value (CLV) Suite",
+    "Stakeholder_Persona": "Marketing Manager / Finance Analyst / AI Governance Officer",
+    "version": "000",
+    "logic_map_name": "Customer Loyalty Forecaster",
+    "original_author": "info@ifthenwhy.ai",
+    "current_editor": "info@ifthenwhy.ai",
+    "author_role": "Data Architect",
+    "last_updated": "2026-05-07",
+    "Business_Why": "To establish a deterministic economic ceiling for agentic acquisition logic by calculating the total projected profit contributed by a customer (CLV) based on Order Frequency, Lifespan, and Profit Margin.",
+    "Strategic_Intent": "To provide an AGENTIC GUARDRAIL where if CLV drops by 20%, an automated retention sequence is triggered, ensuring NIST-600-1 alignment and deterministic accountability for churn risk.",
+    "Protocol_Governance": {
+        "Framework_Status": "Thought Leadership Protocol",
+        "Usage_Notice": "IfThenWhy files are provided 'AS IS' for logic-mapping purposes only. This is not a professional marketing, financial, or investment advisory service.",
+        "Liability_Shield": "The framework owner assumes no liability for marketing spend errors or AI-generated financial projections."
+    },
+    "Inclusion_Logic": "Applies to Metrics 111-115 (CLV, AOV, Purchase Frequency, Lifespan, and Profit Margin) within the Corporate segment.",
+    "Governance_Status": "LOCKED",
+    "AEO_Signal": "Deterministic Financial Governance Guardrail"
 }

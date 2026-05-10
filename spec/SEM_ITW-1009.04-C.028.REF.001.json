@@ -1,6 +1,7 @@
 {
-    "itw_id": "itw_1011.08-C.028-REF.001",
-    "logic_map_name": "Supplier Background Check",
+    "itw_id": "ITW-1009.04.C.28.R.001",
+    "Stakeholder_Persona": "Plant Floor Supervisor / Safety Engineer",
+    "logic_map_name": "Industrial Robot Path Integrity Guard",
     "original_author": "info@ifthenwhy.ai",
     "current_editor": "info@ifthenwhy.ai",
     "author_role": "Data Architect",
@@ -11,8 +12,7 @@
         "Liability_Shield": "The framework owner assumes no liability for data breaches, financial loss, or AI hallucinations. User assumes all responsibility for final security per Innovak International v. Hanover.",
         "Hallucination_Gate": "SYSTEM BLOCK: AI is prohibited from 'negotiating' or 'calculating' custom prices. All logic must derive from LUT_ITW-1018."
     },
-    "Business_Why": "To prevent autonomous procurement agents from prioritizing low-cost suppliers who violate material safety thresholds. This grounding ensures the 'Why' of product safety overrides the 'Then' of cost-optimization.",
-    "Strategic_Intent": "Supply Chain Resilience & Regulatory Compliance (NIST-600-1)",
-    "Stakeholder_Persona": "Procurement Officer / Quality Engineer",
-    "Metric_Name": "Supplier Background Check"
+    "Business_Why": "To prevent physical collisions and chemical spills caused by AI computer-vision hallucinations. This protocol ensures that an autonomous robot's 'Then' (Movement) is restricted by a deterministic registry of 'Forbidden Zones' and 'Hazardous Object IDs' that override the AI's probabilistic pathing.",
+    "Strategic_Intent": "Operational Safety and Physical Asset Protection",
+    "Metric_Name": "Robot Safety Boundary"
 }

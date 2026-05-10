@@ -1,0 +1,6 @@
+{
+  "itw_id": "ITW-1004.12.M.69.R.001",
+  "Business_Trigger": "LLM-generated text contains a legal citation string (e.g., Reporter/Page format).",
+  "Logic_Action": "Extract string and cross-reference against LUT-69-001 (Verified Judicial Index).",
+  "Strategic_Intent": "To verify the 'Existence' attribute before filing, satisfying the Duty of Candor to the Court."
+}
