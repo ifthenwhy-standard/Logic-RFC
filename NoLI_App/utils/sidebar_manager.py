@@ -6,20 +6,36 @@ def render_sidebar(LOGO_URL, BLUEPRINT_URL):
     and the IfThenWhy roadmap/about sections.
     """
     # 1. Load Global CSS First
+
+
     st.markdown("""
         <style>
             label p { color: #000; font-weight: 500; }
-            div.stButton > button:first-child {
-                background-color: #0071e3; color: white; border-radius: 20px;
-                padding: 10px 40px; min-width: 300px; white-space: nowrap; border: none; font-weight: 600;
+            
+            /* Primary Button: Save Changes (Narrower, ~1/3 size) */
+            div.stButton > button[kind="primary"] {
+                background-color: #0071e3; 
+                color: white; 
+                border-radius: 20px;
+                padding: 10px 20px; 
+                width: 33% !important; 
+                min-width: 150px;
+                border: none; 
+                font-weight: 600;
             }
-            /* Note: :contains() is sometimes tricky in CSS, 
-               but this targets your red Discard button perfectly */
-            div.stButton > button:contains("Discard/Undo") {
-                background-color: #ffffff; color: #d93025; border: 1px solid #d93025;
+
+            /* Secondary Button: Row-level Delete (Narrow and subtle) */
+            div.stButton > button[kind="secondary"] {
+                background-color: transparent;
+                color: #d93025; 
+                border: 1px solid #d93025;
+                border-radius: 10px;
+                padding: 2px 10px;
+                font-size: 0.8rem;
+                width: auto !important;
             }
+
             .header-label { font-weight: 700; color: #333; font-size: 0.9rem; }
-            .itw-wrapper { height: 600px; overflow-y: auto; border: 1px solid #ddd; }
         </style>
     """, unsafe_allow_html=True)
     

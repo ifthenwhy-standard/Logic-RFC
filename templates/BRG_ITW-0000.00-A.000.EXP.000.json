@@ -2,7 +2,7 @@
     "Manifest_Label": {
         "Filename": "",
         "Metric_Name": "",
-        "ITW_ID": "",
+        "itw_id": "",
         "Protocol": "Logic RFC v1.0.0"
     },
     "Logic_Intent": {

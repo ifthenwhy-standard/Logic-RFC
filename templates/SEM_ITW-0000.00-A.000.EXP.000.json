@@ -6,7 +6,7 @@
       "Liability_Shield": "The framework owner assumes no liability for marketing spend errors or AI-generated financial projections."
     },
     "Metadata": {
-      "itw_ID": "itw_0000.00-A.000.EXP.000",
+      "itw_id": "itw_0000.00-A.000.EXP.000",
       "framework": "IfThenWhy",
       "version": "000",
       "logic_map_name": "",
@@ -19,6 +19,7 @@
     "Metric_Definition": {
       "metric_id": "",
       "metric_name": "",
+      "logic_map_name"
       "calculation_name": "",
       "business_definition": "",
       "strategic_intent": "",
