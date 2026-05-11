@@ -93,10 +93,10 @@ To meet the "Validity and Reliability" requirements of the NIST AI Risk Manageme
 
 > **Audit Note:** The ~5% variance in UC1 and UC3 accounts for "conversational padding" (polite AI fillers). All core business and compliance claims remain 100% grounded in the Logic DNA™[cite: 1].
 
-## 8. BERT Faithfulness Audits
-BERT (Bidirectional Encoder Representations from Transformers) scores measure if the AI understands the strategic goal of the data mapping files, ensuring there is no drift away from the original business purpose. Key fields audited include `Business_Why` and `Strategic_Intent`.
 
-Detailed logic alignment scores for the full registry can be found at: **[https://www.ifthenwhy.ai/bert-scores](https://www.ifthenwhy.ai/bert-scores)**
+## 8. NIST Dioptra™ & BERT Audit Strategy
+
+This update incorporates the **NIST Dioptra** testbed logic to evaluate the trustworthy characteristics of the AI models interacting with Logic Map Files. While BERT measures if the AI is faithful to the logic, Dioptra measures how much you can trust the model's robustness against risks and attacks.
 
 | ITW_ID | BERT Alignment Score | Audit Status |
 | :--- | :---: | :--- |
@@ -117,6 +117,16 @@ Detailed logic alignment scores for the full registry can be found at: **[https:
 | ITW-1016 | **84.31%** | Successful Audit |
 | ITW-1017 | **86.54%** | Successful Audit |
 | ITW-1018 | **85.91%** | Successful Audit |
+
+The NoLI app provides both BERT analysis and interfaces with DIOPTRA to calculate scores that align with the **NIST AI Risk Management Framework (RMF)**.
+
+| Audit Layer | Metric | Focus Area | Goal |
+| :--- | :--- | :--- | :--- |
+| **Faithfulness** | BERT Score | Semantic Alignment | Ensures the "Then" reflects the "Why" |
+| **Robustness** | DIOPTRA Score | Adversarial Resilience | Ensures model stability against risks/attacks |
+
+Detailed logic alignment scores for the full registry can be found at: **[https://www.ifthenwhy.ai/bert-scores](https://www.ifthenwhy.ai/bert-scores)**
+
 
 ## 9. Standards & AI Governance
 The Logic RFC protocol ensures global interoperability by aligning with internationally recognized standards[cite: 1]:
