@@ -100,6 +100,9 @@ def render_sidebar(LOGO_URL, BLUEPRINT_URL):
             **High-Fidelity Logic Maps for Deterministic Data**
             
             * **Business Leaders:** The "Why" behind the metric.
+            * **Automated Grounding Audit: Integrating Ragas to identify and remediate Logic-to-Action gaps in real-time.
+            * **Dynamic Compliance Mapping: AI-driven updates for current news, legal, regulatory, standards bodies, and NIST standards alignment.
+            * **Github Intake for Shared library of community-vetted logic map files .
             * **Technical:** Deterministic source-to-target roadmaps.
             * **Auditors:** Clear business logic audit trails.
             * **AI Agents:** Grounding metadata for authoritative rules.
