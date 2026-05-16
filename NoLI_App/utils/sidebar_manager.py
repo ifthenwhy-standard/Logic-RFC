@@ -75,6 +75,8 @@ def render_sidebar(LOGO_URL, BLUEPRINT_URL):
                     <ul style="font-size: 0.8rem; margin-top: 0;">
                         <li><strong>Gap Scan:</strong> AI search of news and legal updates to identify conflicts.</li>
                         <li><strong>RAGAS:</strong> Advanced evaluation of RAG faithfulness.</li>
+                        <li><Github Intake for Shared library of community-vetted logic map files.>
+                        <li><Automated Grounding Audit: Integrating Ragas to identify and remediate Logic-to-Action gaps in real-time.>
                         <li><strong>Active:</strong> BERT Faithfulness & Dioptras Audits (Live).</li>
                     </ul>
                     <p style="font-size: 0.7rem; opacity: 0.8; margin-top: 10px;">(Click button again to collapse)</p>
@@ -100,9 +102,7 @@ def render_sidebar(LOGO_URL, BLUEPRINT_URL):
             **High-Fidelity Logic Maps for Deterministic Data**
             
             * **Business Leaders:** The "Why" behind the metric.
-            * **Automated Grounding Audit: Integrating Ragas to identify and remediate Logic-to-Action gaps in real-time.
             * **Dynamic Compliance Mapping: AI-driven updates for current news, legal, regulatory, standards bodies, and NIST standards alignment.
-            * **Github Intake for Shared library of community-vetted logic map files .
             * **Technical:** Deterministic source-to-target roadmaps.
             * **Auditors:** Clear business logic audit trails.
             * **AI Agents:** Grounding metadata for authoritative rules.

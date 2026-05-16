@@ -11,7 +11,7 @@
 streamlit
 
 # --- NIST Dioptra & Slipstream Handshake ---
-# CRITICAL: These must stay pinned to prevent dependency hell
+# CRITICAL: These must stay pinned to prevent dependency issues
 # aiobotocore 3.2.1 provides the async engine for Slipstream logic
 aiobotocore==3.2.1
 botocore==1.42.61
