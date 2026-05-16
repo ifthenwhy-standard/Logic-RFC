@@ -75,8 +75,8 @@ def render_sidebar(LOGO_URL, BLUEPRINT_URL):
                     <ul style="font-size: 0.8rem; margin-top: 0;">
                         <li><strong>Gap Scan:</strong> AI search of news and legal updates to identify conflicts.</li>
                         <li><strong>RAGAS:</strong> Advanced evaluation of RAG faithfulness.</li>
-                        <li><Github Intake for Shared library of community-vetted logic map files.>
-                        <li><Automated Grounding Audit: Integrating Ragas to identify and remediate Logic-to-Action gaps in real-time.>
+                        <li><Github Intake for Shared library of community-vetted logic map files.</li>
+                        <li><Automated Grounding Audit: Integrating Ragas to identify and remediate Logic-to-Action gaps in real-time.</li>
                         <li><strong>Active:</strong> BERT Faithfulness & Dioptras Audits (Live).</li>
                     </ul>
                     <p style="font-size: 0.7rem; opacity: 0.8; margin-top: 10px;">(Click button again to collapse)</p>

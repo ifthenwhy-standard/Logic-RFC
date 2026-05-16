@@ -2,7 +2,9 @@
 
 
 from utils.config_logic import TYPE_LABELS
-from engines.edit_tools.file_utilities import get_protocol_description
+
+from edit_tools.file_utilities import get_protocol_description 
+
 
 def build_edit_dropdown_options(PATHS, spec_files, extract_itw_display_name):
     """

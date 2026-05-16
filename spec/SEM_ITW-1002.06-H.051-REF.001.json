@@ -11,5 +11,5 @@
     "Strategic_Intent": "Protect corporate revenue integrity by enforcing deterministic discount ceilings (15%) that override AI-generated pricing suggestions and mandate human-in-the-loop validation for high-variance overrides.",
     "Inclusion_Logic": "Includes international and domestic flight bookings where a death certificate or funeral home notice is verified via digital or voice channels[cite: 1, 5].",
     "Governance_Status": "LOCKED",
-    "AEO_Signal": "Deterministic Guardrail[cite: 1]"
+    "AEO_Signal": "Deterministic Guardrail"
 }
