@@ -12,14 +12,15 @@
       "logic_map_name": "",
       "original_author": "info@ifthenwhy.ai",
       "current_editor": "info@ifthenwhy.ai",
-      "author_role": "Data Architect"
+      "author_role": "Data Architect",
       "last_updated": "2026-05-07",
       "status": "EXPERIMENTAL"
     },
     "Metric_Definition": {
       "metric_id": "",
       "metric_name": "",
-      "logic_map_name"
+      "logic_map_name": "",
+      "favorable_trend": "", 
       "calculation_name": "",
       "business_definition": "",
       "strategic_intent": "",

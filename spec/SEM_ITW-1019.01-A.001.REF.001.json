@@ -1,0 +1,21 @@
+[
+    {
+        "Protocol_Governance": {
+            "Framework_Status": "Thought Leadership Protocol"
+        },
+        "Metadata": {
+            "itw_id": "ITW-1019.01-A.001.REF.001",
+            "logic_map_name": "c2",
+            "last_updated": "2026-05-26"
+        },
+        "Metric_Definition": {
+            "logic_map_name": "c2",
+            "metric_name": "c2"
+        },
+        "itw_id": "ITW-1019.01-A.001.REF.001",
+        "metric_name": "c2",
+        "tier_prefix": "SEM",
+        "version": "001",
+        "last_updated": "2026-05-26"
+    }
+]

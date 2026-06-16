@@ -1,11 +1,16 @@
 {
+    "Calculation_Engine": {
+        "calculation_grain": "customer_id, calendar_date",
+        "calculation_method": "SUM",
+        "rounding_rule": "truncate"
+        },
     "validation_logic": {
         "itw_id": "",
         "metric_id": "",
         "logic_map_name": "",
         "original_author": "info@ifthenwhy.ai",
         "current_editor": "info@ifthenwhy.ai",
-        "author_role": "Data Architect"
+        "author_role": "Data Architect",
         "framework": "IfThenWhy",
         "last_updated": "",
         "control_id": "",

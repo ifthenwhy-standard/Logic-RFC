@@ -5,9 +5,7 @@ def render_sidebar(LOGO_URL, BLUEPRINT_URL):
     Sidebar Manager: Handles navigation, session state initialization, 
     and the IfThenWhy roadmap/about sections.
     """
-    # 1. Load Global CSS First
-
-
+    # 1. Clean Global CSS (Keeping only working button styles)
     st.markdown("""
         <style>
             label p { color: #000; font-weight: 500; }
@@ -38,7 +36,6 @@ def render_sidebar(LOGO_URL, BLUEPRINT_URL):
             .header-label { font-weight: 700; color: #333; font-size: 0.9rem; }
         </style>
     """, unsafe_allow_html=True)
-    
     
     # 2. Initialize Session States
     if 'set_created' not in st.session_state:
@@ -75,8 +72,8 @@ def render_sidebar(LOGO_URL, BLUEPRINT_URL):
                     <ul style="font-size: 0.8rem; margin-top: 0;">
                         <li><strong>Gap Scan:</strong> AI search of news and legal updates to identify conflicts.</li>
                         <li><strong>RAGAS:</strong> Advanced evaluation of RAG faithfulness.</li>
-                        <li><Github Intake for Shared library of community-vetted logic map files.</li>
-                        <li><Automated Grounding Audit: Integrating Ragas to identify and remediate Logic-to-Action gaps in real-time.</li>
+                        <li><strong>GitHub Intake:</strong> Shared library of community-vetted logic map files.</li>
+                        <li><strong>Automated Grounding Audit:</strong> Integrating Ragas to identify and remediate Logic-to-Action gaps in real-time.</li>
                         <li><strong>Active:</strong> BERT Faithfulness & Dioptras Audits (Live).</li>
                     </ul>
                     <p style="font-size: 0.7rem; opacity: 0.8; margin-top: 10px;">(Click button again to collapse)</p>
@@ -102,10 +99,10 @@ def render_sidebar(LOGO_URL, BLUEPRINT_URL):
             **High-Fidelity Logic Maps for Deterministic Data**
             
             * **Business Leaders:** The "Why" behind the metric.
-            * **Dynamic Compliance Mapping: AI-driven updates for current news, legal, regulatory, standards bodies, and NIST standards alignment.
+            * **Dynamic Compliance Mapping:** AI-driven updates for current news, legal, regulatory, standards bodies, and NIST standards alignment.
             * **Technical:** Deterministic source-to-target roadmaps.
             * **Auditors:** Clear business logic audit trails.
             * **AI Agents:** Grounding metadata for authoritative rules.
             """)
             
-    return task # Return the selected task to the main script
+    return task
