@@ -5,6 +5,21 @@
 ## Executive Summary
 Logic RFC (Request for Comments) is a system-agnostic Reference Architecture for data logic and AI governance. It provides a deterministic, machine-readable standard designed to bridge the gap between human intent ("The Why") and mechanical data actions ("The Then"). By utilizing a Logic Map File Architecture, this protocol ensures that every metric is structurally bound to a verifiable business trigger, meeting the rigorous demands of NIST-2025/2026 AI Transparency Standards and Agentic AI Governance.
 
+## Key Capabilities: What Logic RFC™ Resolves
+To move beyond casual experimentation, the IfThenWhy™ framework provides a structured blueprint to achieve the following:
+
+* **How to structure your data to reduce computing costs and context window bloat** with IfThenWhy™ token optimization.
+* **How to provide structure and improve plain text** with Markdown.
+* **How to shape data and information for AI answer engines** and to capture elite AEO (Answer Engine Optimization) rankings.
+* **How to ensure the right answer by enforcing predictable, verifiable outputs** that build professional trust through deterministic logic.
+* **How to become an editor who directs Python** instead of a programmer writing code.
+* **How to describe the visual image you want** so the AI can write the HTML & CSS plain text that builds the layout.
+* **How to outline your processes in plain words** so the AI can generate the Mermaid text that draws the diagram.
+* **How to write for Natural Language Processing (NLP)** to ensure text is perfectly optimized for AI search engines and AI narration.
+* **How to achieve automated data lineage auditing** using pure, plain-text data design maps that allow advanced testing engines like BERT and RAGAS to proactively audit, track, and react immediately to shifting regulatory mandates, legal statutes, and volatile global events.
+
+---
+
 ## 1. The Logic Map File Architecture
 The framework utilizes a series of text-based map files to extract and standardize business rules, transforming raw data into "Logic DNA" and eliminating AI hallucinations.
 
