@@ -1,9 +1,16 @@
 # Logic RFC™: A Reference Architecture for Deterministic AI Grounding
-### *An Open-Source Protocol by IfThenWhy™*
+### *An Open-Source Protocol by IfThenWhy®*
 ---
 
+
+🎙️ **The Plain Text of AI Podcast:** [Apple Podcasts](https://podcasts.apple.com/us/podcast/the-plain-text-of-ai-introduction/id6793225449?i=1000777755758) | [YouTube](https://music.youtube.com/playlist?list=PLEZxc8WUrnSQ) | [Amazon](https://music.amazon.com/podcasts/866c0928-8409-49a4-a424-c85bb8f55b03/the-plain-text-of-ai)
+
+### Executive Summary
+
+Logic RFC (Request for Comments) is a system-agnostic Reference Architecture for data logic and AI governance...
 ## Executive Summary
 Logic RFC (Request for Comments) is a system-agnostic Reference Architecture for data logic and AI governance. It provides a deterministic, machine-readable standard designed to bridge the gap between human intent ("The Why") and mechanical data actions ("The Then"). By utilizing a Logic Map File Architecture, this protocol ensures that every metric is structurally bound to a verifiable business trigger, meeting the rigorous demands of NIST-2025/2026 AI Transparency Standards and Agentic AI Governance.
+
 
 ## Key Capabilities: What Logic RFC™ Resolves
 To move beyond casual experimentation, the IfThenWhy™ framework provides a structured blueprint to achieve the following:
